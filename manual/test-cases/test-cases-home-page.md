@@ -9,7 +9,7 @@ Each test case is traceable to its corresponding **Use Case** and **Requirement*
 
 ## TC-HP-01 – Verify Home Page for Non-logged-in Users
 **Jira Test Case:** [SSQ-6](https://storyspoilerqa.atlassian.net/browse/SSQ-6)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.  
 
@@ -31,7 +31,7 @@ Navigation bar on top
 
 ## TC-HP-02 – Verify Navigation Bar for Non-logged-in Users
 **Jira Test Case:** [SSQ-7](https://storyspoilerqa.atlassian.net/browse/SSQ-7)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.  
 
@@ -46,9 +46,9 @@ Navigation bar is fixed at the top and displays:
 
 ---
 
-## TC-HP-03 – Verify “StORYSPOIL” Home Link for non-logged-in users
+## TC-HP-03 – Verify “STORYSPOIL” Home Link for non-logged-in users
 **Jira Test Case:** [SSQ-8](https://storyspoilerqa.atlassian.net/browse/SSQ-8)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.
 
@@ -63,7 +63,7 @@ Home Page reloads correctly.
 
 ## TC-HP-04 – Verify “SIGN UP” button in navigation bar
 **Jira Test Case:** [SSQ-9](https://storyspoilerqa.atlassian.net/browse/SSQ-9)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.
 
@@ -78,7 +78,7 @@ User is redirected to the Sign Up page.
 
 ## TC-HP-05 – Verify “LOG IN” button in navigaton bar
 **Jira Test Case:** [SSQ-10](https://storyspoilerqa.atlassian.net/browse/SSQ-10)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.
 
@@ -93,7 +93,7 @@ User is redirected to the Log In page.
 
 ## TC-HP-06 – Verify footer for non-logged-in users
 **Jira Test Case:** [SSQ-11](https://storyspoilerqa.atlassian.net/browse/SSQ-11)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.
 
@@ -108,7 +108,7 @@ Footer displays “Copyright © StorySpoil 2023”.
 
 ## TC-HP-07 – Verify Copyright link in footer for non-logged-in users
 **Jira Test Case:** [SSQ-12](https://storyspoilerqa.atlassian.net/browse/SSQ-12)  
-**Use Case:** UC-HP-1 (Jira: [SSQ-2])(https://storyspoilerqa.atlassian.net/browse/SSQ-2)
+**Use Case:** UC-HP-1 (Jira: [SSQ-2](https://storyspoilerqa.atlassian.net/browse/SSQ-2))
 
 **Prerequisites:** TD-01: Guest Session.
 
@@ -123,7 +123,7 @@ User is redirected to the Copyright page.
 
 ## TC-HP-08 – Verify Home Page for logged-in users
 **Jira Test Case:** [SSQ-13](https://storyspoilerqa.atlassian.net/browse/SSQ-13)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid User with existing Spoilers
 
@@ -144,7 +144,7 @@ Home Page displays:
 
 ## TC-HP-09 – Verify navigation bar for logged-in users
 **Jira Test Case:** [SSQ-14](https://storyspoilerqa.atlassian.net/browse/SSQ-14)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -162,7 +162,7 @@ Navigation bar is fixed and displays:
 
 ## TC-HP-10 – Verify profile link in navigation bar
 **Jira Test Case:** [SSQ-15](https://storyspoilerqa.atlassian.net/browse/SSQ-15)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -176,9 +176,9 @@ User is redirected to My Profile page.
 
 ---
 
-## TC-HP-11 – Verify “StORYSPOIL” home link for logged-in users
+## TC-HP-11 – Verify “STORYSPOIL” home link for logged-in users
 **Jira Test Case:** [SSQ-16](https://storyspoilerqa.atlassian.net/browse/SSQ-16)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -194,7 +194,7 @@ Home Page reloads correctly.
 
 ## TC-HP-12 – Verify “CREATE SPOILER” link in navigation bar
 **Jira Test Case:** [SSQ-17](https://storyspoilerqa.atlassian.net/browse/SSQ-17)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -210,7 +210,7 @@ User is redirected to Create Spoiler page.
 
 ## TC-HP-13 – Verify “LOGOUT” link in navigation bar
 **Jira Test Case:** [SSQ-18](https://storyspoilerqa.atlassian.net/browse/SSQ-18)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -226,7 +226,7 @@ User is logged out and redirected to Home Page for non-logged-in users.
 
 ## TC-HP-14 – Verify Footer for logged-in users
 **Jira Test Case:** [SSQ-19](https://storyspoilerqa.atlassian.net/browse/SSQ-19)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -242,7 +242,7 @@ Footer displays “Copyright © StorySpoil 2023”.
 
 ## TC-HP-15 – Verify Copyright link in footer for logged-in users
 **Jira Test Case:** [SSQ-20](https://storyspoilerqa.atlassian.net/browse/SSQ-20)  
-**Use Case:** UC-HP-2 (Jira: [SSQ-3])(https://storyspoilerqa.atlassian.net/browse/SSQ-3)
+**Use Case:** UC-HP-2 (Jira: [SSQ-3](https://storyspoilerqa.atlassian.net/browse/SSQ-3))
 
 **Prerequisites:** TD-02: Valid user account exists.
 
@@ -258,7 +258,7 @@ User is redirected to Copyright page.
 
 ## TC-HP-16 – Verify Home Page with no spoilers
 **Jira Test Case:** [SSQ-21](https://storyspoilerqa.atlassian.net/browse/SSQ-21)  
-**Use Case:** UC-HP-3 (Jira: [SSQ-4])(https://storyspoilerqa.atlassian.net/browse/SSQ-4)
+**Use Case:** UC-HP-3 (Jira: [SSQ-4](https://storyspoilerqa.atlassian.net/browse/SSQ-4))
 
 **Prerequisites:** TD-03: New users account exists with no spoilers.
 
@@ -280,7 +280,7 @@ Home Page displays:
 
 ## TC-HP-17 – Verify “WRITE SPOILER” button
 **Jira Test Case:** [SSQ-22](https://storyspoilerqa.atlassian.net/browse/SSQ-22)  
-**Use Case:** UC-HP-3 (Jira: [SSQ-4])(https://storyspoilerqa.atlassian.net/browse/SSQ-4)
+**Use Case:** UC-HP-3 (Jira: [SSQ-4](https://storyspoilerqa.atlassian.net/browse/SSQ-4))
 
 **Prerequisites:** TD-03: New users account exists with no spoilers.
 
@@ -296,7 +296,7 @@ User is redirected to Create Spoiler page.
 
 ## TC-HP-18 – Verify Home Page access with no Internet connection
 **Jira Test Case:** [SSQ-23](https://your-jira-instance.atlassian.net/browse/SSQ-TC-18)  
-**Use Case:** [UC-HP-4](https://storyspoilerqa.atlassian.net/browse/SSQ-5)
+**Use Case:** UC-HP-4 (Jira: [SSQ-5](https://storyspoilerqa.atlassian.net/browse/SSQ-5))
 
 **Prerequisites:** Internet is disabled.
 
@@ -310,7 +310,7 @@ App does not load, browser shows an error message like “No Internet” or “Y
 
 ## TC-HP-19 – Verify Home Page access with invalid/mistyped URL
 **Jira Test Case:** [SSQ-24](https://storyspoilerqa.atlassian.net/browse/SSQ-24)  
-**Use Case:** [UC-HP-4](https://storyspoilerqa.atlassian.net/browse/SSQ-5)
+**Use Case:** UC-HP-4 (Jira: [SSQ-5](https://storyspoilerqa.atlassian.net/browse/SSQ-5))
 
 **Prerequisites:** User has Internet connection.
 

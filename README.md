@@ -32,6 +32,8 @@ This section will be populated upon the completion of the testing cycle. It will
 
 - **Version Control**: GitHub (Used for documentation, history tracking, and integrating with Jira via Smart Commits.)
 
+- **API Testing**: Postman
+
 - **Documentation**: Markdown
 
 - **Testing Approach**: Manual Functional Testing
@@ -72,7 +74,8 @@ Story-Spoiler-QA-Project/
     ├── qa-report/          # The final QA Summary Report
     ├── requirements/       # Detailed System Requirements
     ├── test-cases/         # Manual Test Cases grouped by functionality
-    └── use-cases/          # Use Case documentation
+    ├── use-cases/          # Use Case documentation
+    └── test-data/          # Test data documentation
 ```
 ## Getting Started
 
