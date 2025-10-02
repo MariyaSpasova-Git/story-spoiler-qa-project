@@ -27,6 +27,12 @@ Navigation bar on top
 - "Ready to Spoil a Story?" section
 - Footer 
 
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-HP-01](../bugs/bugs-report.md#bug-hp-01) (Jira: [SSQ-25](https://storyspoilerqa.atlassian.net/browse/SSQ-25))
+**Screenshot:** ![BUG-HP-01](../screenshots/bug-hp-01.png)  
+
+
 ---
 
 ## TC-HP-02 – Verify Navigation Bar for Non-logged-in Users
@@ -42,7 +48,9 @@ Navigation bar on top
 **Expected Result:**  
 Navigation bar is fixed at the top and displays:  
 - “StorySpoil” link (left)  
-- “SIGN UP” and “LOG IN” buttons (right)  
+- “SIGN UP” and “LOG IN” buttons (right)
+
+**Execution Result:** ✅ Passed
 
 ---
 
@@ -59,6 +67,8 @@ Navigation bar is fixed at the top and displays:
 **Expected Result:**  
 Home Page reloads correctly.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-04 – Verify “SIGN UP” button in navigation bar
@@ -72,7 +82,9 @@ Home Page reloads correctly.
 2. Click “SIGN UP” button in the navigation bar.  
 
 **Expected Result:**  
-User is redirected to the Sign Up page.  
+User is redirected to the Sign Up page. 
+
+**Execution Result:** ✅ Passed
 
 ---
 
@@ -89,6 +101,8 @@ User is redirected to the Sign Up page.
 **Expected Result:**  
 User is redirected to the Log In page.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-06 – Verify footer for non-logged-in users
@@ -104,6 +118,8 @@ User is redirected to the Log In page.
 **Expected Result:**  
 Footer displays “Copyright © StorySpoil 2023”.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-07 – Verify Copyright link in footer for non-logged-in users
@@ -118,6 +134,10 @@ Footer displays “Copyright © StorySpoil 2023”.
 
 **Expected Result:**  
 User is redirected to the Copyright page.  
+
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-HP-02](../bugs/bugs-report.md#bug-hp-02) (Jira: [SSQ-26](https://storyspoilerqa.atlassian.net/browse/SSQ-26))
 
 ---
 
@@ -140,6 +160,10 @@ Home Page displays:
 - Scrollable list of Spoilers
 - Footer  
 
+**Execution Result:** 🚫 Blocked
+
+**Related Query:** [QRY-HP-01](../queries/queries.md#qry-hp-01) (Jira: [SSQ-27](https://storyspoilerqa.atlassian.net/browse/SSQ-27))
+
 ---
 
 ## TC-HP-09 – Verify navigation bar for logged-in users
@@ -158,6 +182,8 @@ Navigation bar is fixed and displays:
 - Profile + Home link (left)  
 - “CREATE SPOILER” and “LOGOUT” buttons (right)  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-10 – Verify profile link in navigation bar
@@ -174,6 +200,8 @@ Navigation bar is fixed and displays:
 **Expected Result:**  
 User is redirected to My Profile page.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-11 – Verify “STORYSPOIL” home link for logged-in users
@@ -188,7 +216,11 @@ User is redirected to My Profile page.
 3. Click the "STORYSPOIL" link in the navigation bar. 
 
 **Expected Result:**  
-Home Page reloads correctly.   
+Home Page reloads correctly. 
+
+**Execution Result:** 🚫 Blocked
+
+**Related Query:** [QRY-HP-02](../queries/queries.md#qry-hp-02) (Jira: [SSQ-28](https://storyspoilerqa.atlassian.net/browse/SSQ-28))
 
 ---
 
@@ -206,6 +238,8 @@ Home Page reloads correctly.
 **Expected Result:**  
 User is redirected to Create Spoiler page.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-13 – Verify “LOGOUT” link in navigation bar
@@ -221,6 +255,8 @@ User is redirected to Create Spoiler page.
 
 **Expected Result:**  
 User is logged out and redirected to Home Page for non-logged-in users.  
+
+**Execution Result:** ✅ Passed
 
 ---
 
@@ -238,6 +274,8 @@ User is logged out and redirected to Home Page for non-logged-in users.
 **Expected Result:**  
 Footer displays “Copyright © StorySpoil 2023”.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-15 – Verify Copyright link in footer for logged-in users
@@ -252,7 +290,11 @@ Footer displays “Copyright © StorySpoil 2023”.
 3. Observe the footer.  
 
 **Expected Result:**  
-User is redirected to Copyright page.  
+User is redirected to Copyright page. 
+
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-HP-02](../bugs/bugs-report.md#bug-hp-02) (Jira: [SSQ-26](https://storyspoilerqa.atlassian.net/browse/SSQ-26))
 
 ---
 
@@ -276,6 +318,8 @@ Home Page displays:
 - "WRITE SPOILER" button
 - Footer 
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-17 – Verify “WRITE SPOILER” button
@@ -292,6 +336,8 @@ Home Page displays:
 **Expected Result:**  
 User is redirected to Create Spoiler page.  
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-18 – Verify Home Page access with no Internet connection
@@ -306,6 +352,8 @@ User is redirected to Create Spoiler page.
 **Expected Result:**  
 App does not load, browser shows an error message like “No Internet” or “You are offline”.
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-HP-19 – Verify Home Page access with invalid/mistyped URL
@@ -319,3 +367,5 @@ App does not load, browser shows an error message like “No Internet” or “Y
 
 **Expected Result:**  
 App doesn't load, browser shows an error like “Site can’t be reached” / “DNS_PROBE_FINISHED_NXDOMAIN”.
+
+**Execution Result:** ✅ Passed
