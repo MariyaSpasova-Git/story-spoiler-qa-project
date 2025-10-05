@@ -2,26 +2,178 @@
 
 This file contains **anonymized test data** for manual test cases.
 Each test case references the corresponding **Test Data ID (TD-XX)**.
+
 > ⚠️ All credentials below are dummy values for testing only.
 
 ---
 
+## Home Page Test Data
+
 ### TD-01 – Guest Session
-- No active user session
-- Browser cache and cookies cleared
+
+* No active user session
+* Browser cache and cookies cleared
 
 ### TD-02 – Valid User 1
-- Username: `test_user_1`
-- Password: `123456`
-- Existing spoilers available
-- Existing user profile
+
+* Username: `test_user_1`
+* Password: `123456`
+* Existing spoilers available
+* Existing user profile
 
 ### TD-03 – Valid User 2 (New Account)
-- Username: `new_test_user`
-- Password: `123456`
-- No spoilers yet
-- No user profile yet
+
+* Username: `new_test_user`
+* Password: `123456`
+* No spoilers yet
+* No user profile yet
 
 ### TD-04 – Invalid User
-- Username: `invalid_user`
-- Password: `123456`
+
+* Username: `invalid_user`
+* Password: `123456`
+
+---
+
+## User Registration Test Data
+
+### TD-05 – Invalid Username (1 character)
+
+**Value:** `a`
+
+**Note:** Below minimum length (2 characters)
+
+### TD-06 – Invalid Username (31 characters)
+
+**Value:** `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
+
+**Note:** Above maximum length (30 characters)
+
+### TD-07 – Valid Username
+
+**Value:** `storyfan123`
+
+### TD-08 – Empty Username
+
+**Value:** ``
+
+**Note:** Use when testing required-field validations.
+
+---
+
+### TD-09 – Valid Email
+
+**Value:** `testuser@example.com`
+
+### TD-10 – Invalid Email (missing "@")
+
+**Value:** `userexample.com`
+
+### TD-11 – Invalid Email (5 characters)
+
+**Value:** `a@b.c`
+
+**Note:** Below minimum length (6 characters)
+
+### TD-12 – Invalid Email (missing ".")
+
+**Value:** `user@examplecom`
+
+---
+
+### TD-13 – Valid First Name
+
+**Value:** `John`
+
+### TD-14 – Invalid First Name (1 character)
+
+**Value:** `A`
+
+**Note:** Below minimum length (2 characters)
+
+### TD-15 – Invalid First Name (61 characters)
+
+**Value:** `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA` *(61 characters)*
+
+**Note:** Above maximum length (60 characters)
+
+---
+
+### TD-16 – Valid Last Name
+
+**Value:** `Smith`
+
+### TD-17 – Invalid Last Name (1 character)
+
+**Value:** `B`
+
+**Note:** Below minimum length (2 characters)
+
+### TD-18 – Invalid Last Name (61 characters)
+
+**Value:** `LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL` *(61 chars)*
+
+**Note:** Above maximum length (60 characters)
+
+---
+
+### TD-19 – Valid Password
+
+**Value:** `1234567`
+
+**Constraints:** 6–30 characters
+
+### TD-20 – Valid Repeat Password (matches TD-19)
+
+**Value:** `1234567`
+
+### TD-21 – Invalid Password (5 characters)
+
+**Value:** `12345`
+
+**Note:** Below minimum length (6 characters)
+
+### TD-22 – Invalid Password (31 characters)
+
+**Value:** `ppppppppppppppppppppppppppppppp`
+
+**Note:** Above maximum length (30 characters)
+
+### TD-23 – Invalid Repeat Password (mismatch)
+
+**Value:** `DifferentPass`
+
+---
+
+### TD-24 – Invalid Middle Name (1 character)
+
+**Value:** `M`
+
+**Note:** Below minimum length (2 characters)
+
+### TD-25 – Invalid Middle Name (61 characters)
+
+**Value:** `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM`
+**Note:** Above maximum length (60 characters)
+
+### TD-26 – Valid Middle Name
+
+**Value:** `Doe`
+
+### TD-27 – Empty Middle Name (valid, optional)
+
+**Value:** ``
+
+---
+
+## Usage Notes
+
+* Test cases reference TD-IDs directly (e.g., **Enter TD-09** for valid email).
+* Long-string test data (61 / 31 chars) use placeholder values, length is what matters.
+* This file is kept synchronized with all test case documents.
+
+
+## 🔗 Linking
+This test data is referenced in:  
+
+- [Test Cases – Home Page](./test-cases-home-page.md)
