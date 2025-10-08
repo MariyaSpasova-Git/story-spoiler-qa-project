@@ -30,7 +30,7 @@ Navigation bar on top
 **Execution Result:** ❌ Failed
 
 **Related Bug:** [BUG-HP-01](../bugs/bug-report.md#bug-hp-01--missing-picture-in-upload-a-picture-section) (Jira: [SSQ-25](https://storyspoilerqa.atlassian.net/browse/SSQ-25))
-**Screenshot:** ![BUG-HP-01](../screenshots/bug-hp-01.png)  
+**Screenshot:** ![BUG-HP-01](../../docs/screenshots/home-page/bug-hp-01.pngbug-hp-01.png)  
 
 
 ---

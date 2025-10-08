@@ -9,7 +9,7 @@ Each bug is linked to its corresponding Jira issue, GitHub test case(s), and scr
 ## BUG-HP-01 – Missing picture in "Upload a Picture" section
 
 **Jira Bug:** [SSQ-25](https://storyspoilerqa.atlassian.net/browse/SSQ-25)  
-**Related Test Case:**  [TC-HP-01](../tests/test-cases-home-page.md#tc-hp-01) (Jira link: [SSQ-6](https://storyspoilerqa.atlassian.net/browse/SSQ-6))
+**Related Test Case:**  [TC-HP-01](../test-cases/test-cases-home-page.md#tc-hp-01--verify-home-page-for-non-logged-in-users) (Jira link: [SSQ-6](https://storyspoilerqa.atlassian.net/browse/SSQ-6))
 
 ### Steps to Reproduce
 1. Open the app URL.
@@ -37,7 +37,7 @@ Open
 - Home Page (non-logged-in users)
 
 ### Screenshot
-![BUG-HP-01](../docs/screenshots/bug-hp-01.png)
+![BUG-HP-01](../../docs/screenshots/home-page/bug-hp-01.png)
 
 ---
 
@@ -45,8 +45,8 @@ Open
 
 **Jira Bug:** [SSQ-26](https://storyspoilerqa.atlassian.net/browse/SSQ-26)  
 **Related Test Cases:**  
-- [TC-HP-07](../tests/test-cases-home-page.md#tc-hp-07) (Jira link: [SSQ-12](https://storyspoilerqa.atlassian.net/browse/SSQ-12)) – Verify Copyright link in footer for non-logged-in users
-- [TC-HP-15](../tests/test-cases-home-page.md#tc-hp-15) – (Jira link: [SSQ-15](https://storyspoilerqa.atlassian.net/browse/SSQ-20)) - Verify Copyright link in footer for logged-in users
+- [TC-HP-07](../test-cases/test-cases-home-page.md#tc-hp-07--verify-copyright-link-in-footer-for-non-logged-in-users) (Jira link: [SSQ-12](https://storyspoilerqa.atlassian.net/browse/SSQ-12)) – Verify Copyright link in footer for non-logged-in users
+- [TC-HP-15](../test-cases/test-cases-home-page.md#tc-hp-15--verify-copyright-link-in-footer-for-logged-in-users) – (Jira link: [SSQ-15](https://storyspoilerqa.atlassian.net/browse/SSQ-20)) - Verify Copyright link in footer for logged-in users
 
 ### Steps to Reproduce
 1. Open the app URL.
@@ -79,8 +79,8 @@ Open
 
 **Jira Bug:** [SSQ-56](https://storyspoilerqa.atlassian.net/browse/SSQ-56)  
 **Related Test Cases:**  
-- [TC-REG-08](../tests/test-cases-user-registration.md#tc-reg-08) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
-- [TC-REG-07](../tests/test-cases-user-registration.md#tc-reg-07) (Jira link: [SSQ-37](https://storyspoilerqa.atlassian.net/browse/SSQ-37))
+- [TC-REG-08](../test-cases/test-cases-user-registration.md#tc-reg-08--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
+- [TC-REG-07](../test-cases/test-cases-user-registration.md#tc-reg-07--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-37](https://storyspoilerqa.atlassian.net/browse/SSQ-37))
 
 ### Steps to Reproduce
 1. Open the app URL.
@@ -108,14 +108,14 @@ Open
 Registration form – Email field
 
 ### Screenshot
-![BUG-REG-01](../docs/screenshots/bug-reg-01.png)
+![BUG-REG-01](../../docs/screenshots/user-registration/bug-reg-01.png)
 
 ---
 
 ## BUG-REG-02 – User is able to sign up with an invalid email address missing a "."
 
 **Jira Bug:** [SSQ-57](https://storyspoilerqa.atlassian.net/browse/SSQ-57)  
-**Related Test Case: ** [TC-REG-08](../tests/test-cases-user-registration.md#tc-reg-08) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
+**Related Test Case: ** [TC-REG-08](../test-cases/test-cases-user-registration.md#tc-reg-08--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
 
 
 ### Steps to Reproduce
@@ -144,14 +144,15 @@ Open
 Registration form – Email validation
 
 ### Screenshot
-![BUG-REG-01](../docs/screenshots/bug-reg-01.png)
+![BUG-REG-01](../../docs/screenshots/user-registration/bug-reg-01.png)
+
 
 ---
 
 ## BUG-REG-03 – User can sign up with a middle name below the minimum boundary
 
 **Jira Bug:** [SSQ-58](https://storyspoilerqa.atlassian.net/browse/SSQ-58)  
-**Related Test Case: ** [TC-REG-13](../tests/test-cases-user-registration.md#tc-reg-13) (Jira link: [SSQ-46](https://storyspoilerqa.atlassian.net/browse/SSQ-46))
+**Related Test Case: ** [TC-REG-13](../test-cases/test-cases-user-registration.md#tc-reg-13--verify-validation-for-invalid-middle-name-too-short) (Jira link: [SSQ-46](https://storyspoilerqa.atlassian.net/browse/SSQ-46))
 
 
 ### Steps to Reproduce
