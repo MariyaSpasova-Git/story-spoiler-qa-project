@@ -25,19 +25,19 @@ The section should display:
 The picture is not displayed. Instead, the alt text `"uploading spoiler story picture"` appears.
 
 ### Severity
-Medium – Content is incomplete, impacting user experience.
+Medium
 
 ### Priority
-Medium – Fix needed but not blocking core functionality.
+Medium
 
 ### Status
 Open
 
 ### Affected Areas
-- Home Page (non-logged-in users)
+Home Page (non-logged-in users)
 
 ### Screenshot
-![BUG-HP-01](../../docs/screenshots/home-page/bug-hp-01.png)
+![Missing Picture](../../docs/screenshots/home-page/bug-hp-01-missing-picture.png)
 
 ---
 
@@ -60,10 +60,10 @@ User is redirected to the dedicated Copyright page.
 The page does not redirect. Instead, the screen scrolls to the top.
 
 ### Severity
-Medium – Functionality issue that impacts compliance/UX but does not block core flows.  
+Medium 
 
 ### Priority
-High – Affects all users across all pages where the footer appears.  
+High  
 
 ### Status
 Open  
@@ -96,10 +96,10 @@ A clear validation error message is displayed that specifies the correct email f
 The validation error message only mentions the `"@"` requirement but does not specify the missing `"."`.
 
 ### Severity
-Medium – User is prevented from registering, but the feedback is unclear, leading to confusion.
+Medium
 
 ### Priority
-High – Basic requirement for user registration; incorrect messaging blocks proper user guidance.
+High
 
 ### Status
 Open
@@ -108,7 +108,7 @@ Open
 Registration form – Email field
 
 ### Screenshot
-![BUG-REG-01](../../docs/screenshots/user-registration/bug-reg-01.png)
+![Incorrect Email Validation Error](../../docs/screenshots/user-registration/bug-reg-01-incorrect-email-validation-error.png)
 
 ---
 
@@ -132,10 +132,10 @@ The user should not be able to complete the sign-up process. A clear validation 
 The user is successfully registered with an invalid email address. No error message is displayed.
 
 ### Severity
-High – Invalid users/accounts can be created, leading to potential system integrity and communication issues.
+High
 
 ### Priority
-Critical – Must be fixed before release since it breaks the fundamental purpose of email-based registration.
+Critical
 
 ### Status
 Open
@@ -143,9 +143,9 @@ Open
 ### Affected Area
 Registration form – Email validation
 
-### Screenshot
-![BUG-REG-01](../../docs/screenshots/user-registration/bug-reg-01.png)
-
+### Screenshots
+![Form Before Submit](../../docs/screenshots/user-registration/bug-reg-02-form-before-submit.png)
+![Successful Login After Registration](../../docs/screenshots/user-registration/bug-reg-02-successful-login-after-registration.png)
 
 ---
 
@@ -169,10 +169,10 @@ The user should not be able to create an account with a middle name shorter than
 The user is able to create an account with a 1-character middle name. No error message is displayed.
 
 ### Severity
-Low - Does not break registration flow, but violates requirement constraints and data integrity.
+Low
 
 ### Priority
-Medium – Should be fixed, but less urgent than the email validation issue.
+Medium
 
 ### Status
 Open
@@ -180,4 +180,43 @@ Open
 ### Affected Area
 Registration form – Middle Name field
 
+### Screenshots
+![Form Before Submit](../../docs/screenshots/user-registration/bug-reg-03-form-before-submit.png)
+![Successful Login After Registration](../../docs/screenshots/user-registration/bug-reg-03-successful-login-after-registration.png)
 
+---
+
+## BUG-REG-04 – Incorrect field reference in Last Name validation
+
+**Jira Bug:** [SSQ-70](https://storyspoilerqa.atlassian.net/browse/SSQ-70)  
+**Related Test Case: ** [TC-REG-15](../test-cases/test-cases-user-registration.md#tc-reg-15--verify-validation-for-invalid-last-name-too-short) (Jira link: [SSQ-48](https://storyspoilerqa.atlassian.net/browse/SSQ-48))
+
+### Steps to Reproduce
+1. Open the app URL.
+2. Click the “SIGN UP” button in the navigation bar.
+3. Enter a last name of 1 character, such as `L`, in the Last Name field.
+4. Fill in all other required fields with valid test data (see TD-07, TD-09, TD-14, TD-20, TD-21).
+5. Click the “SIGN UP” button.
+
+### Expected Result
+A clear validation error message should be displayed indicating that the last name must be at least 2 characters.
+
+### Actual Result
+An error message appears under the Last Name field: `"Last name has to be at least 2 symbols!"`.
+
+### Severity
+Medium
+
+### Priority
+High
+
+### Status
+Open
+
+### Affected Area
+Registration form – Last Name field validation
+
+### Screenshot
+![Invalid Last Name Error](../../docs/screenshots/user-registration/bug-reg-04-invalid-last-name-error.png)
+
+---

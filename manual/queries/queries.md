@@ -10,7 +10,7 @@ Screenshots are stored in the `docs/screenshots/` folder.
 ## QRY-HP-01 – Requirements for Home Page for logged in users lack visuals and detailed content specification
 
 **Jira query:** [SSQ-27](https://storyspoilerqa.atlassian.net/browse/SSQ-27)  
-**Related Test Case:** [TC-HP-08](../../tests/test-cases-home-page.md#tc-hp-08) (Jira: [SSQ-13](https://storyspoilerqa.atlassian.net/browse/SSQ-13))
+**Related Test Case:** [TC-HP-08](../test-cases/test-cases-home-page.md#tc-hp-08--verify-home-page-for-logged-in-users) (Jira: [SSQ-13](https://storyspoilerqa.atlassian.net/browse/SSQ-13))
 
 **Description:**
 The original requirement document for the **Home Page (Logged-in User)** is incomplete. It lacks visuals and detailed text specification. Without them, developers and testers cannot reliably build or validate the feature.
@@ -39,7 +39,7 @@ The requirement should contain a clear visual alongside a detailed description o
 ## QRY-HP-02 – Home Page for logged-in users navigation link label
 
 **Jira Query:** [SSQ-28](https://storyspoilerqa.atlassian.net/browse/SSQ-28)  
-**Related Test Case:** [TC-HP-11](../tests/test-cases-home-page.md#tc-hp-11) (Jira: [SSQ-16](https://storyspoilerqa.atlassian.net/browse/SSQ-16))
+**Related Test Case:** [TC-HP-11](../test-cases/test-cases-home-page.md#tc-hp-11--verify-storyspoil-home-link-for-logged-in-users) (Jira: [SSQ-16](https://storyspoilerqa.atlassian.net/browse/SSQ-16))
 
 **Description:**
 Original requirement document states the navigation bar should display “**StorySpoil**” (mixed case), but both the mockup and current implementation show “**STORYSPOIL**” (all caps).
@@ -62,10 +62,10 @@ Requirement text differs from both design and implementation.
 
 ## QRY-REG-01 – Consistency of capitalization in field names
 
-* **Jira Query ID:** [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59) 
+* **Jira Query:** [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59) 
 * **Related Test Cases:** 
-- TC-REG-20 (../tests/test-cases-home-page.md#tc-reg-20) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
-- TC-REG-04 (../tests/test-cases-home-page.md#tc-reg-04) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
+- TC-REG-20 (../test-cases/test-cases-user-registration.md#tc-reg-20--verify-validation-for-existing-username-reuse) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
+- TC-REG-04 (../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
 
 **Description:**
 Error messages use inconsistent capitalization for field names (e.g., `"UserName already taken!"` vs. `"User name is required!"`).
@@ -82,9 +82,9 @@ Error messages should follow a consistent capitalization style (e.g., “Usernam
 **Actual Result:**
 Field names are inconsistently capitalized across error messages.
 
-**Screenshots:**
-![QRY-REG-01-01](../../docs/screenshots/qry-reg-01-01.png)
-![QRY-REG-01-02](../../docs/screenshots/qry-reg-01-02.png)
+### Screenshots
+![Error Required Username](../../docs/screenshots/user-registration/qry-reg-01-error-required-username.png)
+![Error Taken Username](../../docs/screenshots/user-registration/qry-reg-01-error-taken-username.png)
 
 **Status:** ⏳ Open
 
@@ -92,10 +92,10 @@ Field names are inconsistently capitalized across error messages.
 
 ## QRY-REG-02 – Extra bullet point before error messages
 
-* **Jira Query ID:** [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60) 
+* **Jira Query:** [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60) 
 * **Related Test Cases:** 
-- TC-REG-20 (../tests/test-cases-home-page.md#tc-reg-20) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
-- TC-REG-21 (../tests/test-cases-home-page.md#tc-reg-21) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-54))
+- TC-REG-20 (../test-cases/test-cases-user-registration.md#tc-reg-20--verify-validation-for-existing-username-reuse) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
+- TC-REG-21 (../test-cases/test-cases-user-registration.md#tc-reg-21--verify-validation-for-existing-email-reuse) (Jira: [SSQ-54](https://storyspoilerqa.atlassian.net/browse/SSQ-54))
 
 **Description:**
 An unnecessary bullet point (“•”) is displayed before validation error messages when trying to sign up with an existing username or email.
@@ -107,7 +107,7 @@ An unnecessary bullet point (“•”) is displayed before validation error mes
 
 1. Open the app URL.
 2. Navigate to Sign Up page.
-3. Enter existing username (TD-02) or existing email address (TD-29) to trigger validation messages.
+3. In the Username field, enter existing username (TD-02) or existing email address (TD-29) to trigger validation messages.
 
 **Expected Result:**
 Error messages should display cleanly without bullet points.
@@ -115,40 +115,18 @@ Error messages should display cleanly without bullet points.
 **Actual Result:**
 Error messages are preceded by an unnecessary bullet point.
 
-**Status:** Open
+### Screenshots
+![Bullet Before Taken Email Error](../../docs/screenshots/user-registration/qry-reg-02-bullet-before-taken-username-error.png)
+![Bullet Before Taken Username Error](../../docs/screenshots/user-registration/qry-reg-02-bullet-before-taken-email-error.png)
+
+**Status:** ⏳ Open
 
 ---
 
-## QUERY-REG-03 – Clarity of system-generated email validation error
+## QRY-REG-03 – Consistency of required field messages
 
-* **Jira Query ID:** SSQ-63
-* **Related Test Case ID:** TC-REG-04 (../tests/test-cases-home-page.md#tc-reg-04) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
-
-**Description:**
-System-generated email validation error reads:
-`"Please include an '@' in the email address. The 'XXXX' is missing an 'a'."`
-
-**Steps to Identify:**
-
-1. Open the app URL.
-2. Enter an invalid email format such as `testemail`.
-3. Attempt to sign up.
-
-**Expected Result:**
-Error message should clearly and simply explain the invalid format (e.g., “Invalid email format. Please include an ‘@’ and a ‘.’”).
-
-**Actual Result:**
-Message may confuse users with wording like “missing an ‘a’.”
-
-**Status:** Open
-
----
-
-## QUERY-REG-04 – Consistency of required field messages
-
-* **Jira Query ID:** SSQ-Q05
-* **Related Test Case ID:** TC-REG-17
-* **Jira Link:** [SSQ-Q05](https://your-jira-instance.atlassian.net/browse/SSQ-Q05)
+* **Jira Query:** [SSQ-63](https://storyspoilerqa.atlassian.net/browse/SSQ-63) 
+* **Related Test Case:** TC-REG-04 (../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
 
 **Description:**
 Required field messages are inconsistent:
@@ -167,15 +145,19 @@ Required messages should follow a consistent format (e.g., `"<Field> is required
 **Actual Result:**
 Some messages start with “The”, others don’t.
 
-**Status:** Open
+### Screenshot
+![Inconsistent Errors](../../docs/screenshots/user-registration/qry-reg-03-inconsistent-errors.png)
+
+**Status:** ⏳ Open
 
 ---
 
-## QUERY-REG-05 – Tone and punctuation inonsistency
+## QRY-REG-04 – Validation messages tone and punctuation consistency
 
-* **Jira Query ID:** SSQ-Q06
-* **Related Test Case ID:** TC-REG-13, TC-REG-19, TC-REG-20
-* **Jira Link:** [SSQ-Q06](https://your-jira-instance.atlassian.net/browse/SSQ-Q06)
+* **Jira Query:** [SSQ-64](https://storyspoilerqa.atlassian.net/browse/SSQ-64) 
+* **Related Test Cases:** 
+- TC-REG-17 (../test-cases/test-cases-user-registration.md#tc-reg-17--verify-validation-for-invalid-password-too-short) (Jira: [SSQ-50](https://storyspoilerqa.atlassian.net/browse/SSQ-50))
+- TC-REG-19 (../test-cases/test-cases-user-registration.md#tc-reg-19--verify-validation-for-invalid-repeat-password-mismatched) (Jira: [SSQ-52](https://storyspoilerqa.atlassian.net/browse/SSQ-52))
 
 **Description:**
 Inconsistent punctuation:
@@ -184,7 +166,9 @@ Inconsistent punctuation:
 * `"Passwords don't match."` (period).
 
 **Steps to Identify:**
-Trigger validation errors in password and confirm password fields.
+1. Open the app URL.
+2. Navigate to Sign Up page.
+3. In the Password field, enter very short password (TD-22), or in the Confirm Password field, enter incorrect repeat password (TD-24) to trigger validation messages.
 
 **Expected Result:**
 All error messages should use consistent punctuation.
@@ -192,14 +176,18 @@ All error messages should use consistent punctuation.
 **Actual Result:**
 Error messages mix exclamation marks and periods.
 
-**Status:** 
+### Screenshots
+![Error With Exclamation Mark](../../docs/screenshots/user-registration/qry-reg-04-error-with-exclamation-mark.png)
+![Error With Period](../../docs/screenshots/user-registration/qry-reg-04-error-with-period.png)
+
+**Status:** ⏳ Open
 
 ---
 
-## QUERY-REG-06 – Label discrepancy for “Repeat Password” vs. “Confirm Password”
+## QRY-REG-05 – Label discrepancy for “Repeat Password” vs. “Confirm Password”
 
-* **Jira Query:** [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59) 
-* **Related Test Case ID:** TC-REG-01 (../tests/test-cases-user-registration.md#tc-reg-04) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
+* **Jira Query:** [SSQ-65](https://storyspoilerqa.atlassian.net/browse/SSQ-65) 
+* **Related Test Case:** TC-REG-01 (../test-cases/test-cases-user-registration.md#tc-reg-01--verify-sign-up-page) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
 
 **Description:**
 In the original requirements document, the field label is described as “Repeat password”, but the image shows “Confirm password”. The application also uses “Confirm password”.
@@ -220,19 +208,18 @@ Requirements specify “Repeat password”, but design and app show “Confirm p
 
 ---
 
-## QUERY-REG-08 – Required field indicators not defined in requirements
+## QRY-REG-06 – Required field indicators not defined in requirements
 
-* **Jira Query ID:** SSQ-Q08
-* **Related Test Case ID:** TC-REG-17
-* **Jira Link:** [SSQ-Q08](https://your-jira-instance.atlassian.net/browse/SSQ-Q08)
+* **Jira Query:** [SSQ-66](https://storyspoilerqa.atlassian.net/browse/SSQ-66) 
+* **Related Test Case:** TC-REG-04 (../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
 
 **Description:**
-It is not mentioned in the SRS whether required fields should be visually marked. The app currently does not display required field indicators (e.g., red asterisk).
+It is not mentioned in the original requirements document whether required fields should be visually marked. The app currently does not display required field indicators (e.g., red asterisk).
 
 **Steps to Identify:**
 
 1. Open the requirements document.
-2. Navigate to **Sign Up Page**.
+2. Navigate to Sign Up Page.
 3. Compare field specifications with actual UI.
 
 **Expected Result:**
@@ -241,53 +228,23 @@ Requirements should specify if required fields must be visually indicated.
 **Actual Result:**
 No indicators are defined or displayed.
 
-**Status:** Open
+**Status:** ⏳ Open
 
 ---
 
-## QUERY-REG-09 – Missing user flows for sign-up process in requirements
+## QRY-REG-07 – Missing character type constraints for all input fields
 
-* **Jira Query ID:** SSQ-Q09
-* **Related Test Case ID:** TC-REG-06 – TC-REG-25
-* **Jira Link:** [SSQ-Q09](https://your-jira-instance.atlassian.net/browse/SSQ-Q09)
+* **Jira Query:** [SSQ-68](https://storyspoilerqa.atlassian.net/browse/SSQ-68) 
+* **Related Test Cases:** 
+- TC-REG-02 (../test-cases/test-cases-user-registration.md#tc-reg-02--verify-registration-with-valid-data-without-optional-middle-name) (Jira: [SSQ-35](https://storyspoilerqa.atlassian.net/browse/SSQ-35))
+- TC-REG-03 (../test-cases/test-cases-user-registration.md#tc-reg-03--verify-registration-with-valid-data-with-optional-middle-name) (Jira: [SSQ-39](https://storyspoilerqa.atlassian.net/browse/SSQ-39))
 
 **Description:**
-The requirements lack defined user flows for the sign-up process.
+The original requirements document defines only the minimum and maximum character lengths for each registration field but does not specify permitted or prohibited character types (e.g., special characters, digits, spaces, symbols).
 
 **Steps to Identify:**
 
-1. Open the requirements document.
-2. Navigate to **Sign Up Page**.
-
-**Expected Result:**
-The requirements should specify expected behavior for different flows (e.g., successful sign-up, failed sign-up, duplicate username, invalid email).
-
-**Actual Result:**
-User flows are not defined; expected behavior is unknown.
-
-**Status:** Open
-
----
-
-# Additional Queries – User Registration
-
-These queries identify missing or unclear requirements discovered during the **User Registration** testing phase.
-They are intended for clarification and alignment with stakeholders.
-
----
-
-## QUERY-REG-10 – Missing character type constraints for all input fields
-
-* **Jira Query ID:** SSQ-Q10
-* **Related Test Case ID:** TC-REG-06 – TC-REG-25
-* **Jira Link:** [SSQ-Q10](https://your-jira-instance.atlassian.net/browse/SSQ-Q10)
-
-**Description:**
-The SRS defines only the **minimum and maximum character lengths** for each registration field but does not specify **permitted or prohibited character types** (e.g., special characters, digits, spaces, symbols).
-
-**Steps to Identify:**
-
-1. Review the SRS sections “User Registration” and “Sign Up Page”.
+1. Review the original requirements document section “Sign Up Page”.
 2. Observe that no field-level constraints are mentioned for character types.
 3. Compare with actual app behavior (fields accept a wide range of symbols and special characters).
 
@@ -297,32 +254,31 @@ The requirements should specify which character types are allowed or disallowed 
 **Actual Result:**
 Only field length constraints are defined; no character-type restrictions are mentioned.
 
-**Status:** Open
+**Status:** ⏳ Open
 
 ---
 
-## QUERY-REG-11 – Missing user agreement or terms acceptance step
+## QRY-REG-08 – Missing user agreement or terms acceptance step
 
-* **Jira Query ID:** SSQ-Q11
-* **Related Test Case ID:** TC-REG-06 – TC-REG-25
-* **Jira Link:** [SSQ-Q11](https://your-jira-instance.atlassian.net/browse/SSQ-Q11)
+* **Jira Query:** [SSQ-69](https://storyspoilerqa.atlassian.net/browse/SSQ-69) 
+* **Related Test Case:** TC-REG-01 (../test-cases/test-cases-user-registration.md#tc-reg-01--verify-sign-up-page) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
 
 **Description:**
-The **Sign Up form** does not include an option for users to agree to **Terms and Conditions** or **Privacy Policy**, nor is this requirement defined in the SRS.
+The Sign Up form does not include an option for users to agree to Terms and Conditions or Privacy Policy, nor is this requirement defined in the original requirements document.
 
 **Steps to Identify:**
 
 1. Open the app URL.
-2. Navigate to **Sign Up Page**.
+2. Navigate to Sign Up Page.
 3. Observe that the registration form contains no checkbox or link for legal agreements.
-4. Review the SRS “Sign Up Page” section for confirmation.
+4. Review the original requirements document “Sign Up Page” section for confirmation.
 
 **Expected Result:**
-Requirements and UI should include a step for users to explicitly agree to Terms of Service and Privacy Policy before account creation.
+Requirements and UI should include a step for users to explicitly agree to Terms of Service or Privacy Policy before account creation.
 
 **Actual Result:**
 No such checkbox or acceptance step exists in the current implementation or in the documented requirements.
 
-**Status:** Open
+**Status:** ⏳ Open
 
 ---

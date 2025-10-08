@@ -51,7 +51,7 @@ Each test case references the corresponding **Test Data ID (TD-XX)**.
 
 ### TD-07 – Valid Username
 
-**Value:** `storyfan123`
+**Value:** `qa_user_01`
 
 ### TD-08 – Empty Username
 
@@ -172,6 +172,10 @@ Each test case references the corresponding **Test Data ID (TD-XX)**.
 **Value:** ``
 
 ---
+
+### TD-29 – Valid email (registered)
+
+**Value:** `test_user_1@example.com`
 
 ## Usage Notes
 
