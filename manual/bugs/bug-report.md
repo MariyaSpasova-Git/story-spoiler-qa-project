@@ -78,9 +78,7 @@ Open
 ## BUG-REG-01 – Validation error message does not specify the correct email address format
 
 **Jira Bug:** [SSQ-56](https://storyspoilerqa.atlassian.net/browse/SSQ-56)  
-**Related Test Cases:**  
-- [TC-REG-08](../test-cases/test-cases-user-registration.md#tc-reg-08--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
-- [TC-REG-07](../test-cases/test-cases-user-registration.md#tc-reg-07--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-37](https://storyspoilerqa.atlassian.net/browse/SSQ-37))
+**Related Test Case:** [TC-REG-08](../test-cases/test-cases-user-registration.md#tc-reg-08--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
 
 ### Steps to Reproduce
 1. Open the app URL.
@@ -220,3 +218,35 @@ Registration form – Last Name field validation
 ![Invalid Last Name Error](../../docs/screenshots/user-registration/bug-reg-04-invalid-last-name-error.png)
 
 ---
+
+## BUG-REG-04 – “Forgot Password?” link redirects to Home Page instead of Restore Password page 
+
+**Jira Bug:** [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87)  
+**Related Test Case:** [TC-LOG-06](../test-cases/test-cases-user-registration.md#tc-log-06--verify-create-new-button-redirects-to-sign-up-paget) (Jira link: [SSQ-82](https://storyspoilerqa.atlassian.net/browse/SSQ-82))
+
+**Description:**  
+When a user clicks the "Forgot Password?" link on the Log In page, the system redirects the user to the Home page for non-logged-in users instead of navigating to the Restore Password page as expected.
+
+**Steps to Reproduce:**  
+1. Open the app URL.  
+2. Click the "LOG IN" button in the navigation bar.  
+3. Click "Forgot Password?" link.
+
+**Expected Result:**  
+User is redirected to the Restore Password page, where they can initiate the password recovery process. 
+
+**Actual Result:**  
+User is redirected to the Home page for non-logged-in users. 
+
+**Severity:** High  
+**Priority:** High  
+
+**Status:** Open  
+**Affected Area:** Log In page – "Forgot Password?" link
+
+### Screenshots
+![Forgot Password Link Log In Page](../../docs/screenshots/log-in-page/bug-log-07-forgot-password-link-log-in-page.png)
+![Forgot Password Link Home Page](../../docs/screenshots/log-in-page/bug-log-08-forgot-password-link-home-page.png)
+
+---
+

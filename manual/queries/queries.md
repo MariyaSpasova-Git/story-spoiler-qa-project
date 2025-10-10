@@ -282,3 +282,125 @@ No such checkbox or acceptance step exists in the current implementation or in t
 **Status:** ⏳ Open
 
 ---
+
+## QRY-LOG-01 – Extra bullet point before "Unable to sign in!" error message
+
+## QRY-LOG-01 – Extra bullet point before "Unable to sign in!" error message
+
+* **Jira Query:** [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84)
+* **Related Test Cases:**  
+  - TC-LOG-03 – [Verify validation for required fields](../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))  
+  - TC-LOG-04 – [Verify validation for invalid username](../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))  
+  - TC-LOG-05 – [Verify validation for invalid password](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
+
+**Description:**  
+An unnecessary bullet point (“•”) is displayed before the validation error message `"Unable to sign in!"` across multiple login validation scenarios.
+
+**Steps to Identify:**  
+1. Open the app URL.  
+2. Navigate to the Log In page.  
+3. Reproduce any of the following scenarios:  
+   - Leave both Username and Password fields empty (TD-31).  
+   - Enter an invalid username with a valid password (TD-02).  
+   - Enter a valid username with an incorrect password (TD-32).  
+4. Click the "LOG IN" button.  
+
+**Expected Result:**  
+The `"Unable to sign in!"` error message should display cleanly without a bullet point.  
+
+**Actual Result:**  
+A bullet point (“•”) precedes the error message in all tested scenarios.  
+
+### Screenshots
+- [Required fields empty](../../docs/screenshots/log-in/qry-log-01-bullet-before-unable-sign-in-empty-fields.png)  
+- [Invalid username](../../docs/screenshots/log-in/qry-log-01-bullet-before-unable-sign-in-invalid-username.png)  
+- [Incorrect password](../../docs/screenshots/log-in/qry-log-01-bullet-before-unable-sign-in-invalid-password.png)
+
+
+* **Jira Query:** [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84) 
+* **Related Test Cases:** 
+- TC-LOG-03 (../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
+
+**Description:**
+An unnecessary bullet point (“•”) is displayed before the validation error message `"Unable to sign in!"`
+
+**Steps to Identify:**
+
+1. Open the app URL.
+2. Navigate to Log In page.
+3. Reproduce any of the following scenarios:
+   - Leave both Username and Password fields empty (TD-31).
+   - Enter an invalid username with a valid password (TD-02).
+   - Enter a valid username with an incorrect password (TD-32).
+4. Click "LOG IN" button.
+
+**Expected Result:**
+The `"Unable to sign in!"` error message should display cleanly without a bullet point.
+
+**Actual Result:**
+A bullet point (“•”) precedes the error message in all tested scenarios.
+
+### Screenshots
+![Bullet Point Before Unable Sign In Empty Fields](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-empty-fields.png)
+![Bullet Point Before Unable Sign In Invalid Username](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-invalid-username.png)
+![Bullet Point Before Unable Sign In Incorrect Password](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-incorrect-password.png)
+
+---
+
+## QRY-LOG-02 – Consistency of required field messages
+
+* **Jira Query:** [SSQ-85](https://storyspoilerqa.atlassian.net/browse/SSQ-85)
+* **Related Test Case:** TC-LOG-03 (../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
+
+**Description:**
+Required field messages are inconsistent:
+
+* `"Username is required!"`
+* `"The password is required!"`
+
+**Steps to Identify:**
+1. Open the app URL.
+2. Navigate to Log In page.
+3. Leave the Username and Password fields empty (TD-31).
+4. Click "LOG IN" button.
+
+**Expected Result:**
+Required messages should follow a consistent format (e.g., `"<Field> is required!"`).
+
+**Actual Result:**
+One message starts with “The”, the other doesn’t.
+
+### Screenshot
+![Inconsistent Required Field Errors](../../docs/screenshots/log-in-page/qry-log-02-inconsistent-required-fields-errors.png)
+
+---
+
+## QRY-LOG-03 – Generic error message for invalid login credentials
+
+* **Jira Query:** [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86) 
+* **Related Test Cases:** 
+- TC-LOG-04 (../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))
+- TC-LOG-05 (../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
+
+**Description:**
+When attempting to log in with an invalid username or incorrect password, the system displays a generic error message `"Unable to sign in!"`.
+
+**Steps to Identify:**
+
+1. Open the app URL.
+2. Navigate to Log In page.
+3. Enter invalid username (TD-04) and valid password (TD-04) or valid username (TD-30) and incorrect password (TD-30) in the Password field.
+4. Click "LOG IN" button.
+
+**Expected Result:**
+System should display more specific validation message (e.g., `"Invalid username/password"`).
+
+**Actual Result:**
+The error message is generic. No clarification is provided on whether the issue is with the username or the password.  
+
+### Screenshots
+![Invalid Username Generic Error](../../docs/screenshots/log-in-page/qry-log-03-invalid-username-generic-error.png)
+![Incorect Password Generic Error](../../docs/screenshots/log-in-page/qry-log-04-incorrect-password-generic-error.png)
+
+---
+
