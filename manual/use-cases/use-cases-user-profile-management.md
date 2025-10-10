@@ -1,0 +1,65 @@
+# Use Cases – User Profile Management
+
+**Requirement Link:** [REQ-4 – User Profile Management](https://storyspoilerqa.atlassian.net/browse/SSQ-88)
+
+---
+
+## UC-PROF-1 – Access My Profile Page
+**Jira Use Case:** [SSQ-89](https://storyspoilerqa.atlassian.net/browse/SSQ-89)
+
+### Description
+Logged-in users can access their Profile page by clicking the user icon in the navigation bar.
+
+### Preconditions
+- User is successfully logged in.
+- User is on the My Profile page.
+
+### Main Flow
+1. User clicks the user profile icon in the top-right navigation bar.  
+2. System navigates to the My Profile page.
+
+### Expected Outcome
+My Profile page displays Username, Profile Picture, Full Name, Email, Total Spoilers count, and About Me section.
+
+---
+
+## UC-PROF-2 – Edit Profile Information
+**Jira Use Case:** [SSQ-90](https://storyspoilerqa.atlassian.net/browse/SSQ-90)
+
+### Description
+Logged-in users can edit their profile information from My Profile page.
+
+### Preconditions
+- User is on My Profile page.
+
+### Main Flow
+1. User clicks the “EDIT” button.  
+2. System opens the Edit Profile Info page.  
+3. User updates one or more of the following fields:
+   - Profile Picture (valid image URL)
+   - First Name
+   - Middle Name
+   - Last Name
+   - About Me  
+4. The user clicks “ADD.”  
+
+### Expected Outcome
+System validates inputs, saves the changes, and updates the displayed profile information.
+
+---
+
+## UC-PROF-3 – Validation Errors During Profile Edit
+**Jira Use Case:** [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91)
+
+### Description
+System must prevent invalid data submission during profile edits.
+
+### Preconditions
+- User is on the Edit Profile Info page.
+
+### Main Flow
+1. Leave required fields blank or enter invalid data. 
+2. Click “ADD.”   
+
+### Expected Outcome
+System prevents user from editing their profile. Appropriate error messages are displayed for each incorrect field, indicating the specific rule that has been violated.
