@@ -26,6 +26,8 @@ The Log In page displays the following elements:
 - Forgot Password? option
 - Don't have an account? option with a CREATE NEW button
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-LOG-02 – Verify successful log-in with valid credentials
@@ -44,6 +46,8 @@ The Log In page displays the following elements:
 **Expected Result:**  
 The user successfully logs in and is redirected to the Home Page for logged-in users.
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-LOG-03 – Verify validation for required fields
@@ -60,6 +64,12 @@ The user successfully logs in and is redirected to the Home Page for logged-in u
 
 **Expected Result:**  
 User is not logged in. Validation errors are displayed for both Username and Password fields. Each field shows a clear, user-friendly message indicating that it is required.
+
+**Execution Result:** ✅ Passed
+
+**Related Queries:** 
+- [QRY-LOG-01](../queries/queries.md#qry-log-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+- [QRY-LOG-02](../queries/queries.md#qry-log-02--consistency-of-required-field-messages) (Jira: [SSQ-85](https://storyspoilerqa.atlassian.net/browse/SSQ-85))
 
 ---
 
@@ -79,6 +89,12 @@ User is not logged in. Validation errors are displayed for both Username and Pas
 **Expected Result:**  
 User remains on the Log In page. A clear error message should be displayed indicating that the username/password is incorrect.
 
+**Execution Result:** ✅ Passed
+
+**Related Queries:** 
+- [QRY-LOG-01](../queries/queries.md#qry-log-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+- [QRY-LOG-03](../queries/queries.md#qry-log-03--generic-error-message-for-invalid-login-credentials) (Jira: [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86))
+
 ---
 
 ## TC-LOG-05 – Verify validation for invalid password
@@ -97,6 +113,12 @@ User remains on the Log In page. A clear error message should be displayed indic
 **Expected Result:**  
 User remains on the Log In page. A clear error message should be displayed indicating that the username/password is incorrect.
 
+**Execution Result:** ✅ Passed
+
+**Related Queries:** 
+- [QRY-LOG-01](../queries/queries.md#qry-log-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+- [QRY-LOG-03](../queries/queries.md#qry-log-03--generic-error-message-for-invalid-login-credentials) (Jira: [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86))
+
 ---
 
 ## TC-LOG-06 – Verify "Forgot password?" link redirects to Restore Password page
@@ -112,6 +134,10 @@ User remains on the Log In page. A clear error message should be displayed indic
 
 **Expected Result:**  
 User is redirected to the Restore Password page.
+
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-LOG-01](../bugs/bug-report.md#bug-log-01--forgot-password-link-redirects-to-home-page-instead-of-restore-password-page) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
 
 ---
 
