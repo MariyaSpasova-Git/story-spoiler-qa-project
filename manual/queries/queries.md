@@ -42,7 +42,7 @@ The requirement should contain a clear visual alongside a detailed description o
 **Related Test Case:** [TC-HP-11](../test-cases/test-cases-home-page.md#tc-hp-11--verify-storyspoil-home-link-for-logged-in-users) (Jira: [SSQ-16](https://storyspoilerqa.atlassian.net/browse/SSQ-16))
 
 **Description:**
-Original requirement document states the navigation bar should display “**StorySpoil**” (mixed case), but both the mockup and current implementation show “**STORYSPOIL**” (all caps).
+Original requirement document states the navigation bar should display "**StorySpoil**" (mixed case), but both the mockup and current implementation show "**STORYSPOIL**" (all caps).
 
 **Steps to Identify:**
 
@@ -64,8 +64,8 @@ Requirement text differs from both design and implementation.
 
 * **Jira Query:** [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59) 
 * **Related Test Cases:** 
-- TC-REG-20 (../test-cases/test-cases-user-registration.md#tc-reg-20--verify-validation-for-existing-username-reuse) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
-- TC-REG-04 (../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
+- [TC-REG-20](../test-cases/test-cases-user-registration.md#tc-reg-20--verify-validation-for-existing-username-reuse) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
+- [TC-REG-04](../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
 
 **Description:**
 Error messages use inconsistent capitalization for field names (e.g., `"UserName already taken!"` vs. `"User name is required!"`).
@@ -77,7 +77,7 @@ Error messages use inconsistent capitalization for field names (e.g., `"UserName
 3. In the Username field, enter duplicate (TD-02) or invalid (empty) usernames to trigger different validation messages.
 
 **Expected Result:**
-Error messages should follow a consistent capitalization style (e.g., “Username”).
+Error messages should follow a consistent capitalization style (e.g., "Username").
 
 **Actual Result:**
 Field names are inconsistently capitalized across error messages.
@@ -90,43 +90,10 @@ Field names are inconsistently capitalized across error messages.
 
 ---
 
-## QRY-REG-02 – Extra bullet point before error messages
-
-* **Jira Query:** [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60) 
-* **Related Test Cases:** 
-- TC-REG-20 (../test-cases/test-cases-user-registration.md#tc-reg-20--verify-validation-for-existing-username-reuse) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
-- TC-REG-21 (../test-cases/test-cases-user-registration.md#tc-reg-21--verify-validation-for-existing-email-reuse) (Jira: [SSQ-54](https://storyspoilerqa.atlassian.net/browse/SSQ-54))
-
-**Description:**
-An unnecessary bullet point (“•”) is displayed before validation error messages when trying to sign up with an existing username or email.
-
-- `"UserName already taken!"`
-- `"User name is required!"`.
-
-**Steps to Identify:**
-
-1. Open the app URL.
-2. Navigate to Sign Up page.
-3. In the Username field, enter existing username (TD-02) or existing email address (TD-29) to trigger validation messages.
-
-**Expected Result:**
-Error messages should display cleanly without bullet points.
-
-**Actual Result:**
-Error messages are preceded by an unnecessary bullet point.
-
-### Screenshots
-![Bullet Before Taken Email Error](../../docs/screenshots/user-registration/qry-reg-02-bullet-before-taken-username-error.png)
-![Bullet Before Taken Username Error](../../docs/screenshots/user-registration/qry-reg-02-bullet-before-taken-email-error.png)
-
-**Status:** ⏳ Open
-
----
-
-## QRY-REG-03 – Consistency of required field messages
+## QRY-REG-02 – Consistency of required field messages
 
 * **Jira Query:** [SSQ-63](https://storyspoilerqa.atlassian.net/browse/SSQ-63) 
-* **Related Test Case:** TC-REG-04 (../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
+* **Related Test Case:** [TC-REG-04](../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
 
 **Description:**
 Required field messages are inconsistent:
@@ -143,21 +110,21 @@ Trigger required field validation across different fields.
 Required messages should follow a consistent format (e.g., `"<Field> is required!"`).
 
 **Actual Result:**
-Some messages start with “The”, others don’t.
+Some messages start with "The", others don’t.
 
 ### Screenshot
-![Inconsistent Errors](../../docs/screenshots/user-registration/qry-reg-03-inconsistent-errors.png)
+![Inconsistent Errors](../../docs/screenshots/user-registration/qry-reg-02-inconsistent-errors.png)
 
 **Status:** ⏳ Open
 
 ---
 
-## QRY-REG-04 – Validation messages tone and punctuation consistency
+## QRY-REG-03 – Validation messages tone and punctuation consistency
 
 * **Jira Query:** [SSQ-64](https://storyspoilerqa.atlassian.net/browse/SSQ-64) 
 * **Related Test Cases:** 
-- TC-REG-17 (../test-cases/test-cases-user-registration.md#tc-reg-17--verify-validation-for-invalid-password-too-short) (Jira: [SSQ-50](https://storyspoilerqa.atlassian.net/browse/SSQ-50))
-- TC-REG-19 (../test-cases/test-cases-user-registration.md#tc-reg-19--verify-validation-for-invalid-repeat-password-mismatched) (Jira: [SSQ-52](https://storyspoilerqa.atlassian.net/browse/SSQ-52))
+- [TC-REG-17](../test-cases/test-cases-user-registration.md#tc-reg-17--verify-validation-for-invalid-password-too-short) (Jira: [SSQ-50](https://storyspoilerqa.atlassian.net/browse/SSQ-50))
+- [TC-REG-19](../test-cases/test-cases-user-registration.md#tc-reg-19--verify-validation-for-invalid-repeat-password-mismatched) (Jira: [SSQ-52](https://storyspoilerqa.atlassian.net/browse/SSQ-52))
 
 **Description:**
 Inconsistent punctuation:
@@ -177,20 +144,20 @@ All error messages should use consistent punctuation.
 Error messages mix exclamation marks and periods.
 
 ### Screenshots
-![Error With Exclamation Mark](../../docs/screenshots/user-registration/qry-reg-04-error-with-exclamation-mark.png)
-![Error With Period](../../docs/screenshots/user-registration/qry-reg-04-error-with-period.png)
+![Error With Exclamation Mark](../../docs/screenshots/user-registration/qry-reg-03-error-with-exclamation-mark.png)
+![Error With Period](../../docs/screenshots/user-registration/qry-reg-03-error-with-period.png)
 
 **Status:** ⏳ Open
 
 ---
 
-## QRY-REG-05 – Label discrepancy for “Repeat Password” vs. “Confirm Password”
+## QRY-REG-04 – Label discrepancy for "Repeat Password" vs. "Confirm Password"
 
 * **Jira Query:** [SSQ-65](https://storyspoilerqa.atlassian.net/browse/SSQ-65) 
-* **Related Test Case:** TC-REG-01 (../test-cases/test-cases-user-registration.md#tc-reg-01--verify-sign-up-page) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
+* **Related Test Case:** [TC-REG-01](../test-cases/test-cases-user-registration.md#tc-reg-01--verify-sign-up-page) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
 
 **Description:**
-In the original requirements document, the field label is described as “Repeat password”, but the image shows “Confirm password”. The application also uses “Confirm password”.
+In the original requirements document, the field label is described as "Repeat password", but the image shows "Confirm password". The application also uses "Confirm password".
 
 **Steps to Identify:**
 
@@ -202,16 +169,16 @@ In the original requirements document, the field label is described as “Repeat
 There should be no inconsistency between requirement description, UI design, and app implementation.
 
 **Actual Result:**
-Requirements specify “Repeat password”, but design and app show “Confirm password”.
+Requirements specify "Repeat password", but design and app show "Confirm password".
 
 **Status:** ⏳ Open
 
 ---
 
-## QRY-REG-06 – Required field indicators not defined in requirements
+## QRY-REG-05 – Required field indicators not defined in requirements
 
 * **Jira Query:** [SSQ-66](https://storyspoilerqa.atlassian.net/browse/SSQ-66) 
-* **Related Test Case:** TC-REG-04 (../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
+* **Related Test Case:** [TC-REG-04](../test-cases/test-cases-user-registration.md#tc-reg-04--verify-validation-for-all-required-fields) (Jira: [SSQ-40](https://storyspoilerqa.atlassian.net/browse/SSQ-40))
 
 **Description:**
 It is not mentioned in the original requirements document whether required fields should be visually marked. The app currently does not display required field indicators (e.g., red asterisk).
@@ -232,19 +199,19 @@ No indicators are defined or displayed.
 
 ---
 
-## QRY-REG-07 – Missing character type constraints for all input fields
+## QRY-REG-06 – Missing character type constraints for all input fields
 
 * **Jira Query:** [SSQ-68](https://storyspoilerqa.atlassian.net/browse/SSQ-68) 
 * **Related Test Cases:** 
-- TC-REG-02 (../test-cases/test-cases-user-registration.md#tc-reg-02--verify-registration-with-valid-data-without-optional-middle-name) (Jira: [SSQ-35](https://storyspoilerqa.atlassian.net/browse/SSQ-35))
-- TC-REG-03 (../test-cases/test-cases-user-registration.md#tc-reg-03--verify-registration-with-valid-data-with-optional-middle-name) (Jira: [SSQ-39](https://storyspoilerqa.atlassian.net/browse/SSQ-39))
+- [TC-REG-02](../test-cases/test-cases-user-registration.md#tc-reg-02--verify-registration-with-valid-data-without-optional-middle-name) (Jira: [SSQ-35](https://storyspoilerqa.atlassian.net/browse/SSQ-35))
+- [TC-REG-03](../test-cases/test-cases-user-registration.md#tc-reg-03--verify-registration-with-valid-data-with-optional-middle-name) (Jira: [SSQ-39](https://storyspoilerqa.atlassian.net/browse/SSQ-39))
 
 **Description:**
 The original requirements document defines only the minimum and maximum character lengths for each registration field but does not specify permitted or prohibited character types (e.g., special characters, digits, spaces, symbols).
 
 **Steps to Identify:**
 
-1. Review the original requirements document section “Sign Up Page”.
+1. Review the original requirements document section "Sign Up Page".
 2. Observe that no field-level constraints are mentioned for character types.
 3. Compare with actual app behavior (fields accept a wide range of symbols and special characters).
 
@@ -258,10 +225,10 @@ Only field length constraints are defined; no character-type restrictions are me
 
 ---
 
-## QRY-REG-08 – Missing user agreement or terms acceptance step
+## QRY-REG-07 – Missing user agreement or terms acceptance step
 
 * **Jira Query:** [SSQ-69](https://storyspoilerqa.atlassian.net/browse/SSQ-69) 
-* **Related Test Case:** TC-REG-01 (../test-cases/test-cases-user-registration.md#tc-reg-01--verify-sign-up-page) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
+* **Related Test Case:** [TC-REG-01](../test-cases/test-cases-user-registration.md#tc-reg-01--verify-sign-up-page) (Jira: [SSQ-34](https://storyspoilerqa.atlassian.net/browse/SSQ-34))
 
 **Description:**
 The Sign Up form does not include an option for users to agree to Terms and Conditions or Privacy Policy, nor is this requirement defined in the original requirements document.
@@ -271,7 +238,7 @@ The Sign Up form does not include an option for users to agree to Terms and Cond
 1. Open the app URL.
 2. Navigate to Sign Up Page.
 3. Observe that the registration form contains no checkbox or link for legal agreements.
-4. Review the original requirements document “Sign Up Page” section for confirmation.
+4. Review the original requirements document "Sign Up Page" section for confirmation.
 
 **Expected Result:**
 Requirements and UI should include a step for users to explicitly agree to Terms of Service or Privacy Policy before account creation.
@@ -283,74 +250,10 @@ No such checkbox or acceptance step exists in the current implementation or in t
 
 ---
 
-## QRY-LOG-01 – Extra bullet point before "Unable to sign in!" error message
-
-## QRY-LOG-01 – Extra bullet point before "Unable to sign in!" error message
-
-* **Jira Query:** [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84)
-* **Related Test Cases:**  
-  - TC-LOG-03 – [Verify validation for required fields](../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))  
-  - TC-LOG-04 – [Verify validation for invalid username](../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))  
-  - TC-LOG-05 – [Verify validation for invalid password](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
-
-**Description:**  
-An unnecessary bullet point (“•”) is displayed before the validation error message `"Unable to sign in!"` across multiple login validation scenarios.
-
-**Steps to Identify:**  
-1. Open the app URL.  
-2. Navigate to the Log In page.  
-3. Reproduce any of the following scenarios:  
-   - Leave both Username and Password fields empty (TD-31).  
-   - Enter an invalid username with a valid password (TD-02).  
-   - Enter a valid username with an incorrect password (TD-32).  
-4. Click the "LOG IN" button.  
-
-**Expected Result:**  
-The `"Unable to sign in!"` error message should display cleanly without a bullet point.  
-
-**Actual Result:**  
-A bullet point (“•”) precedes the error message in all tested scenarios.  
-
-### Screenshots
-- [Required fields empty](../../docs/screenshots/log-in/qry-log-01-bullet-before-unable-sign-in-empty-fields.png)  
-- [Invalid username](../../docs/screenshots/log-in/qry-log-01-bullet-before-unable-sign-in-invalid-username.png)  
-- [Incorrect password](../../docs/screenshots/log-in/qry-log-01-bullet-before-unable-sign-in-invalid-password.png)
-
-
-* **Jira Query:** [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84) 
-* **Related Test Cases:** 
-- TC-LOG-03 (../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
-
-**Description:**
-An unnecessary bullet point (“•”) is displayed before the validation error message `"Unable to sign in!"`
-
-**Steps to Identify:**
-
-1. Open the app URL.
-2. Navigate to Log In page.
-3. Reproduce any of the following scenarios:
-   - Leave both Username and Password fields empty (TD-31).
-   - Enter an invalid username with a valid password (TD-02).
-   - Enter a valid username with an incorrect password (TD-32).
-4. Click "LOG IN" button.
-
-**Expected Result:**
-The `"Unable to sign in!"` error message should display cleanly without a bullet point.
-
-**Actual Result:**
-A bullet point (“•”) precedes the error message in all tested scenarios.
-
-### Screenshots
-![Bullet Point Before Unable Sign In Empty Fields](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-empty-fields.png)
-![Bullet Point Before Unable Sign In Invalid Username](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-invalid-username.png)
-![Bullet Point Before Unable Sign In Incorrect Password](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-incorrect-password.png)
-
----
-
-## QRY-LOG-02 – Consistency of required field messages
+## QRY-LOG-01 – Consistency of required field messages
 
 * **Jira Query:** [SSQ-85](https://storyspoilerqa.atlassian.net/browse/SSQ-85)
-* **Related Test Case:** TC-LOG-03 (../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
+* **Related Test Case:** [TC-LOG-03](../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
 
 **Description:**
 Required field messages are inconsistent:
@@ -368,19 +271,19 @@ Required field messages are inconsistent:
 Required messages should follow a consistent format (e.g., `"<Field> is required!"`).
 
 **Actual Result:**
-One message starts with “The”, the other doesn’t.
+One message starts with "The", the other doesn’t.
 
 ### Screenshot
-![Inconsistent Required Field Errors](../../docs/screenshots/log-in-page/qry-log-02-inconsistent-required-fields-errors.png)
+![Inconsistent Required Field Errors](../../docs/screenshots/log-in-page/qry-log-01-inconsistent-required-fields-errors.png)
 
 ---
 
-## QRY-LOG-03 – Generic error message for invalid login credentials
+## QRY-LOG-02 – Generic error message for invalid login credentials
 
 * **Jira Query:** [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86) 
 * **Related Test Cases:** 
-- TC-LOG-04 (../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))
-- TC-LOG-05 (../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
+- [TC-LOG-04](../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))
+- [TC-LOG-05](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
 
 **Description:**
 When attempting to log in with an invalid username or incorrect password, the system displays a generic error message `"Unable to sign in!"`.
@@ -399,8 +302,81 @@ System should display more specific validation message (e.g., `"Invalid username
 The error message is generic. No clarification is provided on whether the issue is with the username or the password.  
 
 ### Screenshots
-![Invalid Username Generic Error](../../docs/screenshots/log-in-page/qry-log-03-invalid-username-generic-error.png)
-![Incorect Password Generic Error](../../docs/screenshots/log-in-page/qry-log-04-incorrect-password-generic-error.png)
+![Invalid Username Generic Error](../../docs/screenshots/log-in-page/qry-log-02-invalid-username-generic-error.png)
+![Incorect Password Generic Error](../../docs/screenshots/log-in-page/qry-log-03-incorrect-password-generic-error.png)
+
+---
+
+## QRY-UX-01 – Extra bullet point before error messages across multiple forms
+
+**Jira Query:** [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60)
+
+**Related Test Cases:**  
+- [TC-REG-20](../test-cases/test-cases-user-registration.md#tc-reg-20--verify-validation-for-existing-username-reuse) (Jira: [SSQ-53](https://storyspoilerqa.atlassian.net/browse/SSQ-53))
+- [TC-REG-21](../test-cases/test-cases-user-registration.md#tc-reg-21--verify-validation-for-existing-email-reuse) (Jira: [SSQ-54](https://storyspoilerqa.atlassian.net/browse/SSQ-54))
+- [TC-LOG-03](../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
+- [TC-LOG-04](../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))
+- [TC-LOG-05](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81)) 
+
+**Description:**  
+An unnecessary bullet point ("•") appears before validation error messages across multiple pages, including the Sign Up and Log In forms.
+
+**Steps to Identify:**  
+
+**A. Sign Up Page**  
+1. Open the app URL.  
+2. Navigate to Sign Up page.  
+3. In the Username field, enter existing username (TD-02) or existing email address (TD-29) to trigger validation messages.
+4. Click "SIGN UP" button.  
+
+**B. Log In Page**  
+1. Open the app URL.  
+2. Navigate to Log In page.  
+3. Reproduce any of the following scenarios:  
+   - Leave both Username and Password fields empty (TD-31).  
+   - Enter an invalid username with a valid password (TD-02).  
+   - Enter a valid username with an incorrect password (TD-32).  
+4. Click the "LOG IN" button.   
+
+**Expected Result:**  
+All error messages should display cleanly, without any preceding bullet point or formatting artifacts.
+
+**Actual Result:**  
+Error messages across both pages display an unnecessary bullet point ("•") before the text.
+
+**Screenshots:**  
+**Sign Up Page**  
+- ![Bullet Point Before Taken Username Error](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-before-taken-username-error.png)  
+- ![Bullet Point Before Taken Email Error](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-before-taken-email-error.png)  
+
+**Log In Page**  
+- ![Bullet Point Before Unable Sign In Empty Fields](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-empty-fields.png)  
+- ![Bullet Point Before Unable Sign In Invalid Username](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-invalid-username.png)  
+- ![Bullet Point Before Unable Sign In Incorrect Password](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-incorrect-password.png)
+
+**Status:** ⏳ Open
+
+---
+
+## QRY-UX-02 – Inconsistent "ADD" button label across multiple pages
+
+**Jira Query:** [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61)  
+**Related Test Cases:**
+- [TC-PROF-04](../test-cases/test-cases-user-registration.md#tc-prof-04--verify-user-can-edit-their-profile) (Jira: [SSQ-96](https://storyspoilerqa.atlassian.net/browse/SSQ-96))
+
+**Description:**  
+The button used to confirm user actions is labeled "ADD" on several pages (e.g., Edit Profile Info, Log In). This label is misleading in contexts where users are expected to update or submit existing information rather than add new data.
+
+**Steps to Identify:**  
+1. Navigate to any of the following pages:  
+   - Edit Profile Info
+2. Observe the button label used to confirm the action.  
+
+**Expected Result:**  
+Buttons should have context-appropriate labels, e.g. "Save" or "Update" for profile/spoilers edits.
+
+**Actual Result:**  
+The confirmation button is labeled "ADD", which may confuse users regarding the action being performed.
 
 ---
 

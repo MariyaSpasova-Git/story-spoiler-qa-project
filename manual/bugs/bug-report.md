@@ -115,7 +115,6 @@ Registration form – Email field
 **Jira Bug:** [SSQ-57](https://storyspoilerqa.atlassian.net/browse/SSQ-57)  
 **Related Test Case: ** [TC-REG-08](../test-cases/test-cases-user-registration.md#tc-reg-08--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-41](https://storyspoilerqa.atlassian.net/browse/SSQ-41))
 
-
 ### Steps to Reproduce
 1. Open the app URL.
 2. Click the “SIGN UP” button in the navigation bar.
@@ -219,30 +218,33 @@ Registration form – Last Name field validation
 
 ---
 
-## BUG-REG-04 – “Forgot Password?” link redirects to Home Page instead of Restore Password page 
+## BUG-LOG-01 – “Forgot Password?” link redirects to Home Page instead of Restore Password page 
 
 **Jira Bug:** [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87)  
 **Related Test Case:** [TC-LOG-06](../test-cases/test-cases-user-registration.md#tc-log-06--verify-create-new-button-redirects-to-sign-up-paget) (Jira link: [SSQ-82](https://storyspoilerqa.atlassian.net/browse/SSQ-82))
 
-**Description:**  
-When a user clicks the "Forgot Password?" link on the Log In page, the system redirects the user to the Home page for non-logged-in users instead of navigating to the Restore Password page as expected.
-
-**Steps to Reproduce:**  
+### Steps to Reproduce
 1. Open the app URL.  
 2. Click the "LOG IN" button in the navigation bar.  
 3. Click "Forgot Password?" link.
 
-**Expected Result:**  
+### Expected Result
 User is redirected to the Restore Password page, where they can initiate the password recovery process. 
 
-**Actual Result:**  
-User is redirected to the Home page for non-logged-in users. 
+### Actual Result  
+User is redirected to the Home page for non-logged-in users; the Restore Password page is not accessible.
 
-**Severity:** High  
-**Priority:** High  
+### Severity
+High 
 
-**Status:** Open  
-**Affected Area:** Log In page – "Forgot Password?" link
+### Priority
+High  
+
+### Status
+Open  
+
+### Affected Area:
+Log In page – "Forgot Password?" link
 
 ### Screenshots
 ![Forgot Password Link Log In Page](../../docs/screenshots/log-in-page/bug-log-07-forgot-password-link-log-in-page.png)
@@ -250,3 +252,33 @@ User is redirected to the Home page for non-logged-in users.
 
 ---
 
+## BUG-PROF-01 – “EDIT” button does not open the Edit Profile Info page
+
+**Jira Bug:** [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87)  
+**Related Test Case:** [TC-LOG-06](../test-cases/test-cases-user-registration.md#tc-log-06--verify-create-new-button-redirects-to-sign-up-paget) (Jira link: [SSQ-82](https://storyspoilerqa.atlassian.net/browse/SSQ-82))
+
+### Steps to Reproduce
+1. Navigate to the app URL.
+2. Click “LOG IN” button in the navigation bar.
+3. Enter valid credentials (username and password) from TD-02.
+4. Click the top-left user profile icon in the navigation bar.
+5. Click “EDIT” button.
+
+### Expected Result
+User is redirected to the Edit Profile Info page, where they can edit their profile.
+
+### Actual Result
+The “EDIT” button does not perform any action. The user remains on the My Profile page; the Edit Profile Info page is not accessible.
+
+### Severity
+Blocking 
+
+### Priority
+High  
+
+### Status
+Open
+
+### Affected Areas
+- My Profile Page (Navigation)
+- Edit Profile Info Page (Accessibility)
