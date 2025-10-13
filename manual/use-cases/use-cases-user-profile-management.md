@@ -40,7 +40,25 @@ System redirects the user to the Edit Profile Info page.
 
 ---
 
-## UC-PROF-3 – Edit Profile Information
+## UC-PROF-3 – Access Edit Profile Info Page
+**Jira Use Case:** [SSQ-100](https://storyspoilerqa.atlassian.net/browse/SSQ-100)
+
+### Description
+Logged-in users can access their Edit Profile Info page by clicking the “EDIT” button on My Profile page.
+
+### Preconditions
+- User is on My Profile page.
+
+### Main Flow
+1. User clicks the “EDIT” button on My Profile page.  
+2. System navigates to the Edit Profile Info page. 
+
+### xpected Outcome
+Edit Profile Info page displays fields First Name, Middle Name, Last Name, About Me, and Profile picture.
+
+---
+
+## UC-PROF-4 – Edit Profile Information
 **Jira Use Case:** [SSQ-90](https://storyspoilerqa.atlassian.net/browse/SSQ-90)
 
 ### Description
@@ -65,7 +83,7 @@ System validates inputs, saves the changes, and updates the displayed profile in
 
 ---
 
-## UC-PROF-4 – Validation Errors During Profile Edit
+## UC-PROF-5 – Validation Errors During Profile Edit
 **Jira Use Case:** [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91)
 
 ### Description

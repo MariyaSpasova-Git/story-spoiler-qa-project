@@ -68,8 +68,8 @@ User is not logged in. Validation errors are displayed for both Username and Pas
 **Execution Result:** ✅ Passed
 
 **Related Queries:** 
-- [QRY-LOG-01](../queries/queries.md#qry-log-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
-- [QRY-LOG-02](../queries/queries.md#qry-log-02--consistency-of-required-field-messages) (Jira: [SSQ-85](https://storyspoilerqa.atlassian.net/browse/SSQ-85))
+- [QRY-UX-01](../queries/queries.md#XXXXX1) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
+- [QRY-LOG-01](../queries/queries.md#qry-log-01--consistency-of-required-field-messages) (Jira: [SSQ-85](https://storyspoilerqa.atlassian.net/browse/SSQ-85))
 
 ---
 
@@ -92,8 +92,8 @@ User remains on the Log In page. A clear error message should be displayed indic
 **Execution Result:** ✅ Passed
 
 **Related Queries:** 
-- [QRY-LOG-01](../queries/queries.md#qry-log-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
-- [QRY-LOG-03](../queries/queries.md#qry-log-03--generic-error-message-for-invalid-login-credentials) (Jira: [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86))
+- [QRY-LOG-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+- [QRY-LOG-02](../queries/queries.md#qry-log-02--generic-error-message-for-invalid-login-credentials) (Jira: [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86))
 
 ---
 
@@ -116,8 +116,8 @@ User remains on the Log In page. A clear error message should be displayed indic
 **Execution Result:** ✅ Passed
 
 **Related Queries:** 
-- [QRY-LOG-01](../queries/queries.md#qry-log-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
-- [QRY-LOG-03](../queries/queries.md#qry-log-03--generic-error-message-for-invalid-login-credentials) (Jira: [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86))
+- [QRY-LOG-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-unable-to-sign-in-error-message-1) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+- [QRY-LOG-02](../queries/queries.md#qry-log-02--generic-error-message-for-invalid-login-credentials) (Jira: [SSQ-86](https://storyspoilerqa.atlassian.net/browse/SSQ-86))
 
 ---
 
@@ -154,3 +154,5 @@ User is redirected to the Restore Password page.
 
 **Expected Result:**  
 User is redirected to the Sign Up page.
+
+**Execution Result:** ✅ Passed

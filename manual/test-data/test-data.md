@@ -171,11 +171,36 @@ Each test case references the corresponding **Test Data ID (TD-XX)**.
 
 **Value:** ``
 
----
-
-### TD-29 – Valid email (registered)
+### TD-29 – Valid Email (registered account)
 
 **Value:** `test_user_1@example.com`
+
+### TD-30 – Invalid User (valid username with incorrect password)
+
+* Username: `test_user_1`
+* Password: `wrongpass123`
+
+### TD-31 – Empty Credentials
+
+* Username: ``
+* Password: ``
+
+### TD-32 – Valid Profile Picture URL
+* **Value:** `http://example.com/test-image.jpg`
+
+### TD-33 Invalid Profile picture URL (missing "http://" or "https://")
+**Value:** `example.com/image.png`
+
+### TD-34 Invalid Profile picture URL (missing image extension)
+**Value:** `http://example.com/image`
+
+### TD-35 Valid About Me Description
+**Value:** `Dedicated QA tester with a passion for software quality assurance.`
+
+### TD-36 – Invalid About Me description (257 characters)
+
+**Value:** `DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD`
+
 
 ## Usage Notes
 

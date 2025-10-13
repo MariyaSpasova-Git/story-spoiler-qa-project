@@ -29,8 +29,7 @@ Navigation bar on top
 
 **Execution Result:** ❌ Failed
 
-**Related Bug:** [BUG-HP-01](../bugs/bug-report.md#bug-hp-01--missing-picture-in-upload-a-picture-section) (Jira: [SSQ-25](https://storyspoilerqa.atlassian.net/browse/SSQ-25))
-**Screenshot:** ![BUG-HP-01](../../docs/screenshots/home-page/bug-hp-01.pngbug-hp-01.png)  
+**Related Bug:** [BUG-HP-01](../bugs/bug-report.md#bug-hp-01--missing-picture-in-upload-a-picture-section) (Jira: [SSQ-25](https://storyspoilerqa.atlassian.net/browse/SSQ-25)) 
 
 
 ---
@@ -137,7 +136,7 @@ User is redirected to the Copyright page.
 
 **Execution Result:** ❌ Failed
 
-**Related Bug:** [BUG-HP-02](../bugs/bugs-report.md#bug-hp-02--copyright-link-in-footer-does-not-redirect) (Jira: [SSQ-26](https://storyspoilerqa.atlassian.net/browse/SSQ-26))
+**Related Bug:** [BUG-HP-02](../bugs/bug-report.md#bug-hp-02--copyright-link-in-footer-does-not-redirect) (Jira: [SSQ-26](https://storyspoilerqa.atlassian.net/browse/SSQ-26))
 
 ---
 
@@ -341,7 +340,7 @@ User is redirected to Create Spoiler page.
 ---
 
 ## TC-HP-18 – Verify Home Page access with no Internet connection
-**Jira Test Case:** [SSQ-23](https://your-jira-instance.atlassian.net/browse/SSQ-TC-18)  
+**Jira Test Case:** [SSQ-23](https://your-jira-instance.atlassian.net/browse/SSQ-23)  
 **Use Case:** [UC-HP-4](../use-cases/use-cases-home-page.md#uc-hp-4--home-page-failure-state-message-display) (Jira: [SSQ-5](https://storyspoilerqa.atlassian.net/browse/SSQ-5))
 
 **Prerequisites:** Internet is disabled.
