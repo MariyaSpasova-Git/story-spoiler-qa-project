@@ -71,15 +71,15 @@ User is redirected to the Edit Profile Info page.
 
 **Execution Result:** ❌ Failed
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
-**Related Query:** [QRY-UX-02](../queries/queries.md#XXXX) (Jira: [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61))
+**Related Query:** [QRY-UX-02](../queries/queries.md#qry-ux-02--inconsistent-add-button-label-across-multiple-pages) (Jira: [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61))
 
 ---
 
 ## TC-PROF-04 – Verify Edit Profile Info page
 **Jira Test Case:** [SSQ-101](https://storyspoilerqa.atlassian.net/browse/SSQ-101)  
-**Use Case:** [UC-PROF-3](../use-cases/use-cases-user-profile-management.md#XXX) (Jira: [SSQ-100](https://storyspoilerqa.atlassian.net/browse/SSQ-100))
+**Use Case:** [UC-PROF-3](../use-cases/use-cases-user-profile-management.md#uc-prof-3--access-edit-profile-info-page) (Jira: [SSQ-100](https://storyspoilerqa.atlassian.net/browse/SSQ-100))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -102,7 +102,9 @@ The Edit Profile Info page displays the following elements:
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
+
+**Related Query:** [QRY-UX-02](../queries/queries.md#qry-ux-02--inconsistent-add-button-label-across-multiple-pages) (Jira: [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -110,7 +112,7 @@ The Edit Profile Info page displays the following elements:
 
 ## TC-PROF-05 – Verify profile edit with valid data
 **Jira Test Case:** [SSQ-96](https://storyspoilerqa.atlassian.net/browse/SSQ-96)  
-**Use Case:** [UC-PROF-4](../use-cases/use-cases-user-profile-management.md#XXXXe) (Jira: [SSQ-90](https://storyspoilerqa.atlassian.net/browse/SSQ-90))
+**Use Case:** [UC-PROF-4](../use-cases/use-cases-user-profile-management.md#uc-prof-4--edit-profile-information) (Jira: [SSQ-90](https://storyspoilerqa.atlassian.net/browse/SSQ-90))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -123,8 +125,8 @@ The Edit Profile Info page displays the following elements:
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click "ADD" button.
 
 **Expected Result:**  
@@ -132,7 +134,7 @@ Profile information is updated successfully. User is redirected to the My Profil
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -140,7 +142,7 @@ Profile information is updated successfully. User is redirected to the My Profil
 
 ## TC-PROF-06 – Verify required fields validation when all fields are empty
 **Jira Test Case:** [SSQ-97](https://storyspoilerqa.atlassian.net/browse/SSQ-97)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -158,7 +160,7 @@ Clear and consistent validation messages are displayed for each required field (
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -166,7 +168,7 @@ Clear and consistent validation messages are displayed for each required field (
 
 ## TC-PROF-07 – Verify minimum length validation when editing the First Name field
 **Jira Test Case:** [SSQ-102](https://storyspoilerqa.atlassian.net/browse/SSQ-102)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -179,8 +181,8 @@ Clear and consistent validation messages are displayed for each required field (
 6. In the First Name field, enter TD-15 (invalid first name, too short).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -188,7 +190,7 @@ User is prevented from completing the editing process. A clear validation messag
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -196,7 +198,7 @@ User is prevented from completing the editing process. A clear validation messag
 
 ## TC-PROF-08 – Verify maximum length validation when editing the First Name field
 **Jira Test Case:** [SSQ-103](https://storyspoilerqa.atlassian.net/browse/SSQ-103)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -209,8 +211,8 @@ User is prevented from completing the editing process. A clear validation messag
 6. In the First Name field, attempt to enter TD-16 (invalid first name, too long).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -218,7 +220,7 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -226,7 +228,7 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 ## TC-PROF-09 – Verify minimum length validation when editing the Middle Name field
 **Jira Test Case:** [SSQ-104](https://storyspoilerqa.atlassian.net/browse/SSQ-104)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -239,8 +241,8 @@ User cannot complete the editing process with a value exceeding the maximum leng
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-25 (invalid middle name, too short).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -248,7 +250,7 @@ User is prevented from completing the editing process. A clear validation messag
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -256,7 +258,7 @@ User is prevented from completing the editing process. A clear validation messag
 
 ## TC-PROF-10 – Verify maximum length validation when editing the Middle Name field
 **Jira Test Case:** [SSQ-105](https://storyspoilerqa.atlassian.net/browse/SSQ-105)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -269,8 +271,8 @@ User is prevented from completing the editing process. A clear validation messag
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, attempt to enter TD-26 (invalid middle name, too long).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -278,7 +280,7 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -286,7 +288,7 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 ## TC-PROF-11 – Verify minimum length validation when editing the Last Name field
 **Jira Test Case:** [SSQ-106](https://storyspoilerqa.atlassian.net/browse/SSQ-106)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -299,8 +301,8 @@ User cannot complete the editing process with a value exceeding the maximum leng
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-18 (invalid last name, too short).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -308,7 +310,7 @@ User is prevented from completing the editing process. A clear validation messag
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -316,7 +318,7 @@ User is prevented from completing the editing process. A clear validation messag
 
 ## TC-PROF-12 – Verify maximum length validation when editing the Last Name field
 **Jira Test Case:** [SSQ-107](https://storyspoilerqa.atlassian.net/browse/SSQ-107)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-editt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -329,8 +331,8 @@ User is prevented from completing the editing process. A clear validation messag
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, attempt to enter TD-19 (invalid last name, too long).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -338,7 +340,7 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
@@ -346,7 +348,7 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 ## TC-PROF-13 – Verify maximum length validation when editing the About me field
 **Jira Test Case:** [SSQ-108](https://storyspoilerqa.atlassian.net/browse/SSQ-108)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-editt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -359,8 +361,8 @@ User cannot complete the editing process with a value exceeding the maximum leng
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, attempt to enter TD-36 (invalid description, too long).
-10. In the Profile picture field, enter TD-32 (valid picture URL).
+9. In the About me field, attempt to enter TD-39 (invalid description, too long).
+10. In the Profile picture field, enter TD-33 (valid picture URL).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -368,15 +370,15 @@ User cannot complete the editing process with a value exceeding the maximum leng
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
 ---
 
-## TC-PROF-14 – Verify validation for Profile picture field with invalid URL (missing "http://")
+## TC-PROF-14 – Verify validation for Profile picture field with invalid URL (missing protocol)
 **Jira Test Case:** [SSQ-109](https://storyspoilerqa.atlassian.net/browse/SSQ-109)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -389,8 +391,8 @@ User cannot complete the editing process with a value exceeding the maximum leng
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-33 (invalid picture URL, missing "http://" or "https://").
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-35 (invalid picture URL, missing protocol).
 11. Click “ADD” button.
 
 **Expected Result:**  
@@ -398,15 +400,15 @@ Clear validation error message is displayed indicating that the image URL must s
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
 ---
 
-## TC-PROF-15 – Verify validation for Profile picture field with invalid URL (missing "http://")
+## TC-PROF-15 – Verify validation for Profile picture field with invalid URL (missing file extension)
 **Jira Test Case:** [SSQ-110](https://storyspoilerqa.atlassian.net/browse/SSQ-110)  
-**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#XXXXt) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
 
 **Prerequisites:** TD-02: Valid user.
 
@@ -419,15 +421,75 @@ Clear validation error message is displayed indicating that the image URL must s
 6. In the First Name field, enter TD-14 (valid first name).
 7. In the Middle Name field, enter TD-27 (valid middle name).
 8. In the Last Name field, enter TD-17 (valid last name).
-9. In the About me field, enter TD-35 (valid description).
-10. In the Profile picture field, enter TD-34 (invalid picture URL, missing image extension).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-36 (invalid picture URL, missing file extension).
 11. Click “ADD” button.
 
 **Expected Result:**  
-Clear validation error message is displayed indicating that the image URL must end with a valid file extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
+Clear validation error message is displayed indicating that the image URL must end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#XXXX) (Jira: [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87))
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
+
+**Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
+
+---
+
+## TC-PROF-16 – Verify validation for Profile picture field with invalid URL (wrong extension)
+**Jira Test Case:** [SSQ-111](https://storyspoilerqa.atlassian.net/browse/SSQ-111)  
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+
+**Prerequisites:** TD-02: Valid user.
+
+**Steps:**  
+1. Navigate to the app URL.
+2. Click “LOG IN” button in the navigation bar.
+3. Enter the valid credentials (username and password) from TD-02.
+4. Click the top-left user profile icon in the navigation bar.
+5. Click "EDIT" button on My Profile page.
+6. In the First Name field, enter TD-14 (valid first name).
+7. In the Middle Name field, enter TD-27 (valid middle name).
+8. In the Last Name field, enter TD-17 (valid last name).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-37 (invalid picture URL, wrong extension).
+11. Click “ADD” button.
+
+**Expected Result:**  
+Clear validation error message is displayed indicating that the image URL must end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
+
+**Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
+
+---
+
+## TC-PROF-17 – Verify validation for Profile picture field with invalid URL (invalid URL structure)
+**Jira Test Case:** [SSQ-112](https://storyspoilerqa.atlassian.net/browse/SSQ-112)  
+**Use Case:** [UC-PROF-5](../use-cases/use-cases-user-profile-management.md#uc-prof-5--validation-errors-during-profile-edit) (Jira: [SSQ-91](https://storyspoilerqa.atlassian.net/browse/SSQ-91))
+
+**Prerequisites:** TD-02: Valid user.
+
+**Steps:**  
+1. Navigate to the app URL.
+2. Click “LOG IN” button in the navigation bar.
+3. Enter the valid credentials (username and password) from TD-02.
+4. Click the top-left user profile icon in the navigation bar.
+5. Click "EDIT" button on My Profile page.
+6. In the First Name field, enter TD-14 (valid first name).
+7. In the Middle Name field, enter TD-27 (valid middle name).
+8. In the Last Name field, enter TD-17 (valid last name).
+9. In the About me field, enter TD-38 (valid description).
+10. In the Profile picture field, enter TD-34 (invalid picture URL, invalid URL structure).
+11. Click “ADD” button.
+
+**Expected Result:**  
+Clear validation error message is displayed indicating that the image URL must start with `~http://"` or `"https://"` and end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.

@@ -59,7 +59,7 @@ The user successfully logs in and is redirected to the Home Page for logged-in u
 **Steps:**  
 1. Open the app URL.
 2. Click “LOG IN” button in the navigation bar.
-3. Leave the Username and Password fields empty (TD-31).
+3. Leave the Username and Password fields empty (TD-32).
 4. Click “LOG IN” button.
 
 **Expected Result:**  
@@ -101,13 +101,13 @@ User remains on the Log In page. A clear error message should be displayed indic
 **Jira Test Case:** [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81)  
 **Use Case:** [UC-LOG-3](../use-cases/use-cases-log-in-page.md#uc-log-3--validation-errors-for-invalid-credentials) (Jira: [SSQ-74](https://storyspoilerqa.atlassian.net/browse/SSQ-74))
 
-**Prerequisites:** TD-30: Invalid user (valid username, invalid password)
+**Prerequisites:** TD-31: Invalid user (valid username, invalid password)
 
 **Steps:**  
 1. Open the app URL.
 2. Click “LOG IN” button in the navigation bar.
-3. In the Username field, enter the valid username from TD-30.
-4. In the Password field, enter the invalid password from TD-30.
+3. In the Username field, enter the valid username from TD-31.
+4. In the Password field, enter the invalid password from TD-31.
 5. Click “LOG IN” button.
 
 **Expected Result:**  

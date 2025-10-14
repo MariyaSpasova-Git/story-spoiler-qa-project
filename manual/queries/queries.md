@@ -32,7 +32,7 @@ The requirement should contain a clear visual alongside a detailed description o
 * No visuals provided
 * Text description is incomplete and ambiguous
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -56,7 +56,7 @@ Text formatting should be consistent between requirement, design mockup, and imp
 **Actual:**
 Requirement text differs from both design and implementation.
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -86,7 +86,7 @@ Field names are inconsistently capitalized across error messages.
 ![Error Required Username](../../docs/screenshots/user-registration/qry-reg-01-error-required-username.png)
 ![Error Taken Username](../../docs/screenshots/user-registration/qry-reg-01-error-taken-username.png)
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -115,7 +115,7 @@ Some messages start with "The", others don’t.
 ### Screenshot
 ![Inconsistent Errors](../../docs/screenshots/user-registration/qry-reg-02-inconsistent-errors.png)
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -147,7 +147,7 @@ Error messages mix exclamation marks and periods.
 ![Error With Exclamation Mark](../../docs/screenshots/user-registration/qry-reg-03-error-with-exclamation-mark.png)
 ![Error With Period](../../docs/screenshots/user-registration/qry-reg-03-error-with-period.png)
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -171,7 +171,7 @@ There should be no inconsistency between requirement description, UI design, and
 **Actual Result:**
 Requirements specify "Repeat password", but design and app show "Confirm password".
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -195,7 +195,7 @@ Requirements should specify if required fields must be visually indicated.
 **Actual Result:**
 No indicators are defined or displayed.
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -221,7 +221,7 @@ The requirements should specify which character types are allowed or disallowed 
 **Actual Result:**
 Only field length constraints are defined; no character-type restrictions are mentioned.
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -246,7 +246,7 @@ Requirements and UI should include a step for users to explicitly agree to Terms
 **Actual Result:**
 No such checkbox or acceptance step exists in the current implementation or in the documented requirements.
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -303,7 +303,34 @@ The error message is generic. No clarification is provided on whether the issue 
 
 ### Screenshots
 ![Invalid Username Generic Error](../../docs/screenshots/log-in-page/qry-log-02-invalid-username-generic-error.png)
-![Incorect Password Generic Error](../../docs/screenshots/log-in-page/qry-log-03-incorrect-password-generic-error.png)
+![Incorect Password Generic Error](../../docs/screenshots/log-in-page/qry-log-02-incorrect-password-generic-error.png)
+
+---
+
+## QRY-PROF-01 – Inconsistent field labels between text and mockup in the requirements document
+
+* **Jira Query:** [SSQ-62](https://storyspoilerqa.atlassian.net/browse/SSQ-62)  
+* **Related Test Case:** [TC-PROF-04](../test-cases/test-cases-log-in-page.md#tc-prof-04--verify-edit-profile-info-page) (Jira: [SSQ-101](https://storyspoilerqa.atlassian.net/browse/SSQ-101))
+
+**Description:**  
+There is an inconsistency between the text description and the mockup image in the original requirements docuement for the Edit Profile Info page field labels.  
+- The text lists the following fields: `First Name`, `Middle Name`, `Last Name`, `About me`, `Profile picture`.
+- The mokup image displays different labels: `First Name`, `Mid Name`, `Last Name`, `About`, `Picture URL`.
+
+This mismatch causes ambiguity in naming conventions and expected field labels for the Edit Profile Info page.
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Edit Profile Info Page.  
+3. Compare the field names listed in the text description with those shown in the accompanying mockup image. 
+
+**Expected Result:**  
+Field labels should be consistent across the original requirements docuement text and mockup image to ensure clarity and accurate test design.  
+
+**Actual Result:**  
+Field labels differ between the text and mockup image.  
+
+**Status:** Open  
 
 ---
 
@@ -346,15 +373,15 @@ Error messages across both pages display an unnecessary bullet point ("•") bef
 
 **Screenshots:**  
 **Sign Up Page**  
-- ![Bullet Point Before Taken Username Error](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-before-taken-username-error.png)  
-- ![Bullet Point Before Taken Email Error](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-before-taken-email-error.png)  
+![Bullet Point Before Taken Username Error](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-before-taken-username-error.png)  
+![Bullet Point Before Taken Email Error](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-before-taken-email-error.png)  
 
 **Log In Page**  
-- ![Bullet Point Before Unable Sign In Empty Fields](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-empty-fields.png)  
-- ![Bullet Point Before Unable Sign In Invalid Username](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-invalid-username.png)  
-- ![Bullet Point Before Unable Sign In Incorrect Password](../../docs/screenshots/log-in-page/qry-log-01-bullet-point-before-unable-sign-in-incorrect-password.png)
+![Bullet Point Before Unable Sign In Empty Fields](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-before-unable-sign-in-empty-fields.png)  
+![Bullet Point Before Unable Sign In Invalid Username](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-before-unable-sign-in-invalid-username.png)  
+![Bullet Point Before Unable Sign In Incorrect Password](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-before-unable-sign-in-incorrect-password.png)
 
-**Status:** ⏳ Open
+**Status:** Open
 
 ---
 
@@ -362,7 +389,7 @@ Error messages across both pages display an unnecessary bullet point ("•") bef
 
 **Jira Query:** [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61)  
 **Related Test Cases:**
-- [TC-PROF-04](../test-cases/test-cases-user-registration.md#tc-prof-04--verify-user-can-edit-their-profile) (Jira: [SSQ-96](https://storyspoilerqa.atlassian.net/browse/SSQ-96))
+- [TC-PROF-04](../test-cases/test-cases-user-profile-management.md#tc-prof-04--verify-edit-profile-info-page) (Jira link: [SSQ-101](https://storyspoilerqa.atlassian.net/browse/SSQ-101))
 
 **Description:**  
 The button used to confirm user actions is labeled "ADD" on several pages (e.g., Edit Profile Info, Log In). This label is misleading in contexts where users are expected to update or submit existing information rather than add new data.
@@ -377,6 +404,8 @@ Buttons should have context-appropriate labels, e.g. "Save" or "Update" for prof
 
 **Actual Result:**  
 The confirmation button is labeled "ADD", which may confuse users regarding the action being performed.
+
+**Status:** Open
 
 ---
 

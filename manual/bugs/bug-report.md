@@ -83,7 +83,7 @@ Open
 ### Steps to Reproduce
 1. Open the app URL.
 2. Click the “SIGN UP” button in the navigation bar.
-3. Enter an invalid email address such as `testemail` in the Email field.
+3. In the Email field, enter TD-30 (nvalid email, missing '@' and '.').
 4. Fill in all other required fields with valid test data (see TD-07, TD-14, TD-28, TD-17, TD-20, TD-21).
 5. Click the “SIGN UP” button.
 
@@ -254,8 +254,23 @@ Log In page – "Forgot Password?" link
 
 ## BUG-PROF-01 – “EDIT” button does not open the Edit Profile Info page
 
-**Jira Bug:** [SSQ-87](https://storyspoilerqa.atlassian.net/browse/SSQ-87)  
-**Related Test Case:** [TC-LOG-06](../test-cases/test-cases-user-registration.md#tc-log-06--verify-create-new-button-redirects-to-sign-up-paget) (Jira link: [SSQ-82](https://storyspoilerqa.atlassian.net/browse/SSQ-82))
+**Jira Bug:** [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99)  
+**Related Test Cases:** 
+- [TC-PROF-03](../test-cases/test-cases-user-profile-management.md#tc-prof-03--verify-edit-button-redirects-to-edit-profile-info-page) (Jira link: [SSQ-95](https://storyspoilerqa.atlassian.net/browse/SSQ-95))
+- [TC-PROF-04](../test-cases/test-cases-user-profile-management.md#tc-prof-04--verify-edit-profile-info-page) (Jira link: [SSQ-101](https://storyspoilerqa.atlassian.net/browse/SSQ-101))
+- [TC-PROF-05](../test-cases/test-cases-user-profile-management.md#tc-prof-05--verify-profile-edit-with-valid-data) (Jira link: [SSQ-96](https://storyspoilerqa.atlassian.net/browse/SSQ-96))
+- [TC-PROF-06](../test-cases/test-cases-user-profile-management.md#tc-prof-06--verify-required-fields-validation-when-all-fields-are-empty) (Jira link: [SSQ-97](https://storyspoilerqa.atlassian.net/browse/SSQ-97))
+- [TC-PROF-07](../test-cases/test-cases-user-profile-management.md#tc-prof-07--verify-minimum-length-validation-when-editing) (Jira link: [SSQ-102](https://storyspoilerqa.atlassian.net/browse/SSQ-102))
+- [TC-PROF-08](../test-cases/test-cases-user-profile-management.md#tc-prof-08--verify-maximum-length-validation-when-editing-the-first-name-field) (Jira link: [SSQ-103](https://storyspoilerqa.atlassian.net/browse/SSQ-103))
+- [TC-PROF-09](../test-cases/test-cases-user-profile-management.md#tc-prof-09--verify-minimum-length-validation-when-editing-the-middle-name-field) (Jira link: [SSQ-104](https://storyspoilerqa.atlassian.net/browse/SSQ-104))
+- [TC-PROF-10](../test-cases/test-cases-user-profile-management.md#tc-prof-10--verify-maximum-length-validation-when-editing-the-middle-name-field) (Jira link: [SSQ-105](https://storyspoilerqa.atlassian.net/browse/SSQ-105))
+- [TC-PROF-11](../test-cases/test-cases-user-profile-management.md#tc-prof-11--verify-minimum-length-validation-when-editing-the-last-name-field) (Jira link: [SSQ-106](https://storyspoilerqa.atlassian.net/browse/SSQ-106))
+- [TC-PROF-12](../test-cases/test-cases-user-profile-management.md#tc-prof-12--verify-maximum-length-validation-when-editing-the-last-name-field) (Jira link: [SSQ-107](https://storyspoilerqa.atlassian.net/browse/SSQ-107))
+- [TC-PROF-13](../test-cases/test-cases-user-profile-management.md#tc-prof-13--verify-maximum-length-validation-when-editing-the-about-me-field) (Jira link: [SSQ-108](https://storyspoilerqa.atlassian.net/browse/SSQ-108))
+- [TC-PROF-14](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-109](https://storyspoilerqa.atlassian.net/browse/SSQ-109))
+- [TC-PROF-15](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-110](https://storyspoilerqa.atlassian.net/browse/SSQ-110))
+- [TC-PROF-16](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-111](https://storyspoilerqa.atlassian.net/browse/SSQ-111))
+- [TC-PROF-17](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-112](https://storyspoilerqa.atlassian.net/browse/SSQ-112))
 
 ### Steps to Reproduce
 1. Navigate to the app URL.
@@ -282,3 +297,6 @@ Open
 ### Affected Areas
 - My Profile Page (Navigation)
 - Edit Profile Info Page (Accessibility)
+
+### Screenshot
+![Edit Button Not Working](../../docs/screenshots/user-profile-management/bug-prof-01-edit-button-not-working.png)

@@ -116,8 +116,8 @@ Each required field displays a clear and user-friendly error message indicating 
 **Execution Result:** ✅ Passed
 
 **Related Queries:** 
-- [QRY-REG-01](../queries/queries.md#qry-hp-01--requirements-for-home-page-for-logged-in-users-lack-visuals-and-detailed-content-specification) (Jira: [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59))
-- [QRY-REG-03](../queries/queries.md#qry-reg-03--consistency-of-required-field-messages) (Jira: [SSQ-63](https://storyspoilerqa.atlassian.net/browse/SSQ-63))
+- [QRY-HP-01](../queries/queries.md#qry-hp-01--requirements-for-home-page-for-logged-in-users-lack-visuals-and-detailed-content-specification) (Jira: [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59))
+- [QRY-REG-02](../queries/queries.md#qry-reg-02--consistency-of-required-field-messages) (Jira: [SSQ-63](https://storyspoilerqa.atlassian.net/browse/SSQ-63))
 - [QRY-REG-01](../queries/queries.md#qry-reg-06--required-field-indicators-not-defined-in-requirements) (Jira: [SSQ-66](https://storyspoilerqa.atlassian.net/browse/SSQ-66))
 
 ---
@@ -507,7 +507,7 @@ The user is prevented from completing the sign-up process. A clear validation me
 **Execution Result:** ✅ Passed
 
 **Related Queries:** 
-- [QRY-REG-03](../queries/queries.md#qry-reg-03--consistency-of-required-field-messages) (Jira: [SSQ-63](https://storyspoilerqa.atlassian.net/browse/SSQ-63))
+- [QRY-REG-02](../queries/queries.md#qry-reg-02--consistency-of-required-field-messages) (Jira: [SSQ-63](https://storyspoilerqa.atlassian.net/browse/SSQ-63))
 - [QRY-REG-04](../queries/queries.md#qry-reg-04--validation-messages-tone-and-punctuation-consistency) (Jira: [SSQ-64](https://storyspoilerqa.atlassian.net/browse/SSQ-64))
 
 ---
@@ -537,7 +537,7 @@ The user is prevented from completing the sign-up process. A clear validation me
 
 **Related Queries:** 
 - [QRY-REG-01](../queries/queries.md#qry-reg-01--consistency-of-capitalization-in-field-names) (Jira: [SSQ-59](https://storyspoilerqa.atlassian.net/browse/SSQ-59))
-- [QRY-REG-02](../queries/queries.md#qry-reg-02--extra-bullet-point-before-error-messages) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
+- [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
 
 ---
 
@@ -585,3 +585,26 @@ User is redirected to the Log In page.
 **Execution Result:** ✅ Passed
 
 ---
+
+## TC-REG-23 – Verify validation for invalid email (missing '@' and '.')
+**Jira Test Case:** [SSQ-113](https://storyspoilerqa.atlassian.net/browse/SSQ-113)  
+**Use Case:** [UC-REG-3](../use-cases/use-cases-user-registration.md#uc-reg-3--validation-errors-during-registration) (Jira: [SSQ-32](https://storyspoilerqa.atlassian.net/browse/SSQ-32))
+
+**Prerequisites:** TD-01: Guest Session.
+
+**Steps:**  
+1. Open the app URL.
+2. Click “SIGN UP” button in the navigation bar.
+3. In the Username field, enter TD-07 (valid username).
+4. In the Email field, enter TD-30 (invalid email, missing '@' and '.').
+5. In the First Name field, enter TD-14 (valid first name).
+6. In the Middle Name field, enter TD-28 (empty middle name).
+7. In the Last Name field, enter TD-17 (valid last name).
+8. In the Password field, enter TD-20 (valid password).
+9. In the Confirm Password field, repeat the password with TD-21.
+10. Click “SIGN UP” button.
+
+**Expected Result:**  
+The user is prevented from completing the sign-up process. A clear validation message should be displayed indicating that the Email must contain ‘@' and '.'.
+
+**Execution Result:** ✅ Passed
