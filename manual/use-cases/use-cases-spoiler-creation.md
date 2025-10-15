@@ -38,7 +38,7 @@ Users can create Spoilers by entering valid data on Create Spoiler page.
    - Add a picture for the spoiler
 2. User clicks “CREATE” button.
 
-### xpected Outcome
+### Expected Outcome
 Spoiler is created successfully. User is redirected to the Home Page, where the new Spoiler is visible with its title, description, and picture.
 
 ---
@@ -56,5 +56,5 @@ System must ensure proper validation for all input fields on the Create Spoiler 
 1. User leaves required fields blank or enters invalid data.
 2. User clicks “CREATE” button.
 
-### xpected Outcome
+### Expected Outcome
 System prevents Spoiler creation and displays appropriate error messages for each invalid field.

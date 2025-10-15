@@ -267,10 +267,10 @@ Log In page – "Forgot Password?" link
 - [TC-PROF-11](../test-cases/test-cases-user-profile-management.md#tc-prof-11--verify-minimum-length-validation-when-editing-the-last-name-field) (Jira link: [SSQ-106](https://storyspoilerqa.atlassian.net/browse/SSQ-106))
 - [TC-PROF-12](../test-cases/test-cases-user-profile-management.md#tc-prof-12--verify-maximum-length-validation-when-editing-the-last-name-field) (Jira link: [SSQ-107](https://storyspoilerqa.atlassian.net/browse/SSQ-107))
 - [TC-PROF-13](../test-cases/test-cases-user-profile-management.md#tc-prof-13--verify-maximum-length-validation-when-editing-the-about-me-field) (Jira link: [SSQ-108](https://storyspoilerqa.atlassian.net/browse/SSQ-108))
-- [TC-PROF-14](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-109](https://storyspoilerqa.atlassian.net/browse/SSQ-109))
-- [TC-PROF-15](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-110](https://storyspoilerqa.atlassian.net/browse/SSQ-110))
-- [TC-PROF-16](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-111](https://storyspoilerqa.atlassian.net/browse/SSQ-111))
-- [TC-PROF-17](../test-cases/test-cases-user-profile-management.md#XXXXXX) (Jira link: [SSQ-112](https://storyspoilerqa.atlassian.net/browse/SSQ-112))
+- [TC-PROF-14](../test-cases/test-cases-user-profile-management.md#tc-prof-14--verify-validation-for-profile-picture-field-with-invalid-url-missing-protocol) (Jira link: [SSQ-109](https://storyspoilerqa.atlassian.net/browse/SSQ-109))
+- [TC-PROF-15](../test-cases/test-cases-user-profile-management.md#tc-prof-15--verify-validation-for-profile-picture-field-with-invalid-url-missing-file-extension) (Jira link: [SSQ-110](https://storyspoilerqa.atlassian.net/browse/SSQ-110))
+- [TC-PROF-16](../test-cases/test-cases-user-profile-management.md#tc-prof-16--verify-validation-for-profile-picture-field-with-invalid-url-wrong-extension) (Jira link: [SSQ-111](https://storyspoilerqa.atlassian.net/browse/SSQ-111))
+- [TC-PROF-17](../test-cases/test-cases-user-profile-management.md#tc-prof-17--verify-validation-for-profile-picture-field-with-invalid-url-invalid-url-structure) (Jira link: [SSQ-112](https://storyspoilerqa.atlassian.net/browse/SSQ-112))
 
 ### Steps to Reproduce
 1. Navigate to the app URL.

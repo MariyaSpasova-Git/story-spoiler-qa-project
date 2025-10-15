@@ -15,7 +15,7 @@ Unregistered users should be able to access the Sign Up page from the Home Page.
 - Application is available at the designated URL.
 
 ### Main Flow
-1. User clicks the **SIGN UP** button on the Home Page.
+1. User clicks the "SIGN UP" button on the Home Page.
 2. System loads the Sign Up page with the registration form.
 
 ### Expected Outcome
@@ -35,12 +35,12 @@ User enters valid registration details and successfully creates a new account.
 
 ### Main Flow
 1. User fills in all required fields with valid input.
-2. User clicks **SIGN UP**.
+2. User clicks "SIGN UP" button.
 3. System validates the input.
 4. System creates the new account.
 
 ### Expected Outcome
-User account is created, and user is either redirected to the Log In page or automatically logged in.
+User account is created. User is automatically logged in.
 
 ---
 

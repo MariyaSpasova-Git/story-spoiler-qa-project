@@ -90,11 +90,11 @@ System validates inputs, saves the changes, and updates the displayed profile in
 System must prevent invalid data submission during profile edits.
 
 ### Preconditions
-- User is on the Edit Profile Info page.
+- User is on Edit Profile Info page.
 
 ### Main Flow
-1. Leave required fields blank or enter invalid data. 
-2. Click “ADD.”   
+1. User leaves required fields blank or enters invalid data. 
+2. User clicks "ADD" button.
 
 ### Expected Outcome
 System prevents user from editing their profile. Appropriate error messages are displayed for each incorrect field, indicating the specific rule that has been violated.
