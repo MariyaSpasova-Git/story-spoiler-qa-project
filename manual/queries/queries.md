@@ -334,6 +334,80 @@ Field labels differ between the text and mockup image.
 
 ---
 
+## QRY-CRSP-01 – Missing "SHARE" button on newly created spoilers
+
+* **Jira Query:** [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67)  
+* **Related Test Cases:** 
+- [TC-CRSP-02](../test-cases/test-cases-spoiler-creation.md#tc-crsp-02--verify-spoiler-creation-with-all-valid-fields) (Jira: [SSQ-119](https://storyspoilerqa.atlassian.net/browse/SSQ-119))
+
+**Description:**  
+According to the original requirements document, the newly created spoiler should display "SHARE", "EDIT", and "DELETE" buttons on the Home page after creation. However, the current implementations show only "EDIT" and "DELETE" buttons.
+
+**Steps to Identify:**  
+1. Open the app URL.
+2. Navigate to the Create Spoiler page.
+4. In the Story title field, enter TD-40 (valid story title).
+6. In the Describe your story spoiler field, enter TD-41 (valid story description).
+7. In the Add a picture for the spoiler field, enter TD-33 (valid picture URL) or leave the field empty.
+8. Click “CREATE” button.
+
+**Expected Result:**  
+All three buttons ("SHARE", "EDIT", "DELETE") should be displayed as described in the requirement.
+
+**Actual Result:**  
+The "SHARE" button is missing. 
+
+**Status:** Open  
+
+**Screenshot:**
+![Missing Share Button](../../docs/screenshots/spoiler-creation/qry-crsp-01-missing-share-button.png)
+
+---
+
+## QRY-CRSP-02 – Generic and improperly formatted validation message for invalid picture URL
+
+* **Jira Query:** [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94)
+* **Related Test Cases:**
+- [TC-CRSP-07](../test-cases/test-cases-spoiler-creation.md#tc-crsp-07--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124))
+- [TC-CRSP-08](../test-cases/test-cases-spoiler-creation.md#tc-crsp-08--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125))
+- [TC-CRSP-09](../test-cases/test-cases-spoiler-creation.md#tc-crsp-09--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126))
+- [TC-CRSP-10](../test-cases/test-cases-spoiler-creation.md#tc-crsp-10--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127))
+
+**Description:**  
+When entering an invalid Picture URL in the Create Spoiler form, the system displays a generic error message `"Invalid url!"` regardless of the specific issue (invalid structure, missing protocol, missing or wrong file extension).  
+Additionally, the message text is not properly formatted — the word “url” is lowercase and an exclamation mark is used.
+
+**Steps to Identify:**
+
+1. Open the app URL.  
+2. Navigate to Create Spoiler page.  
+4. In the Story title field, enter TD-40 (valid story title).
+6. In the Describe your story spoiler field, enter TD-41 (valid story description).  
+5. In the Add a picture for the spoiler field, enter one of the following invalid values:
+   - Missing protocol: TD-35
+   - Missing file extension: TD-36
+   - Wrong file extension: TD-37
+   - Invalid URL structure: TD-34
+6. Click "CREATE" button.
+
+**Expected Result:**  
+A clear and properly formatted validation message should be displayed, specific to the type of input error.  
+Example messages:
+- “Please enter a valid URL starting with http:// or https://.”
+- “Image URL must point to a supported image file (.jpg, .png, .jpeg, .gif).”
+- “Please enter a valid image URL.”
+
+**Actual Result:**  
+A generic and inconsistently formatted message `"Invalid url!"` appears for all invalid URL scenarios.
+
+### Screenshots
+![Generic Invalid Picture URL Error - Missing Protocol](../../docs/screenshots/spoiler-creation/qry-crsp-02-generic-invalid-picture-url-error-missing-protocol.png)
+![Generic Invalid Picture URL Error - Missing File Extension](../../docs/screenshots/spoiler-creation/qry-crsp-02-generic-invalid-picture-url-error-missing-file-extension.png)
+![Generic Invalid Picture URL Error - Wrong File Extension](../../docs/screenshots/spoiler-creation/qry-crsp-02-generic-invalid-picture-url-error-wrong-file-extension.png)
+![Generic Invalid Picture URL Error - Invalid URL Structure](../../docs/screenshots/spoiler-creation/qry-crsp-02-generic-invalid-picture-url-error-invalid-url-structure.png)
+
+---
+
 ## QRY-UX-01 – Extra bullet point before error messages across multiple forms
 
 **Jira Query:** [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60)
@@ -343,10 +417,15 @@ Field labels differ between the text and mockup image.
 - [TC-REG-21](../test-cases/test-cases-user-registration.md#tc-reg-21--verify-validation-for-existing-email-reuse) (Jira: [SSQ-54](https://storyspoilerqa.atlassian.net/browse/SSQ-54))
 - [TC-LOG-03](../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
 - [TC-LOG-04](../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))
-- [TC-LOG-05](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81)) 
+- [TC-LOG-05](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
+- [TC-CRSP-04](../test-cases/test-cases-spoiler-creation.md#tc-crsp-04--verify-required-fields-validation-when-all-fields-are-empty) (Jira: [SSQ-121](https://storyspoilerqa.atlassian.net/browse/SSQ-121))
+- [TC-CRSP-07](../test-cases/test-cases-spoiler-creation.md#tc-crsp-07--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124))
+- [TC-CRSP-08](../test-cases/test-cases-spoiler-creation.md#tc-crsp-08--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125))
+- [TC-CRSP-09](../test-cases/test-cases-spoiler-creation.md#tc-crsp-09--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126))
+- [TC-CRSP-10](../test-cases/test-cases-spoiler-creation.md#tc-crsp-10--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127))
 
 **Description:**  
-An unnecessary bullet point ("•") appears before validation error messages across multiple pages, including the Sign Up and Log In forms.
+An unnecessary bullet point ("•") appears before validation error messages across multiple pages, including the Sign Up, Log In and Create Spoiler forms.
 
 **Steps to Identify:**  
 
@@ -365,6 +444,12 @@ An unnecessary bullet point ("•") appears before validation error messages acr
    - Enter a valid username with an incorrect password (TD-32).  
 4. Click the "LOG IN" button.   
 
+**C. Create Spoiler Page**
+1. Open the app URL.  
+2. Navigate to Create Spoiler page.  
+3. Leave all fields empty.
+4. Click "CREATE" button.  
+
 **Expected Result:**  
 All error messages should display cleanly, without any preceding bullet point or formatting artifacts.
 
@@ -380,6 +465,13 @@ Error messages across both pages display an unnecessary bullet point ("•") bef
 ![Bullet Point Before Unable Sign In Empty Fields](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-before-unable-sign-in-empty-fields.png)  
 ![Bullet Point Before Unable Sign In Invalid Username](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-before-unable-sign-in-invalid-username.png)  
 ![Bullet Point Before Unable Sign In Incorrect Password](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-before-unable-sign-in-incorrect-password.png)
+
+**Create Spoiler Page**  
+![Bullet Point Before Unable To Add Spoiler Error Empty Fields](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-before-unable-to-add-spoiler-error-empty-fields.png)
+![Bullet Point Before Invalid Picture URL Error Missing Protocol](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-before-unable-to-add-spoiler-invalid-url-error-missing-protocol.png) 
+![Bullet Point Before Invalid Picture URL Error Missing File Extension](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-before-unable-to-add-spoiler-invalid-url-error-missing-file-extension.png)
+![Bullet Point Before Invalid Picture URL Error Wrong File Extension](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-before-unable-to-add-spoiler-invalid-url-error-wrong-file-extension.png)
+![Bullet Point Before Invalid Picture URL Error Invalid URL Structure](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-before-unable-to-add-spoiler-invalid-url-error-invalid-url-structure.png) 
 
 **Status:** Open
 
