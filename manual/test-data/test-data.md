@@ -178,7 +178,7 @@ Each test case references the corresponding **Test Data ID (TD-XX)**.
 **Value:** ``
 
 ### TD-43 – Invalid Story Title (71 characters)
-**Value:** `SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS`
+**Value:** `SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS`
 **Note:** Above maximum length (60 characters)
 
 ### TD-44 – Invalid Story Description (401 characters)

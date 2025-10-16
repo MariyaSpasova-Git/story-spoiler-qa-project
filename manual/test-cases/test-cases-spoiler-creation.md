@@ -27,6 +27,8 @@ The Create Spoiler page displays the following elements:
 - Add a picture for the spoiler field
 - “CREATE” button
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-CRSP-02 – Verify spoiler creation with all valid fields
@@ -47,6 +49,14 @@ The Create Spoiler page displays the following elements:
 
 **Expected Result:**  
 Spoiler is created successfully. User is redirected to the Home Page where the newly created spoiler appears with its attributes (title, description, picture, username, date) and buttons (“SHARE”, “EDIT”, and “DELETE”).
+
+**Execution Result:** ✅ Passed
+
+**Note:**  
+Button presence is verified in a separate query.
+
+**Related Query:** 
+- [QRY-CRSP-01](../queries/queries.md#XXXXX) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
 
 ---
 
@@ -69,6 +79,13 @@ Spoiler is created successfully. User is redirected to the Home Page where the n
 **Expected Result:**  
 Spoiler is created successfully. User is redirected to the Home Page where the newly created spoiler appears with its attributes (title, description, empty spoiler picture placeholder, username, date) and buttons (“SHARE”, “EDIT”, and “DELETE”).
 
+**Note:** Presence of the action buttons (“SHARE” / “EDIT” / “DELETE”) on the created spoiler is tracked separately in query [QRY-CRSP-01 – Missing "SHARE" button on newly created spoilers](https://storyspoilerqa.atlassian.net/browse/SSQ-67). This test verifies creation + attribute visibility; button functionality will be covered under the Spoiler Management requirement.
+
+**Execution Result:** ✅ Passed
+
+**Related Query:** 
+- [QRY-CRSP-01](../queries/queries.md#XXXXX) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
+
 ---
 
 ## TC-CRSP-04 – Verify required fields validation when all fields are empty
@@ -87,6 +104,11 @@ Spoiler is created successfully. User is redirected to the Home Page where the n
 
 **Expected Result:**  
 Clear and consistent validation messages are displayed for each required field (Story title and Describe your story spoiler). Optional field (Add a picture for the spoiler) does not trigger error.
+
+**Execution Result:** ✅ Passed
+
+**Related Query:** 
+- [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
 
 ---
 
@@ -109,6 +131,8 @@ Clear and consistent validation messages are displayed for each required field (
 **Expected Result:**  
 User cannot complete the creation process with a value exceeding the maximum length. The field enforces the 70-character limit by preventing additional input.
 
+**Execution Result:** ✅ Passed
+
 ---
 
 ## TC-CRSP-06 – Verify maximum length validation for spoiler description
@@ -129,6 +153,8 @@ User cannot complete the creation process with a value exceeding the maximum len
 
 **Expected Result:**  
 User cannot complete the creation process with a value exceeding the maximum length. The field enforces the 400-character limit by preventing additional input.
+
+**Execution Result:** ✅ Passed
 
 ---
 
@@ -151,6 +177,12 @@ User cannot complete the creation process with a value exceeding the maximum len
 **Expected Result:**  
 Clear validation error message is displayed indicating that the image URL must start with `"http://"` or `"https://"`.
 
+**Execution Result:** ✅ Passed
+
+**Related Queryies:** 
+- [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
+- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+
 ---
 
 ## TC-CRSP-08 – Verify validation for spoiler picture field with invalid URL (missing file extension)
@@ -171,6 +203,12 @@ Clear validation error message is displayed indicating that the image URL must s
 
 **Expected Result:**  
 Clear validation error message is displayed indicating that the picture URL must end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
+
+**Execution Result:** ✅ Passed
+
+**Related Queryies:** 
+- [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
+- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
@@ -193,6 +231,12 @@ Clear validation error message is displayed indicating that the picture URL must
 **Expected Result:**  
 Clear validation error message is displayed indicating that the picture URL must end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
 
+**Execution Result:** ✅ Passed
+
+**Related Queryies:** 
+- [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
+- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+
 ---
 
 ## TC-CRSP-10 – Verify validation for spoiler picture field with invalid URL (invalid URL structure)
@@ -213,3 +257,9 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Expected Result:**  
 Clear validation error message is displayed indicating that the picture URL must start with `"http://"` or `"https://"` and end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
+
+**Execution Result:** ✅ Passed
+
+**Related Queryies:** 
+- [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
+- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
