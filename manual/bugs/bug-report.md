@@ -3,6 +3,7 @@
 This file works in parallel with [queries/queries.md](../queries/queries.md).
 It documents all identified bugs related to the Home Page requirements and use cases.
 Each bug is linked to its corresponding Jira issue, GitHub test case(s), and screenshot evidence.
+Screenshots are stored in the `docs/screenshots/` folder. All usernames, emails, and other data displayed in screenshots are dummy test data used solely for QA and educational purposes
 
 ---
 

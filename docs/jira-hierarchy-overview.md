@@ -2,12 +2,11 @@
 
 This document illustrates the traceability structure used for the Story Spoiler QA project.
 
----
-
 ## 🔗 QA Item Relationships
 
 The following hierarchy defines how project artifacts are related in Jira:
 
+```
 📘 Requirement (Epic)
 │
 ├── 📗 Use Case (custom issue type)
@@ -20,8 +19,7 @@ The following hierarchy defines how project artifacts are related in Jira:
 │ └── ❓ Query (linked directly to use case when functionality is unclear)
 │
 └── 🔗 (All items linked in Jira through issue relationships)
-
----
+```
 
 ## 📘 Example Workflow
 
@@ -41,8 +39,13 @@ The following hierarchy defines how project artifacts are related in Jira:
    Created when a requirement or use case lacks information or clarity.  
    Queries can be linked directly to the related Use Case or Test Case.
 
----
-
 ## 🧭 Traceability Example (Simplified)
 
 Requirement → Use Case → Test Case → Bug / Query
+
+## ✅ Key Notes
+
+- This structure ensures traceability between requirements, use cases, tests, and defects.  
+- Queries represent missing or ambiguous information, not test failures.  
+- Each level provides clear visibility of test coverage.  
+- The structure is simplified for educational and portfolio purposes.
