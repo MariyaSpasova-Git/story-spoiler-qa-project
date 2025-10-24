@@ -185,6 +185,43 @@ Each test case references the corresponding **Test Data ID (TD-XX)**.
 **Value:** `DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD`
 **Note:** Above maximum length (400 characters)
 
+---
+
+### TD-45 – Valid Message
+**Value:** `Check out this amazing spoiler!`
+**Note:** No max length or format defined – assumed free text
+
+### TD-46 – Valid Email
+**Value:** `testfriend@example.com`
+
+### TD-47 – Valid Name
+**Value:** `Alex`
+**Note:** No length or character constraints defined – assumed valid text
+
+### TD-48 – Invalid Email (leading/trailing spaces)
+**Value:** `  example@email.com `
+
+### TD-49 – Invalid Email (missing username)
+**Value:** `@example.com`
+
+### TD-50 – Invalid Email (missing domain name)
+**Value:** `user@.com`
+
+### TD-51 – Invalid Email (missing host)
+**Value:** `user@example.`
+
+### TD-52 – Invalid Email (multiple '@' symbols)
+**Value:** `user@@example.com`
+
+---
+
+### TD-53 – Valid Spoiler Title
+**Value:** `Forest Story`
+
+### TD-54 – Invalid Spoiler Title (not existing)
+**Value:** `xyz123`
+
+
 ## Usage Notes
 
 * Test cases reference TD-IDs directly (e.g., **Enter TD-09** for valid email).
