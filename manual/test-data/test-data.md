@@ -197,57 +197,17 @@ Used to verify optional Picture URL field during Spoiler creation or edit.
 **Value:** `DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD`
 
 ---
-<<<<<<< HEAD
-=======
 
 ### TD-45 – Valid Message
 **Value:** `Check out this amazing spoiler!`
-**Note:** No max length or format defined – assumed free text
-
-### TD-46 – Valid Email
-**Value:** `testfriend@example.com`
-
-### TD-47 – Valid Name
-**Value:** `Alex`
-**Note:** No length or character constraints defined – assumed valid text
-
-### TD-48 – Invalid Email (leading/trailing spaces)
-**Value:** `  example@email.com `
-
-### TD-49 – Invalid Email (missing username)
-**Value:** `@example.com`
-
-### TD-50 – Invalid Email (missing domain name)
-**Value:** `user@.com`
-
-### TD-51 – Invalid Email (missing host)
-**Value:** `user@example.`
-
-### TD-52 – Invalid Email (multiple '@' symbols)
-**Value:** `user@@example.com`
-
----
-
-### TD-53 – Valid Spoiler Title
-**Value:** `Forest Story`
-
-### TD-54 – Invalid Spoiler Title (not existing)
-**Value:** `xyz123`
-
-
-## Usage Notes
->>>>>>> a6ed592dd56e708bb6967a2419e05b1d0606ee20
-
-### TD-45 – Valid Message
-**Value:** `Check out this amazing spoiler!`
-**Note:** No max length or format defined – assumed free text
+**Note:** Assumed maximum length of 100 characters
 
 ### TD-46 – Valid Email
 **Value:** `testfriend@example.com`
 
 ### TD-47 – Valid Name
 **Value:** `Alex` 
-**Note:** No length or character constraints defined – assumed valid text
+**Note:** Assumed maximum length of 70 characters
 
 ---
 
@@ -273,6 +233,17 @@ Used to verify optional Picture URL field during Spoiler creation or edit.
 
 ### TD-54 – Invalid Spoiler Title (not existing)
 **Value:** `xyz123`
+
+---
+
+### TD-55 – Invalid Message (101 characters)
+**Value:** `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM`  
+**Note:** Above maximum length (assumed maximum length of 100 characters)
+
+### TD-56 – Invalid Name (70 characters)
+**Value:** `NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`  
+**Note:** Above maximum length (assumed maximum length of 70 characters)
+
 
 ## 🔗 Linking Notes
 
