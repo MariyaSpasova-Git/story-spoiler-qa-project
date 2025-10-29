@@ -3,7 +3,7 @@
 This file contains **anonymized, reusable test data** for manual and exploratory testing.  
 Each test case references the corresponding **Test Data ID (TD-XX)** for consistency and traceability.  
 
-> ⚠️ All credentials and URLs below are dummy values for testing purposes only.
+> ⚠️ All credentials and URLs below are dummy values for testing purposes only. All spoilers, images, and related data used in the test cases are fictional or placeholder examples created solely for testing and educational purposes. No copyrighted material is distributed or stored; any URLs (e.g., example.com/testimage1.jpg) represent dummy content used to simulate real data.
 
 ---
 
