@@ -28,6 +28,10 @@ Each test case is traceable to its corresponding **Use Case** and **Requirement*
 **Expected Result:**
 All created spoilers appear with their attributes and buttons “SHARE”, “EDIT”, and “DELETE”.
 
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
 ---
 
 ## TC-SM-02 – Verify Home Page default values for new users
@@ -49,9 +53,11 @@ Home Page displays the following elements:
 - “No Spoilers Yet!” message
 - “WRITE SPOILER” button
 
+**Execution Result:** ✅ Passed
+
 ---
 
-## TC-SM-03 – Verify “WRITE SPOILER” button redirects to Create Spoiler page
+## TC-SM-03 – Verify “WRITE SPOILER” button for new users redirects to Create Spoiler page
 **Jira Test Case:** [SSQ-140](https://storyspoilerqa.atlassian.net/browse/SSQ-140)  
 **Use Case:** [UC-SM-1](../use-cases/use-cases-spoiler-management.md#uc-sm-1--view-and-manage-created-spoilers) (Jira: [SSQ-129](https://storyspoilerqa.atlassian.net/browse/SSQ-129))
 
@@ -67,6 +73,8 @@ Home Page displays the following elements:
 
 **Expected Result:**  
 User is redirected to the Create Spoiler page.
+
+**Execution Result:** ✅ Passed
 
 ---
 
@@ -91,6 +99,12 @@ The Share Spoiler page opens successfully and displays the following elements:
 - Name field with placeholder text “Add The name of your friend”
 - “SHARE” button
 
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-01](../queries/queries.md#XXX) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+
 ---
 
 ## TC-SM-05 – Verify spoiler sharing with valid data
@@ -114,7 +128,13 @@ The Share Spoiler page opens successfully and displays the following elements:
 **Expected Result:**  
 System sends the email successfully.
 
-**Note:** Assumed Message and Name fields rules (requirements not specified).
+**Note:** Assumed fields rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -139,7 +159,13 @@ System sends the email successfully.
 **Expected Result:**  
 System prevents the user from sharing the spoiler when the message exceeds 100 characters. The field enforces the character limit by restricting additional input.
 
-**Note:** Assumed Message field rules (requirements not specified).
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -164,7 +190,13 @@ System prevents the user from sharing the spoiler when the message exceeds 100 c
 **Expected Result:**  
 System prevents the user from sharing the spoiler when the name exceeds 70 characters. The field enforces the character limit by restricting additional input.
 
-**Note:** Assumed Name field rules (requirements not specified).
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -189,6 +221,14 @@ System prevents the user from sharing the spoiler when the name exceeds 70 chara
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must contain '@'.
 
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+
 ---
 
 ## TC-SM-09 – Verify validation for invalid email (missing '.')
@@ -211,6 +251,14 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must contain '.'.
+
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -235,6 +283,14 @@ The user is prevented from completing the sharing process. A clear validation me
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must contain '@' and '.'.
 
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+
 ---
 
 ## TC-SM-11 – Verify validation for invalid email (extra spaces)
@@ -257,6 +313,14 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must not contain white spaces.
+
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -281,6 +345,14 @@ The user is prevented from completing the sharing process. A clear validation me
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email field is mandatory.
 
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+
 ---
 
 ## TC-SM-13 – Verify validation for invalid email (missing username)
@@ -303,6 +375,14 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must include a username.
+
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -327,6 +407,14 @@ The user is prevented from completing the sharing process. A clear validation me
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must include a domain name between '@' and '.'.
 
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+
 ---
 
 ## TC-SM-15 – Verify validation for invalid email (missing host)
@@ -349,6 +437,14 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must end with a valid host (e.g., `.com`, `.net`).
+
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -373,6 +469,14 @@ The user is prevented from completing the sharing process. A clear validation me
 **Expected Result:**  
 The user is prevented from completing the sharing process. A clear validation message should be displayed indicating that the Email must include only one '@' symbol.
 
+**Note:** Assumed field rules (requirements not specified).
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+
+**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+
 ---
 
 ## TC-SM-17 – Verify Edit Spoiler page
@@ -391,6 +495,12 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Expected Result:**  
 The Edit Spoiler page opens successfully and displays 3 input fields and a “CREATE” button.
+
+**Execution Result:** ✅ Passed
+
+**Related Queries:** 
+- [QRY-SM-03](../queries/queries.md#XXX) (Jira: [SSQ-172](https://storyspoilerqa.atlassian.net/browse/SSQ-172))
+- [QRY-SM-04](../queries/queries.md#XXX) (Jira: [SSQ-173](https://storyspoilerqa.atlassian.net/browse/SSQ-173))
 
 ---
 
@@ -415,7 +525,11 @@ The Edit Spoiler page opens successfully and displays 3 input fields and a “CR
 **Expected Result:**  
 Spoiler is updated successfully. User is redirected to the Home Page where the updated spoiler appears.
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case passed technically during execution, but it remains blocked pending confirmation of actual field validation requirements for the Edit Spoiler page.
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -440,7 +554,11 @@ Spoiler is updated successfully. User is redirected to the Home Page where the u
 **Expected Result:**  
 Spoiler is updated successfully. User is redirected to the Home Page where the updated spoiler appears.
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case passed technically during execution, but it remains blocked pending confirmation of actual field validation requirements for the Edit Spoiler page.
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -463,7 +581,11 @@ Spoiler is updated successfully. User is redirected to the Home Page where the u
 **Expected Result:**  
 Clear and consistent validation messages are displayed for each required field: the first one (story title) and the second one (story description). The optional third field (picture URL) does not trigger error.
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case passed technically during execution, but it remains blocked pending confirmation of actual field validation requirements for the Edit Spoiler page.
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -488,7 +610,11 @@ Clear and consistent validation messages are displayed for each required field: 
 **Expected Result:**  
 System prevents the user from saving the spoiler when the title exceeds 70 characters. The field enforces the character limit by restricting additional input.
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case passed technically during execution, but it remains blocked pending confirmation of actual field validation requirements for the Edit Spoiler page.
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -513,7 +639,11 @@ System prevents the user from saving the spoiler when the title exceeds 70 chara
 **Expected Result:**  
 User cannot save the changes with a value exceeding the maximum length. The field enforces the 400-character limit by preventing additional input.
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case passed technically during execution, but it remains blocked pending confirmation of actual field validation requirements for the Edit Spoiler page.
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -538,7 +668,11 @@ User cannot save the changes with a value exceeding the maximum length. The fiel
 **Expected Result:**  
 Clear validation error message is displayed indicating that the image URL must start with `"http://"` or `"https://"`.
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case is executed successfully and marked as Passed for the Picture URL field based on existing rules inherited from the Create Spoiler page. However, as the validation rules for the remaining fields are not defined, the overall verification is considered partially blocked until the requirements for the Edit Spoiler page are clarified.
+
+**Execution Result:** ✅ Passed
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -563,7 +697,11 @@ Clear validation error message is displayed indicating that the image URL must s
 **Expected Result:**  
 Clear validation error message is displayed indicating that the picture URL must end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case is executed successfully and marked as Passed for the Picture URL field based on existing rules inherited from the Create Spoiler page. However, as the validation rules for the remaining fields are not defined, the overall verification is considered partially blocked until the requirements for the Edit Spoiler page are clarified.
+
+**Execution Result:** ✅ Passed
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -588,7 +726,11 @@ Clear validation error message is displayed indicating that the picture URL must
 **Expected Result:**  
 Clear validation error message is displayed indicating that the picture URL must end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case is executed successfully and marked as Passed for the Picture URL field based on existing rules inherited from the Create Spoiler page. However, as the validation rules for the remaining fields are not defined, the overall verification is considered partially blocked until the requirements for the Edit Spoiler page are clarified.
+
+**Execution Result:** ✅ Passed
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -613,7 +755,11 @@ Clear validation error message is displayed indicating that the picture URL must
 **Expected Result:**  
 Clear validation error message is displayed indicating that the picture URL must start with `"http://"` or `"https://"` and end with a valid image extension (e.g., `.jpg`, `.png`, `.jpeg`, `.gif`).
 
-**Note:** Assumed same field rules as Create Spoiler page (requirements not specified).
+**Note:** This test case is executed successfully and marked as Passed for the Picture URL field based on existing rules inherited from the Create Spoiler page. However, as the validation rules for the remaining fields are not defined, the overall verification is considered partially blocked until the requirements for the Edit Spoiler page are clarified.
+
+**Execution Result:** ✅ Passed
+
+**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -634,6 +780,10 @@ Clear validation error message is displayed indicating that the picture URL must
 **Expected Result:**  
 The spoiler is successfully deleted and no longer displayed on the Home Page.
 
+**Execution Result:** ✅ Passed
+
+**Related Queries:** [QRY-SM-06](../queries/queries.md#XXX) (Jira: [SSQ-175](https://storyspoilerqa.atlassian.net/browse/SSQ-175))
+
 ---
 
 ## TC-SM-28 – Verify that the search field and button are displayed on Home Page
@@ -653,9 +803,11 @@ The spoiler is successfully deleted and no longer displayed on the Home Page.
 **Expected Result:**  
 A Search field and Search button (represented by a magnifying glass) are visible on the Home Page.
 
+**Execution Result:** ✅ Passed
+
 ---
 
-## TC-SM-29 – Verify that "WRITE SPOILER" button redirects to the Create Spoiler page
+## TC-SM-29 – Verify that "WRITE SPOILER" button on the "There are no spoilers" message redirects to the Create Spoiler page
 **Jira Test Case:** [SSQ-155](https://storyspoilerqa.atlassian.net/browse/SSQ-155)  
 **Use Case:** [UC-SM-9](../use-cases/use-cases-spoiler-management.md#uc-sm-9--search-for-spoilers) (Jira: [SSQ-137](https://storyspoilerqa.atlassian.net/browse/SSQ-137))
 
@@ -673,6 +825,10 @@ A Search field and Search button (represented by a magnifying glass) are visible
 
 **Expected Result:**  
 User is redirected to the Create Spoiler page. 
+
+**Execution Result:** ⚠️ Blocked
+
+**Related Queries:** [BUG-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
 
 ---
 
@@ -694,6 +850,10 @@ User is redirected to the Create Spoiler page.
 **Expected Result:**  
 The spoiler titled TD-53 is displayed.
 
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-SM-02](../bugs/bug-report.md#XXX) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
+
 ---
 
 ## TC-SM-31 – Verify search returns no results for non-existing titles
@@ -713,3 +873,7 @@ The spoiler titled TD-53 is displayed.
 
 **Expected Result:**  
 Message “There are no spoilers :(” is displayed, and the “WRITE SPOILER” button is visible.
+
+**Execution Result:** ❌ Failed
+
+**Related Bug:** [BUG-SM-02](../bugs/bug-report.md#XXX) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))

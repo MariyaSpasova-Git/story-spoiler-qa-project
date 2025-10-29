@@ -1,9 +1,11 @@
 # Queries – Home Page
 
-This document lists all open queries identified during requirements and test case analysis.
-Each query has a unique ID (QRY-HP-XX), is linked to Jira, and references the related test case(s).
-These issues are not strictly functional bugs but require clarification and alignment with stakeholders.
+This document lists all open queries identified during requirements, use case and test case analysis. The issues are not strictly functional bugs but require clarification and alignment with stakeholders.
+This file works in parallel with [bugs/bug-report.md](../queries/bug-report.md).
+Each query has a unique ID (QRY-XX-XX), is linked to its corresponding Jira issue, GitHub test case(s), and screenshot evidence.
 Screenshots are stored in the `docs/screenshots/` folder. All usernames, emails, and other data displayed in screenshots are dummy test data used solely for QA purposes.
+
+> ⚠️ Note: Screenshots or excerpts from the original requirements document are omitted due to copyright restrictions. Related issues are described textually without reproducing protected material.
 
 ---
 
@@ -405,6 +407,264 @@ A generic and inconsistently formatted message `"Invalid url!"` appears for all 
 ![Generic Invalid Picture URL Error - Missing File Extension](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-missing-extension.png)
 ![Generic Invalid Picture URL Error - Wrong File Extension](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-wrong-extension.png)
 ![Generic Invalid Picture URL Error - Invalid URL Structure](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-invalid-structure.png)
+
+---
+
+## QRY-SM-01 – Incorrect capitalization in placeholder text in Share Spoiler page mockup
+
+* **Jira Query:** [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84)  
+* **Related Test Case:** 
+- [TC-SM-04](../test-cases/test-cases-spoiler-management.md#tc-sm-04--verify-share-spoiler-pages) (Jira: [SSQ-141](https://storyspoilerqa.atlassian.net/browse/SSQ-141))
+
+**Description:**  
+In the mockup image for the Share Spoiler page (included in the original requirements document), the Name input field shows the placeholder text `Add The name of your friend`. The word "The" appears incorrectly capitalized. It is unclear whether this capitalization error exists in the implemented UI or only in the mockup.  
+Clarification is needed to ensure text consistency and correct placeholder formatting.
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Story Spoiler Management. 
+3. Locate the mockup for the Share Spoiler page.  
+4. Observe the placeholder text in the Name field.
+
+**Expected Result:**  
+The placeholder should follow standard capitalization rules and read `Add the name of your friend`.
+
+**Actual Result:**  
+The placeholder text in the mockup reads `Add The name of your friend`.
+
+**Status:** Open  
+
+---
+
+## QRY-SM-02 – Missing field validation rules and required field specifications on Share Spoiler page
+
+* **Jira Query:** [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171)  
+* **Related Test Cases:** 
+- [TC-SM-05](../test-cases/test-cases-spoiler-management.md#tc-sm-05--verify-spoiler-sharing-with-valid-data) (Jira: [SSQ-142](https://storyspoilerqa.atlassian.net/browse/SSQ-142))
+- [TC-SM-06](../test-cases/test-cases-spoiler-management.md#tc-sm-06--verify-maximum-length-validation-for-message) (Jira link: [SSQ-168](https://storyspoilerqa.atlassian.net/browse/SSQ-168))
+- [TC-SM-07](../test-cases/test-cases-spoiler-management.md#tc-sm-07--verify-maximum-length-validation-for-name) (Jira link: [SSQ-169](https://storyspoilerqa.atlassian.net/browse/SSQ-169))
+- [TC-SM-08](../test-cases/test-cases-spoiler-management.md#tc-sm-08--verify-validation-for-invalid-email-missing-e) (Jira link: [SSQ-143](https://storyspoilerqa.atlassian.net/browse/SSQ-143))
+- [TC-SM-09](../test-cases/test-cases-spoiler-management.md#tc-sm-09--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-144](https://storyspoilerqa.atlassian.net/browse/SSQ-144))
+- [TC-SM-10](../test-cases/test-cases-spoiler-management.md#tc-sm-10--verify-validation-for-invalid-email-missing--and-) (Jira link: [SSQ-145](https://storyspoilerqa.atlassian.net/browse/SSQ-145))
+- [TC-SM-11](../test-cases/test-cases-spoiler-management.md#tc-sm-11--verify-validation-for-invalid-email-extra-spaces) (Jira link: [SSQ-146](https://storyspoilerqa.atlassian.net/browse/SSQ-146))
+- [TC-SM-12](../test-cases/test-cases-spoiler-management.md#tc-sm-12--verify-validation-for-empty-email-field) (Jira link: [SSQ-147](https://storyspoilerqa.atlassian.net/browse/SSQ-147))
+- [TC-SM-13](../test-cases/test-cases-spoiler-management.md#tc-sm-13--verify-validation-for-invalid-email-missing-username) (Jira link: [SSQ-148](https://storyspoilerqa.atlassian.net/browse/SSQ-148))
+- [TC-SM-14](../test-cases/test-cases-spoiler-management.md#tc-sm-14--verify-validation-for-invalid-email-missing-domain-name) (Jira link: [SSQ-149](https://storyspoilerqa.atlassian.net/browse/SSQ-149))
+- [TC-SM-15](../test-cases/test-cases-spoiler-management.md#tc-sm-15--verify-validation-for-invalid-email-missing-host) (Jira link: [SSQ-150](https://storyspoilerqa.atlassian.net/browse/SSQ-150))
+- [TC-SM-16](../test-cases/test-cases-spoiler-management.md#tc-sm-16--verify-validation-for-invalid-email-multiple--symbols) (Jira link: [SSQ-151](https://storyspoilerqa.atlassian.net/browse/SSQ-151))
+
+**Description:**  
+The original requirements document does not define any input validation rules, formatting constraints, or required field specifications for the Share Spoiler page.  
+It is unclear:  
+- Which fields are mandatory (e.g., Friend’s Name, Message, or other optional fields).  
+- What input formats or character limitations apply.  
+- Whether the Name field should allow only letters or certain special characters.  
+- If the Message field has a maximum character length or formatting restrictions.  
+
+Because the Share Spoiler page is currently inaccessible (see related bug [BUG-SM-01](../bugs/bug-sm-01-missing-share-button.md)), it is not possible to verify these behaviors in the implementation.
+
+Clarification is needed to define:
+- Required versus optional fields.  
+- Formatting and validation rules for each field.  
+- Expected system response and error handling behavior when validation fails.
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Story Spoiler Management. 
+3. Note that it lacks any textual description of field rules or input constraints for the Share Spoiler page.  
+4. Review the mockup — it provides no visible hints about required fields or validation messages.  
+5. Testing of this functionality is currently blocked due to the Share Spoiler page being inaccessible.
+
+**Expected Result:**  
+The original requirements document should specify for each field:  
+- Whether it is required or optional.  
+- Allowed character types, limits, and formats.  
+- Validation rules for the Name and Message fields.  
+- Expected system response for invalid input (error messages, highlights, or disabling of the “Share” button).
+
+**Actual Result:**  
+- No validation, formatting, or required field specifications are defined in the original requirements document.  
+- Mockup provides no indication of constraints or validation behavior.  
+- Functional verification is currently blocked due to the related accessibility issue.
+
+**Status:** Open
+
+---
+
+## QRY-SM-03 – Missing specification and unclear labeling behavior on Edit Spoiler page
+
+* **Jira Query:** [SSQ-172](https://storyspoilerqa.atlassian.net/browse/SSQ-172)  
+* **Related Test Case:** [TC-SM-17](../test-cases/test-cases-spoiler-management.md#tc-sm-17--verify-edit-spoiler-page) (Jira: [SSQ-152](https://storyspoilerqa.atlassian.net/browse/SSQ-152))
+
+**Description:**  
+The original requirements document does not include a textual description of the Edit Spoiler page. The mockup image also shows three input fields without any visible labels or placeholder text, making it unclear how these fields should be identified.
+
+In the implemented app:  
+- The first field appears to correspond to the spoiler title.  
+- The second field appears to be for the spoiler description.  
+- The third field appears to be the spoiler picture URL.
+- The page displays dynamic field labels that change based on the current spoiler values.  
+- For example, if a spoiler’s title is “The Hidden Ending,” the label of the first field becomes “The Hidden Ending” instead of “Title.”  
+- This behavior applies similarly to the description and picture URL fields.
+
+This makes it unclear for the user whether the text shown is the field label or the editable content, creating confusion and potential usability issues.
+
+Clarification is needed regarding:
+- Whether static labels (e.g., “Title”, “Description”, “Picture URL”) should appear next to or above the fields.  
+- Whether the existing spoiler content should populate the input fields as values rather than dynamic labels.  
+- What the intended UI layout and labeling behavior should be according to design standards.
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Story Spoiler Management. 
+3. Check the corresponding mockup for the Edit Spoiler page — it shows three unlabeled input fields.
+4. Observe that there is no text description or label specification.
+5. Open the app and attempt to edit an existing spoiler.  
+6. Observe that the labels dynamically display the current spoiler values.
+
+**Expected Result:**  
+The original requirements document should clearly specify:
+- Static and descriptive field labels (e.g., “Title”, “Description”, “Picture”).  
+- The intended display of current spoiler data (as field values, not labels).  
+- Proper visual differentiation between labels and editable content.
+
+**Actual Result:**  
+No text or label specifications in the original requirements document.  
+- Mockup lacks labeling guidance.  
+- App uses dynamic labels showing spoiler content instead of fixed field labels.
+
+**Status:** Open  
+
+---
+
+## QRY-SM-04 – Incorrect button label "CREATE" on Edit Spoiler page
+
+* **Jira Query:** [SSQ-173](https://storyspoilerqa.atlassian.net/browse/SSQ-173)  
+* **Related Test Case:** [TC-SM-17](../test-cases/test-cases-spoiler-management.md#tc-sm-17--verify-edit-spoiler-page) (Jira: [SSQ-152](https://storyspoilerqa.atlassian.net/browse/SSQ-152))
+
+**Description:**  
+On the Edit Spoiler page, the button used to confirm and save changes is labeled "CREATE".  
+This label is inconsistent with the page’s intended functionality and may confuse users, as "CREATE" typically refers to adding a new spoiler rather than updating an existing one.
+
+The mockup for the Edit Spoiler page in the original requirements document also shows the "CREATE" button.
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Story Spoiler Management. 
+3. Check the corresponding mockup for the Edit Spoiler page — it shows the "CREATE" button.
+4. Open the app and attempt to edit an existing spoiler.  
+5. Observe the button for saving the changes.
+
+**Expected Result:**  
+The button on the Edit Spoiler page should use a clear and context-appropriate label such as "UPDATE" or "SAVE", indicating that it will modify an existing spoiler.
+
+**Actual Result:**  
+The button label reads "CREATE", which implies creation of a new spoiler instead of editing an existing one.
+
+**Status:** Open  
+
+**Screenshot**
+![Incorrect CREATE label](../../docs/screenshots/screenshots-spoiler-management/qry-sm-04-incorrect-create-label.png)
+
+---
+
+## QRY-SM-05 – Missing field validation rules and required field specifications on Edit Spoiler page
+
+* **Jira Query:** [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174)  
+* **Related Test Case:** 
+- [TC-SM-18](../test-cases/test-cases-spoiler-management.md#tc-sm-18--verify-spoiler-edit-with-all-valid-fields) (Jira: [SSQ-159](https://storyspoilerqa.atlassian.net/browse/SSQ-159))
+- [TC-SM-19](../test-cases/test-cases-spoiler-management.md#tc-sm-19--verify-spoiler-edit-with-only-required-fieldss) (Jira: [SSQ-160](https://storyspoilerqa.atlassian.net/browse/SSQ-160))
+- [TC-SM-20](../test-cases/test-cases-spoiler-management.md#tc-sm-20--verify-required-fields-validation-when-all-fields-are-empty) (Jira: [SSQ-161](https://storyspoilerqa.atlassian.net/browse/SSQ-161))
+- [TC-SM-21](../test-cases/test-cases-spoiler-management.md#tc-sm-21--verify-maximum-length-validation-for-spoiler-title) (Jira: [SSQ-162](https://storyspoilerqa.atlassian.net/browse/SSQ-162))
+- [TC-SM-22](../test-cases/test-cases-spoiler-management.md#tc-sm-22--verify-maximum-length-validation-for-spoiler-description) (Jira: [SSQ-163](https://storyspoilerqa.atlassian.net/browse/SSQ-163))
+- [TC-SM-23](../test-cases/test-cases-spoiler-management.md#tc-sm-23--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-164](https://storyspoilerqa.atlassian.net/browse/SSQ-164))
+- [TC-SM-24](../test-cases/test-cases-spoiler-management.md#tc-sm-24--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-165](https://storyspoilerqa.atlassian.net/browse/SSQ-165))
+- [TC-SM-25](../test-cases/test-cases-spoiler-management.md#tc-sm-25--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-166](https://storyspoilerqa.atlassian.net/browse/SSQ-166))
+- [TC-SM-26](../test-cases/test-cases-spoiler-management.md#tc-sm-26--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-167](https://storyspoilerqa.atlassian.net/browse/SSQ-167))
+
+**Description:**  
+The original requirements document does not define any input validation rules, formatting constraints, or required field specifications for the Edit Spoiler page.  
+It is unclear:  
+- Which fields are mandatory (Title, Description, Picture URL).  
+- What input formats and character types are allowed.  
+- Whether maximum or minimum character lengths are enforced.  
+- Whether the Picture URL field should be validated for correct URL format or image extensions.
+
+The absence of this information prevents testers from creating accurate test cases for both:
+- Happy path scenarios (valid input).  
+- Validation error handling (invalid, missing, or improperly formatted input).
+
+Clarification is needed to define:
+- Required versus optional fields.  
+- Input format and validation rules for each field.  
+- Expected system behavior when validation fails (error messages, field highlights, etc.).
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Story Spoiler Management. 
+3. Observe that no text description or validation section is included for the Edit Spoiler page.  
+4. Attempt to edit a spoiler in the app and test various inputs (e.g., empty title, invalid URL).  
+5. Note that system behavior and field validation are inconsistent or undefined.
+
+**Expected Result:**  
+The original requirements document should specify for each field:
+- Whether it is required or optional.  
+- Allowed character types and limits.  
+- Specific format constraints (e.g., valid URL for picture field).
+- Expected system behavior and user feedback for invalid input.
+
+**Actual Result:**  
+- No validation or formatting rules are defined in the original requirements document.  
+- Required fields are not identified.  
+- Validation behavior is unclear or inconsistent in the implementation.
+
+**Status:** Open
+
+---
+
+## QRY-SM-06 – Missing confirmation prompt or message for spoiler deletion
+
+* **Jira Query:** [SSQ-175](https://storyspoilerqa.atlassian.net/browse/SSQ-175)  
+* **Related Test Case:** 
+- [TC-SM-27](../test-cases/test-cases-spoiler-management.md#tc-sm-27--verify-spoiler-deletion) (Jira: [SSQ-153](https://storyspoilerqa.atlassian.net/browse/SSQ-153))
+
+**Description:**  
+When a user deletes a spoiler, the deletion occurs immediately and irreversibly, without any confirmation prompt or success message.  
+
+The original requirements document does not specify whether the system should display:  
+- A confirmation dialog before deletion (e.g., “Are you sure you want to delete this spoiler?”), or  
+- A notification or success message after successful deletion.  
+
+This omission creates ambiguity about expected behavior and increases the risk of accidental data loss.  
+
+Clarification is needed to determine:  
+- Whether a confirmation step is required before deletion.  
+- Whether a success or feedback message should appear after deletion.  
+- If undo or recovery options should be supported.
+
+**Steps to Identify:**  
+1. Open the original requirements document.
+2. Navigate to the section Story Spoiler Management. 
+2. Observe that no mention is made of confirmation prompts or success notifications for the Delete Spoiler page.  
+3. Execute the delete action for a spoiler in the app.  
+4. Note that the spoiler is deleted immediately without any user confirmation or visible feedback.
+
+**Expected Result:**  
+The original requirements document should specify:  
+- Whether the system must ask for user confirmation before deleting a spoiler.  
+- What type of user feedback should appear after deletion (confirmation dialog, toast message, etc.).  
+- Whether deleted spoilers can be restored or if the action is permanent.
+
+**Actual Result:**  
+- The original requirements document provides no guidance on confirmation or feedback behavior.  
+- The app deletes spoilers immediately without any prompt or notification.  
+- This behavior may lead to accidental data loss and user confusion.
+
+**Status:** Open
+
+**Screenshots:**
+![Before Deletion](../../docs/screenshots/screenshots-spoiler-management/qry-sm-06-before-deletion.png)
+![After Deletion](../../docs/screenshots/screenshots-spoiler-management/qry-sm-06-after-deletion.png)
 
 ---
 

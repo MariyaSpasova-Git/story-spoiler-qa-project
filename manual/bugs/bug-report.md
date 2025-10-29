@@ -1,9 +1,11 @@
 # Bugs Report – Home Page
 
-This file works in parallel with [queries/queries.md](../queries/queries.md).
-It documents all identified bugs related to the Home Page requirements and use cases.
-Each bug is linked to its corresponding Jira issue, GitHub test case(s), and screenshot evidence.
+This file documents all identified bugs related to requirements, use case and test case analysis.
+It works in parallel with [queries/queries.md](../queries/queries.md).
+Each bug has a unique ID (BUG-XX-XX), is linked to its corresponding Jira issue, GitHub test case(s), and screenshot evidence.
 Screenshots are stored in the `docs/screenshots/` folder. All usernames, emails, and other data displayed in screenshots are dummy test data used solely for QA and educational purposes
+
+> ⚠️ Note: Screenshots or excerpts from the original requirements document are omitted due to copyright restrictions. Related issues are described textually without reproducing protected material.
 
 ---
 
@@ -301,3 +303,100 @@ Open
 
 ### Screenshot
 ![Edit Button Not Working](../../docs/screenshots/user-profile-management/bug-prof-01-edit-button-not-working.png)
+
+---
+
+## BUG-SM-01 – Missing "SHARE" button for created spoilers on Home Page
+
+**Jira Bug:** [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158)  
+**Related Test Cases:**  
+- [TC-SM-01](../test-cases/test-cases-spoiler-management.md#tc-sm-01--verify-spoiler-list-and-functional-buttons-on-home-page) (Jira link: [SSQ-138](https://storyspoilerqa.atlassian.net/browse/SSQ-138))
+- [TC-SM-04](../test-cases/test-cases-spoiler-management.md#tc-sm-04--verify-share-spoiler-page) (Jira link: [SSQ-141](https://storyspoilerqa.atlassian.net/browse/SSQ-141))
+- [TC-SM-05](../test-cases/test-cases-spoiler-management.md#tc-sm-05--verify-spoiler-sharing-with-valid-data) (Jira link: [SSQ-142](https://storyspoilerqa.atlassian.net/browse/SSQ-142))
+- [TC-SM-06](../test-cases/test-cases-spoiler-management.md#tc-sm-06--verify-maximum-length-validation-for-message) (Jira link: [SSQ-168](https://storyspoilerqa.atlassian.net/browse/SSQ-168))
+- [TC-SM-07](../test-cases/test-cases-spoiler-management.md#tc-sm-07--verify-maximum-length-validation-for-name) (Jira link: [SSQ-169](https://storyspoilerqa.atlassian.net/browse/SSQ-169))
+- [TC-SM-08](../test-cases/test-cases-spoiler-management.md#tc-sm-08--verify-validation-for-invalid-email-missing-e) (Jira link: [SSQ-143](https://storyspoilerqa.atlassian.net/browse/SSQ-143))
+- [TC-SM-09](../test-cases/test-cases-spoiler-management.md#tc-sm-09--verify-validation-for-invalid-email-missing-) (Jira link: [SSQ-144](https://storyspoilerqa.atlassian.net/browse/SSQ-144))
+- [TC-SM-10](../test-cases/test-cases-spoiler-management.md#tc-sm-10--verify-validation-for-invalid-email-missing--and-) (Jira link: [SSQ-145](https://storyspoilerqa.atlassian.net/browse/SSQ-145))
+- [TC-SM-11](../test-cases/test-cases-spoiler-management.md#tc-sm-11--verify-validation-for-invalid-email-extra-spaces) (Jira link: [SSQ-146](https://storyspoilerqa.atlassian.net/browse/SSQ-146))
+- [TC-SM-12](../test-cases/test-cases-spoiler-management.md#tc-sm-12--verify-validation-for-empty-email-field) (Jira link: [SSQ-147](https://storyspoilerqa.atlassian.net/browse/SSQ-147))
+- [TC-SM-13](../test-cases/test-cases-spoiler-management.md#tc-sm-13--verify-validation-for-invalid-email-missing-username) (Jira link: [SSQ-148](https://storyspoilerqa.atlassian.net/browse/SSQ-148))
+- [TC-SM-14](../test-cases/test-cases-spoiler-management.md#tc-sm-14--verify-validation-for-invalid-email-missing-domain-name) (Jira link: [SSQ-149](https://storyspoilerqa.atlassian.net/browse/SSQ-149))
+- [TC-SM-15](../test-cases/test-cases-spoiler-management.md#tc-sm-15--verify-validation-for-invalid-email-missing-host) (Jira link: [SSQ-150](https://storyspoilerqa.atlassian.net/browse/SSQ-150))
+- [TC-SM-16](../test-cases/test-cases-spoiler-management.md#tc-sm-16--verify-validation-for-invalid-email-multiple--symbols) (Jira link: [SSQ-151](https://storyspoilerqa.atlassian.net/browse/SSQ-151))
+
+### Steps to Reproduce
+1. Open the app URL.
+2. Click the "LOG IN" button in the navigation bar.  
+3. Enter valid credentials (username and password) from TD-02.
+4. Observe the list of spoilers displayed on the Home Page.
+
+### Expected Result
+Each spoiler should display the following buttons: "SHARE", "EDIT", and "DELETE".
+
+### Actual Result
+The "SHARE" button is missing for all displayed spoilers. Only "EDIT" and "DELETE" buttons are visible.
+
+### Severity
+High
+
+### Priority
+High
+
+### Status
+Open
+
+### Affected Areas
+- Home Page (Logged-in Users)  
+- Spoiler Management functionality (Edit option unavailable)
+
+### Screenshot
+![Missing SHARE Button](../../docs/screenshots/screenshots-spoiler-management/bug-sm-01-missing-share-button.png)
+
+---
+
+## BUG-SM-02 – Search functionality not working (no action on input or button click)
+
+**Jira Bug:** [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170)  
+**Related Test Cases:** 
+- [TC-SM-29](../test-cases/test-cases-spoiler-management.md#tc-sm-29--verify-that-write-spoiler-button-redirects-to-the-create-spoiler-page) (Jira link: [SSQ-155](https://storyspoilerqa.atlassian.net/browse/SSQ-155))
+- [TC-SM-30](../test-cases/test-cases-spoiler-management.md#tc-sm-30--verify-search-functionality-displays-matching-spoilers) (Jira link: [SSQ-156](https://storyspoilerqa.atlassian.net/browse/SSQ-156))
+- [TC-SM-31](../test-cases/test-cases-spoiler-management.md#tc-sm-31--verify-search-returns-no-results-for-non-existing-titles) (Jira link: [SSQ-157](https://storyspoilerqa.atlassian.net/browse/SSQ-157))
+
+### Steps to Reproduce
+1. Open the app URL.  
+2. Click the "LOG IN" button in the navigation bar.  
+3. Enter valid credentials (username and password) from TD-02.  
+4. Locate the Search field on the Home Page.  
+5. Enter any search term — either a matching or non-matching keyword.  
+6. Press Enter or click the Search button.
+
+### Expected Result
+The system should:
+- Display a list of spoilers that match the search term (for matching input).  
+- Show a "There are no spoilers :(" message (for non-matching input).  
+- Indicate that the search action has been processed (e.g., spinner or filtered list).
+
+### Actual Result
+- No action occurs after pressing Enter or clicking the Search button.  
+- The list of spoilers remains unchanged.  
+- No feedback or error message is displayed.
+
+### Severity
+High
+
+### Priority
+High
+
+### Status
+Open
+
+### Affected Areas
+- Spoiler Management (Search functionality)  
+- Home Page (Logged-in Users)  
+
+### Screenshots
+![Before - Matching Input Entered](../../docs/screenshots/spoiler-management/bug-sm-02-01-matching-input-entered.png)
+![After - No Result Matching Input](../../docs/screenshots/spoiler-management/bug-sm-02-02-no-result-matching-input.png)
+![Before - Non-Matching Input Entered](../../docs/screenshots/spoiler-management/bug-sm-02-03-non-matching-input-entered.png)
+![After - No Result Non-Matching Input](../../docs/screenshots/spoiler-management/bug-sm-02-04-no-result-non-matching-input.png)
