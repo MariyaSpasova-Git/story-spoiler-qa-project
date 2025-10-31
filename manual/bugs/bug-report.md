@@ -11,46 +11,6 @@ Screenshots are stored in the `docs/screenshots/` folder. All usernames, emails,
 
 ---
 
-## 📊 Bug Summary & Analysis
-
-| **Category**         | **Count** |
-|----------------------|-----------|
-| 🔢 **Total Bugs Found** | **9** |
-| 🧩 **Affected Features** | Home Page, User Registration, Log In, Profile Management, Spoiler Management |
-
-### 🔥 Severity Distribution
-
-| Severity | Count | Percentage |
-|-----------|-------|------------|
-| Critical  | 1     | 11% |
-| High      | 4     | 44% |
-| Medium    | 3     | 33% |
-| Low       | 1     | 11% |
-
-### ⚡ Priority Distribution
-
-| Priority | Count | Percentage |
-|-----------|-------|------------|
-| Critical  | 1     | 11% |
-| High      | 4     | 44% |
-| Medium    | 3     | 33% |
-| Low       | 1     | 11% |
-
-### 🧭 Bugs by Requirement (Feature Area)
-
-| **Feature / Requirement** | **Bug IDs** | **Total** |
-|----------------------------|--------------|-----------|
-| Home Page (non-logged-in)  | BUG-HP-01, BUG-HP-02 | 2 |
-| Registration               | BUG-REG-01, BUG-REG-02, BUG-REG-03, BUG-REG-04 | 4 |
-| Log In                     | BUG-LOG-01 | 1 |
-| Profile Management         | BUG-PROF-01 | 1 |
-| Spoiler Management         | BUG-SM-01, BUG-SM-02 | 2 |
-
-\* **Note:**  
-BUG-HP-02 affects the footer link, which is visible on all pages (logged-in and non-logged-in). However, it is logged as a single defec* since the root cause and expected fix are identical across all pages.
-
----
-
 ## 🧪 Detailed Bug List
 
 ### 🏠 Home Page

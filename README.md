@@ -1,5 +1,7 @@
 # Manual QA Project (Story Spoiler)
 
+> Comprehensive manual QA testing of the Story Spoiler web application — 106 test cases executed, 9 bugs and 22 queries logged. Full documentation includes detailed test cases, bug reports, and query tracking.
+
 ## Project Overview
 
 This repository contains all the Quality Assurance artifacts for the "Story Spoiler" web application, a platform designed for registered users to create, manage, and share short, story-based content. The project was completed as part of the QA Fundamentals and Manual Testing course at Software University and serves as a professional portfolio piece, showcasing an end-to-end QA workflow from requirements analysis and test case design through to bug logging, management, and final reporting.
@@ -20,36 +22,25 @@ The primary goal of this QA initiative is to ensure the Story Spoiler applicatio
 
 This section will be populated upon the completion of the testing cycle. It will reference the final qa-report.md and summarize the overall quality status of the Story Spoiler application, including:
 
-- **Total Test Cases Executed** (Passed/Failed/Blocked)
-
-- **Total Bugs Logged** (Categorized by Severity and Priority)
-
+- **Total Test Cases Executed:** 106.
+- **Total Bugs Logged:** 9.
+- **Total Queries Logged:** 22.
 - **Major functional or systemic issues identified**.
 
 ## Tools and Technologies
 
 - **Project Management & Bug Tracking**: Jira (Used for managing Use Cases, Test Cases, and Bug Reports.)
-
 - **Version Control**: GitHub (Used for documentation, history tracking, and integrating with Jira via Smart Commits.)
-
 - **API Testing**: Postman
-
 - **Documentation**: Markdown
-
 - **Testing Approach**: Manual Functional Testing
 
 ## Test Environment
-
 - **Application URL**: https://d3s5nxhwblsjbi.cloudfront.net/
-
 - **Component**: Specification
-
 - **Operating System**: Microsoft Windows 11 Pro (64-bit)
-
 - **Browser**: Version 140.0.7339.128 (Official Build) (64-bit)
-
 - **Jira Site**: https://storyspoilerqa.atlassian.net
-
 - **GitHub Repo**: https://github.com/MariyaSpasova-Git/story-spoiler-qa-project
 
 ## Security Note
@@ -63,19 +54,21 @@ The project structure below illustrates how artifacts are organized. This is typ
 ```
 Story-Spoiler-QA-Project/
 ├── api/
-│   ├── bugs/               # API bug reports
 │   ├── specs/              # API specifications and documentation
 │   ├── requests/           # Postman collection files for API testing
-│   └── test-cases/         # API Test Cases
+│   ├── test-cases/         # API Test Cases
+│   └── bugs/               # API bug reports
 ├── docs/
-│   └── mind-map/           # Visual aids, like mind maps or flowcharts
+│   ├── screenshots/        # Screenshots for bugs and queries
+│   └── mind-map/           # Mind map
 └── manual/
-    ├── bugs/               # Detailed manual bug reports
-    ├── qa-report/          # The final QA Summary Report
     ├── requirements/       # Detailed System Requirements
-    ├── test-cases/         # Manual Test Cases grouped by functionality
     ├── use-cases/          # Use Case documentation
-    └── test-data/          # Test data documentation
+    ├── test-cases/         # Manual Test Cases grouped by functionality
+    ├── test-data/          # Test data documentation
+    ├── queries/            # Detailed queries
+    ├── bugs/               # Detailed manual bug reports
+    └── qa-report/          # The final QA Summary Report
 ```
 ## Getting Started
 
