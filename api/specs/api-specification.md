@@ -14,7 +14,7 @@ The following endpoints are supported:
 **Method:** `POST`  
 **URL:** `/api/User/Create`  
 **Purpose:** Registers a new user account.
-**Expected Response:**
+**Expected Response (201 Created):**
 ```json
 {
     "msg": "Account created successfuly",
@@ -28,7 +28,7 @@ The following endpoints are supported:
 **Method:** `POST`  
 **URL:** `/api/User/Authentication`  
 **Purpose:** Logs in an existing user and returns an access token.
-**Expected Response:**
+**Expected Response (200 OK):**
 ```json
 {
     "username": "User1",
@@ -44,19 +44,19 @@ The following endpoints are supported:
 **Method:** `GET`  
 **URL:** `/api/Story/All`  
 **Purpose:** Lists all spoilers created by the authenticated user.
-**Expected Response:** Returns an array of spoilers in JSON format.
+**Expected Response (200 OK):** Returns an array of spoilers in JSON format.
 
 ### 4. Search Spoilers
 **Method:** `GET`  
 **URL:** `/api/Story/Search?keyword={storyTitle}`  
 **Purpose:** Searches spoilers by title keyword.
-**Expected Response:** Returns a filtered list of spoilers matching the keyword.
+**Expected Response (200 OK):** Returns a filtered list of spoilers matching the keyword.
 
 ### 4. Create Spoiler
 **Method:** `POST`  
 **URL:** `/api/Story/Create`  
 **Purpose:** Creates a new spoiler entry.
-**Expected Response:**
+**Expected Response (201 Created):**
 ```json
 {
   "msg": "Successfully created",
@@ -68,7 +68,7 @@ The following endpoints are supported:
 **Method:** `PUT`  
 **URL:** `/api/Story/Edit/{storyId}`  
 **Purpose:** Updates the title, description, or URL of an existing spoiler.
-**Expected Response:**
+**Expected Response (200 OK):**
 ```json
 {
   "msg": "Successfully edited",
@@ -80,9 +80,19 @@ The following endpoints are supported:
 **Method:** `DELETE`  
 **URL:** `/api/Story/Delete/{storyId}`  
 **Purpose:** Deletes an existing spoiler.
-**Expected Response:**
+**Expected Response (200 OK):**
 ```json
 {
   "msg": "Deleted successfully"
 }
 ```
+
+## Notes
+- The API is stateless — every operation requires a valid token.
+- All request and response examples use dummy data.
+- The image URLs point to public placeholder sources (e.g., picsum.photos).
+- Endpoints conform to RESTful design principles.
+
+*Document created as part of the Story Spoiler QA Project (API Testing Section).*  
+*Last updated: November 2025*  
+*Author: Mariya Spasova*
