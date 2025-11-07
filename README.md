@@ -1,51 +1,72 @@
 # Manual QA Project (Story Spoiler)
 
-> Comprehensive manual QA testing of the Story Spoiler web application — 106 test cases executed, 9 bugs and 22 queries logged. Full documentation includes detailed test cases, bug reports, and query tracking.
+> Comprehensive manual QA testing of the Story Spoiler demo web application — 106 test cases executed, 9 bugs, and 22 queries logged. Full documentation includes detailed test cases, bug reports, API validation, and a final QA summary.
+
+---
 
 ## Project Overview
 
-This repository contains all the Quality Assurance artifacts for the "Story Spoiler" web application, a platform designed for registered users to create, manage, and share short, story-based content. The project was completed as part of the QA Fundamentals and Manual Testing course at Software University and serves as a professional portfolio piece, showcasing an end-to-end QA workflow from requirements analysis and test case design through to bug logging, management, and final reporting.
+This repository contains all Quality Assurance artifacts for the Story Spoiler web application — a platform where registered users can create, manage, and share short, story-based content.
+
+The project was completed as part of the QA Fundamentals and Manual Testing course at Software University and serves as a professional portfolio piece, showcasing an end-to-end QA workflow — from requirements analysis and test design through to defect reporting and API testing.
+
+---
 
 ## Project Goal
 
-The primary goal of this QA initiative is to ensure the Story Spoiler application functions exactly as expected, according to the provided six core use cases. This involves:
+The primary goal of this QA initiative is to verify that the Story Spoiler application functions as intended across its six core use cases. This includes:
 
-- Developing a complete set of Test Cases for each use case.
+- Designing comprehensive test cases for each use case.  
+- Executing all test cases to validate expected behavior.  
+- Logging and documenting bugs and queries in detail.  
+- Maintaining traceability between requirements, test cases, and defects.  
+- Performing API validation through Postman requests.
 
-- Executing all Test Cases to confirm or deny expected functionality.
-
-- Detecting and documenting all identified bugs in detail.
-
-- Maintaining traceability between requirements (Use Cases), testing (Test Cases), and defects (Bug Reports).
+---
 
 ## Key Findings
 
-This section will be populated upon the completion of the testing cycle. It will reference the final qa-report.md and summarize the overall quality status of the Story Spoiler application, including:
+The completed testing cycle is summarized in the [qa-report.md](manual/qa-report/qa-report.md):
 
-- **Total Test Cases Executed:** 106.
-- **Total Bugs Logged:** 9.
-- **Total Queries Logged:** 22.
-- **Major functional or systemic issues identified**.
+- **Total Test Cases Executed:** 106  
+- **Total Bugs Logged:** 9  
+- **Total Queries Logged:** 22  
+- **API Endpoints Tested:** 5
+- **API Tests Passed:** 5
+
+Overall, the Story Spoiler application demonstrates stable core functionality with a few minor API response and UI issues identified and documented.
+
+---
 
 ## Tools and Technologies
 
-- **Project Management & Bug Tracking**: Jira (Used for managing Use Cases, Test Cases, and Bug Reports.)
-- **Version Control**: GitHub (Used for documentation, history tracking, and integrating with Jira via Smart Commits.)
-- **API Testing**: Postman
-- **Documentation**: Markdown
-- **Testing Approach**: Manual Functional Testing
+| Category | Tools |
+|-----------|--------|
+| **Project Management & Bug Tracking** | Jira |
+| **Version Control** | Git, GitHub |
+| **API Testing** | Postman |
+| **Documentation** | Markdown, Miro |
+| **Test Design & Execution** | Manual Functional and UI Testing |
+| **Development Tools** | Visual Studio Code |
+
+---
 
 ## Test Environment
-- **Application URL**: https://d3s5nxhwblsjbi.cloudfront.net/
-- **Component**: Specification
-- **Operating System**: Microsoft Windows 11 Pro (64-bit)
-- **Browser**: Version 140.0.7339.128 (Official Build) (64-bit)
-- **Jira Site**: https://storyspoilerqa.atlassian.net
-- **GitHub Repo**: https://github.com/MariyaSpasova-Git/story-spoiler-qa-project
+
+- **Application URL:** https://d3s5nxhwblsjbi.cloudfront.net/  
+- **Component:** Specification  
+- **Operating System:** Microsoft Windows 11 Pro (64-bit)  
+- **Browser:** Google Chrome 140.0.7339.128 (64-bit)  
+- **Jira Site:** https://storyspoilerqa.atlassian.net  
+- **GitHub Repo:** https://github.com/MariyaSpasova-Git/story-spoiler-qa-project  
+
+---
 
 ## Security Note
 
-For security and privacy reasons, all test usernames and passwords used during the execution process have been intentionally omitted from the test cases and bug reports in this repository. All tests were executed using a set of valid credentials that are managed separately.
+For privacy and security reasons, no real user data was used during testing. All test accounts, usernames, and passwords were dummy values created solely for this project. The images and API test data (e.g., spoiler names and descriptions) are also fictional.
+
+---
 
 ## Project Directory Structure
 
@@ -54,32 +75,48 @@ The project structure below illustrates how artifacts are organized. This is typ
 ```
 Story-Spoiler-QA-Project/
 ├── api/
-│   ├── specs/              # API specifications and documentation
-│   ├── requests/           # Postman collection files for API testing
-│   ├── test-cases/         # API Test Cases
-│   └── bugs/               # API bug reports
+│ ├── specs/
+│ │ └── api-specification.md                        # Detailed endpoint documentation
+│ ├── requests/
+│ │ ├── storyspoiler-api.postman_collection.json    # Postman collection
+│ │ ├── storyspoiler-env.postman_environment.json   # Environment variables
+│ │ └── postman-collection.md                       # Overview and test summary
+│ ├── test-cases/                                   # API test case documentation
+│ └── bugs/                                         # API-related bug reports
 ├── docs/
-│   ├── screenshots/        # Screenshots for bugs and queries
-│   └── mind-map/           # Mind map
+│ ├── screenshots/                                  # Screenshots for bugs and queries
+│ └── mind-map/                                     # Mind map of test coverage
 └── manual/
-    ├── requirements/       # Detailed System Requirements
-    ├── use-cases/          # Use Case documentation
-    ├── test-cases/         # Manual Test Cases grouped by functionality
-    ├── test-data/          # Test data documentation
-    ├── queries/            # Detailed queries
-    ├── bugs/               # Detailed manual bug reports
-    └── qa-report/          # The final QA Summary Report
+├── requirements/                                   # Functional requirements
+├── use-cases/                                      # Use case documentation
+├── test-cases/                                     # Manual test cases by feature
+├── test-data/                                      # Test data documentation
+├── queries/                                        # Queries and clarifications
+├── bugs/                                           # Manual bug reports
+└── qa-report/                                      # Final QA Summary Report
 ```
+---
+
 ## Getting Started
 
-To fully interact with the QA artifacts and project management workflow, you should follow these steps:
+To fully interact with the QA documentation and API test artifacts:
 
-- **Clone the Repository**:
-git clone https://github.com/MariyaSpasova-Git/story-spoiler-qa-project
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/MariyaSpasova-Git/story-spoiler-qa-project
 
-- **Jira Setup**: Ensure you have the Story Spoiler QA Project set up in your Jira site. Use the issue types Requirement, Use Case, Test Case, and Bug.
+2. Open in Visual Studio Code
+Browse documentation or preview Markdown files directly.
 
-- **Jira & GitHub Integration**: Verify the link between your Jira project and this GitHub repository. This allows commits containing the Jira issue key to appear directly on the Jira ticket for seamless traceability.
+3. API Testing (Optional)
+- Import the Postman collection from `/api/requests/`.
+- Import the environment file (`storyspoiler-env.postman_environment.json`).
+- Run the collection to validate the endpoints.
+
+4. Jira Integration (Optional)
+- Ensure you have the Story Spoiler QA Project set up in your Jira site.
+- Use the issue types Requirement, Use Case, Test Case, Bug, and Query.
+- Verify the link between your Jira project and this GitHub repository. This allows commits containing the Jira issue key to appear directly on the Jira ticket for seamless traceability.
 
 ## Contact
 
