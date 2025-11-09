@@ -30,7 +30,7 @@ All created spoilers appear with their attributes and buttons “SHARE”, “ED
 
 **Execution Result:** ❌ Failed
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
 ---
 
@@ -57,7 +57,7 @@ Home Page displays the following elements:
 
 ---
 
-## TC-SM-03 – Verify “WRITE SPOILER” button for new users redirects to Create Spoiler page
+## TC-SM-03 – Verify “WRITE SPOILER” button on Home Page (no spoilers) redirects to Create Spoiler page
 **Jira Test Case:** [SSQ-140](https://storyspoilerqa.atlassian.net/browse/SSQ-140)  
 **Use Case:** [UC-SM-1](../use-cases/use-cases-spoiler-management.md#uc-sm-1--view-and-manage-created-spoilers) (Jira: [SSQ-129](https://storyspoilerqa.atlassian.net/browse/SSQ-129))
 
@@ -101,9 +101,9 @@ The Share Spoiler page opens successfully and displays the following elements:
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-01](../queries/queries.md#XXX) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
+**Related Query:** [QRY-SM-01](../queries/queries.md#qry-sm-01--incorrect-capitalization-in-placeholder-text-in-share-spoiler-page-mockup) (Jira: [SSQ-84](https://storyspoilerqa.atlassian.net/browse/SSQ-84))
 
 ---
 
@@ -132,9 +132,9 @@ System sends the email successfully.
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -163,9 +163,9 @@ System prevents the user from sharing the spoiler when the message exceeds 100 c
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -194,9 +194,9 @@ System prevents the user from sharing the spoiler when the name exceeds 70 chara
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -225,9 +225,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -256,9 +256,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -287,9 +287,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -318,9 +318,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -349,9 +349,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -380,9 +380,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#) (bug-sm-01--missing-share-button-for-created-spoilers-on-home-pageJira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -411,9 +411,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -442,9 +442,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -473,9 +473,9 @@ The user is prevented from completing the sharing process. A clear validation me
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#XXX) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
+**Related Bug:** [BUG-SM-01](../bugs/bug-report.md#bug-sm-01--missing-share-button-for-created-spoilers-on-home-page) (Jira: [SSQ-158](https://storyspoilerqa.atlassian.net/browse/SSQ-158))
 
-**Related Query:** [QRY-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
+**Related Query:** [QRY-SM-02](../queries/queries.md#qry-sm-02--missing-field-validation-rules-and-required-field-specifications-on-share-spoiler-page) (Jira: [SSQ-171](https://storyspoilerqa.atlassian.net/browse/SSQ-171))
 
 ---
 
@@ -499,8 +499,8 @@ The Edit Spoiler page opens successfully and displays 3 input fields and a “CR
 **Execution Result:** ✅ Passed
 
 **Related Queries:** 
-- [QRY-SM-03](../queries/queries.md#XXX) (Jira: [SSQ-172](https://storyspoilerqa.atlassian.net/browse/SSQ-172))
-- [QRY-SM-04](../queries/queries.md#XXX) (Jira: [SSQ-173](https://storyspoilerqa.atlassian.net/browse/SSQ-173))
+- [QRY-SM-03](../queries/queries.md#qry-sm-03--missing-specification-and-unclear-labeling-behavior-on-edit-spoiler-page) (Jira: [SSQ-172](https://storyspoilerqa.atlassian.net/browse/SSQ-172))
+- [QRY-SM-04](../queries/queries.md#qry-sm-04--incorrect-button-label-create-on-edit-spoiler-page) (Jira: [SSQ-173](https://storyspoilerqa.atlassian.net/browse/SSQ-173))
 
 ---
 
@@ -529,7 +529,7 @@ Spoiler is updated successfully. User is redirected to the Home Page where the u
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -558,7 +558,7 @@ Spoiler is updated successfully. User is redirected to the Home Page where the u
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -585,7 +585,7 @@ Clear and consistent validation messages are displayed for each required field: 
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -614,7 +614,7 @@ System prevents the user from saving the spoiler when the title exceeds 70 chara
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -643,7 +643,7 @@ User cannot save the changes with a value exceeding the maximum length. The fiel
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -672,7 +672,7 @@ Clear validation error message is displayed indicating that the image URL must s
 
 **Execution Result:** ✅ Passed
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -701,7 +701,7 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Execution Result:** ✅ Passed
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -730,7 +730,7 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Execution Result:** ✅ Passed
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -759,7 +759,7 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Execution Result:** ✅ Passed
 
-**Related Queries:** [QRY-SM-05](../queries/queries.md#XXX) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
+**Related Queries:** [QRY-SM-05](../queries/queries.md#qry-sm-05--missing-field-validation-rules-and-required-field-specifications-on-edit-spoiler-page) (Jira: [SSQ-174](https://storyspoilerqa.atlassian.net/browse/SSQ-174))
 
 ---
 
@@ -782,7 +782,7 @@ The spoiler is successfully deleted and no longer displayed on the Home Page.
 
 **Execution Result:** ✅ Passed
 
-**Related Queries:** [QRY-SM-06](../queries/queries.md#XXX) (Jira: [SSQ-175](https://storyspoilerqa.atlassian.net/browse/SSQ-175))
+**Related Queries:** [QRY-SM-06](../queries/queries.md#qry-sm-06--missing-confirmation-prompt-or-message-for-spoiler-deletion) (Jira: [SSQ-175](https://storyspoilerqa.atlassian.net/browse/SSQ-175))
 
 ---
 
@@ -807,7 +807,7 @@ A Search field and Search button (represented by a magnifying glass) are visible
 
 ---
 
-## TC-SM-29 – Verify that "WRITE SPOILER" button on the "There are no spoilers" message redirects to the Create Spoiler page
+## TC-SM-29 – Verify “WRITE SPOILER” button on ‘No Search Results’ view redirects to Create Spoiler page
 **Jira Test Case:** [SSQ-155](https://storyspoilerqa.atlassian.net/browse/SSQ-155)  
 **Use Case:** [UC-SM-9](../use-cases/use-cases-spoiler-management.md#uc-sm-9--search-for-spoilers) (Jira: [SSQ-137](https://storyspoilerqa.atlassian.net/browse/SSQ-137))
 
@@ -828,7 +828,7 @@ User is redirected to the Create Spoiler page.
 
 **Execution Result:** ⚠️ Blocked
 
-**Related Queries:** [BUG-SM-02](../queries/queries.md#XXX) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
+**Related Queries:** [BUG-SM-02](../queries/queries.md#bug-sm-02--search-functionality-not-working-no-action-on-input-or-button-click) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
 
 ---
 
@@ -852,7 +852,7 @@ The spoiler titled TD-53 is displayed.
 
 **Execution Result:** ❌ Failed
 
-**Related Bug:** [BUG-SM-02](../bugs/bug-report.md#XXX) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
+**Related Bug:** [BUG-SM-02](../bugs/bug-report.md#bug-sm-02--search-functionality-not-working-no-action-on-input-or-button-click) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
 
 ---
 
@@ -876,4 +876,4 @@ Message “There are no spoilers :(” is displayed, and the “WRITE SPOILER”
 
 **Execution Result:** ❌ Failed
 
-**Related Bug:** [BUG-SM-02](../bugs/bug-report.md#XXX) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))
+**Related Bug:** [BUG-SM-02](../bugs/bug-report.md#bug-sm-02--search-functionality-not-working-no-action-on-input-or-button-click) (Jira: [SSQ-170](https://storyspoilerqa.atlassian.net/browse/SSQ-170))

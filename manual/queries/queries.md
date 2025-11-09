@@ -85,8 +85,8 @@ Error messages should follow a consistent capitalization style (e.g., "Username"
 Field names are inconsistently capitalized across error messages.
 
 ### Screenshots
-![Required Username Error](../../docs/screenshots/user-registration/qry-reg-01-required-username-error.png)
-![Taken Username Error](../../docs/screenshots/user-registration/qry-reg-01-taken-username-error.png)
+![Required Username Error](../../docs/screenshots/screenshots-user-registration/qry-reg-01-required-username-error.png)  
+![Taken Username Error](../../docs/screenshots/screenshots-user-registration/qry-reg-01-taken-username-error.png)  
 
 **Status:** Open
 
@@ -115,7 +115,7 @@ Required messages should follow a consistent format (e.g., `"<Field> is required
 Some messages start with "The", others don’t.
 
 ### Screenshot
-![Inconsistent Error Messages](../../docs/screenshots/user-registration/qry-reg-02-inconsistent-error-messages.png)
+![Inconsistent Error Messages](../../docs/screenshots/screenshots-user-registration/qry-reg-02-inconsistent-error-messages.png)
 
 **Status:** Open
 
@@ -146,8 +146,8 @@ All error messages should use consistent punctuation.
 Error messages mix exclamation marks and periods.
 
 ### Screenshots
-![Error Ending With Exclamation Mark](../../docs/screenshots/user-registration/qry-reg-03-error-ending-exclamation.png)
-![Error Ending With Period](../../docs/screenshots/user-registration/qry-reg-03-error-ending-period.png)
+![Error Ending With Exclamation Mark](../../docs/screenshots/screenshots-user-registration/qry-reg-03-error-ending-exclamation.png)  
+![Error Ending With Period](../../docs/screenshots/screenshots-user-registration/qry-reg-03-error-ending-period.png)  
 
 **Status:** Open
 
@@ -276,7 +276,7 @@ Required messages should follow a consistent format (e.g., `"<Field> is required
 One message starts with "The", the other doesn’t.
 
 ### Screenshot
-![Inconsistent Required Field Errors](../../docs/screenshots/log-in-page/qry-log-01-inconsistent-required-field-errors.png)
+![Inconsistent Required Field Errors](../../docs/screenshots/screenshots-log-in-page/qry-log-01-inconsistent-required-field-errors.png)
 
 ---
 
@@ -304,8 +304,8 @@ System should display more specific validation message (e.g., `"Invalid username
 The error message is generic. No clarification is provided on whether the issue is with the username or the password.  
 
 ### Screenshots
-![Generic Error - Invalid Username](../../docs/screenshots/log-in-page/qry-log-02-invalid-username-error.png)
-![Generic Error - Incorect Password](../../docs/screenshots/log-in-page/qry-log-02-incorrect-password-error.png)
+![Generic Error - Invalid Username](../../docs/screenshots/screenshots-log-in-page/qry-log-02-invalid-username-error.png)  
+![Generic Error - Incorect Password](../../docs/screenshots/screenshots-log-in-page/qry-log-02-incorrect-password-error.png)  
 
 ---
 
@@ -362,7 +362,7 @@ The "SHARE" button is missing.
 **Status:** Open  
 
 **Screenshot:**
-![Missing Share Button](../../docs/screenshots/spoiler-creation/qry-crsp-01-missing-share-button.png)
+![Missing Share Button](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-01-missing-share-button.png)
 
 ---
 
@@ -403,10 +403,10 @@ Example messages:
 A generic and inconsistently formatted message `"Invalid url!"` appears for all invalid URL scenarios.
 
 ### Screenshots
-![Generic Invalid Picture URL Error - Missing Protocol](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-missing-protocol.png)
-![Generic Invalid Picture URL Error - Missing File Extension](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-missing-extension.png)
-![Generic Invalid Picture URL Error - Wrong File Extension](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-wrong-extension.png)
-![Generic Invalid Picture URL Error - Invalid URL Structure](../../docs/screenshots/spoiler-creation/qry-crsp-02-invalid-picture-url-invalid-structure.png)
+![Generic Invalid Picture URL Error - Missing Protocol](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-missing-protocol.png)  
+![Generic Invalid Picture URL Error - Missing File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-missing-extension.png)  
+![Generic Invalid Picture URL Error - Wrong File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-wrong-extension.png)  
+![Generic Invalid Picture URL Error - Invalid URL Structure](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-invalid-structure.png)  
 
 ---
 
@@ -718,20 +718,20 @@ Error messages across both pages display an unnecessary bullet point ("•") bef
 
 **Screenshots:**  
 **Sign Up Page**  
-![Bullet Point Before Taken Username](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-taken-username.png)  
-![Bullet Point Before Taken Email](../../docs/screenshots/user-registration/qry-ux-01-bullet-point-taken-email.png)  
+![Bullet Point Before Taken Username](../../docs/screenshots/screenshots-user-registration/qry-ux-01-bullet-point-taken-username.png)  
+![Bullet Point Before Taken Email](../../docs/screenshots/screenshots-user-registration/qry-ux-01-bullet-point-taken-email.png)  
 
 **Log In Page**  
-![Bullet Point Before Unable Sign In - Empty Fields](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-login-empty-fields.png)  
-![Bullet Point Before Unable Sign In - Invalid Username](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-login-invalid-username.png)  
-![Bullet Point Before Unable Sign In - Incorrect Password](../../docs/screenshots/log-in-page/qry-ux-01-bullet-point-login-incorrect-password.png)
+![Bullet Point Before Unable Sign In - Empty Fields](../../docs/screenshots/screenshots-log-in-page/qry-ux-01-bullet-point-login-empty-fields.png)  
+![Bullet Point Before Unable Sign In - Invalid Username](../../docs/screenshots/screenshots-log-in-page/qry-ux-01-bullet-point-login-invalid-username.png)  
+![Bullet Point Before Unable Sign In - Incorrect Password](../../docs/screenshots/screenshots-log-in-page/qry-ux-01-bullet-point-login-incorrect-password.png)  
 
 **Create Spoiler Page**  
-![Bullet Point Before Unable To Add Spoiler - Empty Fields](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-add-spoiler-empty-fields.png)
-![Bullet Point Before Invalid Picture URL - Missing Protocol](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-add-spoiler-missing-protocol.png) 
-![Bullet Point Before Invalid Picture URL - Missing File Extension](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-add-spoiler-missing-extension.png)
-![Bullet Point Before Invalid Picture URL - Wrong File Extension](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-add-spoiler-wrong-extension.png)
-![Bullet Point Before Invalid Picture URL - Invalid URL Structure](../../docs/screenshots/spoiler-creation/qry-ux-01-bullet-point-add-spoiler-invalid-url-structure.png) 
+![Bullet Point Before Unable To Add Spoiler - Empty Fields](../../docs/screenshots/screenshots-spoiler-creation/qry-ux-01-bullet-point-add-spoiler-empty-fields.png)  
+![Bullet Point Before Invalid Picture URL - Missing Protocol](../../docs/screenshots/screenshots-spoiler-creation/qry-ux-01-bullet-point-add-spoiler-missing-protocol.png)  
+![Bullet Point Before Invalid Picture URL - Missing File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-ux-01-bullet-point-add-spoiler-missing-extension.png)  
+![Bullet Point Before Invalid Picture URL - Wrong File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-ux-01-bullet-point-add-spoiler-wrong-extension.png)  
+![Bullet Point Before Invalid Picture URL - Invalid URL Structure](../../docs/screenshots/screenshots-spoiler-creation/qry-ux-01-bullet-point-add-spoiler-invalid-url-structure.png)  
 
 **Status:** Open
 

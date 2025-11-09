@@ -56,7 +56,7 @@ Spoiler is created successfully. User is redirected to the Home Page where the n
 Button presence is verified in a separate query.
 
 **Related Query:** 
-- [QRY-CRSP-01](../queries/queries.md#XXXXX) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
+- [QRY-CRSP-01](../queries/queries.md#qry-crsp-01--missing-share-button-on-newly-created-spoilers) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
 
 ---
 
@@ -84,7 +84,7 @@ Spoiler is created successfully. User is redirected to the Home Page where the n
 **Execution Result:** ✅ Passed
 
 **Related Query:** 
-- [QRY-CRSP-01](../queries/queries.md#XXXXX) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
+- [QRY-CRSP-01](../queries/queries.md#qry-crsp-01--missing-share-button-on-newly-created-spoilers) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
 
 ---
 
@@ -181,7 +181,7 @@ Clear validation error message is displayed indicating that the image URL must s
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
@@ -208,7 +208,7 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
@@ -235,7 +235,7 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
@@ -262,4 +262,4 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#XXXX) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))

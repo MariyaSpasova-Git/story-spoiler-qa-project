@@ -37,7 +37,7 @@ The section should display:
 The picture is not displayed. Instead, the alt text `"uploading spoiler story picture"` appears.
 
 **Screenshot:**  
-![Missing Picture](../../docs/screenshots/home-page/bug-hp-01-missing-picture.png)
+![Missing Picture](../../docs/screenshots/screenshots-home-page/bug-hp-01-missing-picture.png)
 
 ---
 
@@ -93,7 +93,7 @@ A clear validation error message is displayed that specifies the correct email f
 The validation error message only mentions the `"@"` requirement but does not specify the missing `"."`.
 
 **Screenshot:**  
-![Incorrect Email Validation Error](../../docs/screenshots/user-registration/bug-reg-01-incorrect-email-validation-error.png)
+![Incorrect Email Validation Error](../../docs/screenshots/screenshots-user-registration/bug-reg-01-incorrect-email-error.png)
 
 ---
 
@@ -119,8 +119,8 @@ The user should not be able to complete the sign-up process. A clear validation 
 The user is successfully registered with an invalid email address. No error message is displayed.
 
 **Screenshots:**  
-![Form Before Submit](../../docs/screenshots/user-registration/bug-reg-02-form-before-submit.png)  
-![Successful Login After Registration](../../docs/screenshots/user-registration/bug-reg-02-successful-login-after-registration.png)
+![Form Before Submit](../../docs/screenshots/screenshots-user-registration/bug-reg-02-01-form-before-submit.png)  
+![Successful Login After Registration](../../docs/screenshots/screenshots-user-registration/bug-reg-02-02-successful-login.png)
 
 ---
 
@@ -146,8 +146,8 @@ The user should not be able to create an account with a middle name shorter than
 The user is able to create an account with a 1-character middle name. No error message is displayed.
 
 **Screenshots:**  
-![Form Before Submit](../../docs/screenshots/user-registration/bug-reg-03-form-before-submit.png)  
-![Successful Login After Registration](../../docs/screenshots/user-registration/bug-reg-03-successful-login-after-registration.png)
+![Form Before Submit](../../docs/screenshots/screenshots-user-registration/bug-reg-03-01-form-before-submit.png)  
+![Successful Login After Registration](../../docs/screenshots/screenshots-user-registration/bug-reg-03-02-successful-login.png)
 
 ---
 
@@ -227,7 +227,7 @@ The user is redirected to the Edit Profile Info page.
 The “EDIT” button does not perform any action. The user remains on the My Profile page; the Edit Profile Info page is not accessible.
 
 **Screenshot:**  
-![Edit Button Not Working](../../docs/screenshots/screenshots-user-profile-management/bug-prof-01-edit-button-not-working.png)
+![Edit Button Not Working](../../docs/screenshots/screenshots-profile-management/bug-prof-01-edit-button-not-working.png)
 
 ---
 
@@ -286,18 +286,18 @@ The system should:
 - No feedback or error message is displayed.
 
 **Screenshots:**  
-![Before - Matching Input Entered](../../docs/screenshots/spoiler-management/bug-sm-02-01-matching-input-entered.png)  
-![After - No Result Matching Input](../../docs/screenshots/spoiler-management/bug-sm-02-02-no-result-matching-input.png)  
-![Before - Non-Matching Input Entered](../../docs/screenshots/spoiler-management/bug-sm-02-03-non-matching-input-entered.png)  
-![After - No Result Non-Matching Input](../../docs/screenshots/spoiler-management/bug-sm-02-04-no-result-non-matching-input.png)
+![Before - Matching Input Entered](../../docs/screenshots/screenshots-spoiler-management/bug-sm-02-01-matching-input-entered.png)  
+![After - No Result Matching Input](../../docs/screenshots/screenshots-spoiler-management/bug-sm-02-02-no-result-matching-input.png)  
+![Before - Non-Matching Input Entered](../../docs/screenshots/screenshots-spoiler-management/bug-sm-02-03-non-matching-input-entered.png)  
+![After - No Result Non-Matching Input](../../docs/screenshots/screenshots-spoiler-management/bug-sm-02-04-no-result-non-matching-input.png)
 
 ---
 
 ## 🧾 Summary
 
-✅ **9 total bugs logged** across **5 functional areas**.  
-💡 The **Registration module** has the highest defect count (4), primarily validation-related.  
-🔥 **Search and Edit Profile** bugs are considered **high priority**, as they impact key user actions.  
+✅ 9 total bugs logged across 5 functional areas.  
+💡 The Registration module has the highest defect count (4), primarily validation-related.  
+🔥 Search and Edit Profile bugs are considered high priority, as they impact key user actions.  
 
 ---
 

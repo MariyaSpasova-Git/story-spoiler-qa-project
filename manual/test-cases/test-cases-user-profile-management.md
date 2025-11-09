@@ -73,8 +73,6 @@ User is redirected to the Edit Profile Info page.
 
 **Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
-**Related Query:** [QRY-UX-02](../queries/queries.md#qry-ux-02--inconsistent-add-button-label-across-multiple-pages) (Jira: [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61))
-
 ---
 
 ## TC-PROF-04 – Verify Edit Profile Info page
@@ -104,7 +102,9 @@ The Edit Profile Info page displays the following elements:
 
 **Related Bug:** [BUG-PROF-01](../bugs/bug-report.md#bug-prof-01--edit-button-does-not-open-the-edit-profile-info-page) (Jira: [SSQ-99](https://storyspoilerqa.atlassian.net/browse/SSQ-99))
 
-**Related Query:** [QRY-UX-02](../queries/queries.md#qry-ux-02--inconsistent-add-button-label-across-multiple-pages) (Jira: [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61))
+**Related Queries:** 
+- [QRY-UX-02](../queries/queries.md#qry-ux-02--inconsistent-add-button-label-across-multiple-pages) (Jira: [SSQ-61](https://storyspoilerqa.atlassian.net/browse/SSQ-61))
+- [QRY-PROF-01](../queries/queries.md#qry-prof-01--inconsistent-field-labels-between-text-and-mockup-in-the-requirements-document) (Jira: [SSQ-62](https://storyspoilerqa.atlassian.net/browse/SSQ-62))
 
 **Note:** This functionality should be re-tested once the Edit Profile Info page becomes available.
 
