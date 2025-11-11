@@ -7,9 +7,9 @@ Each test case is traceable to its corresponding **Use Case** and **Requirement*
 
 ---
 
-## TC-CRSP-01 – Verify Create Spoiler page
+## TC-SC-01 – Verify Create Spoiler page
 **Jira Test Case:** [SSQ-118](https://storyspoilerqa.atlassian.net/browse/SSQ-118)  
-**Use Case:** [UC-CRSP-1](../use-cases/use-cases-spoiler-creation.md#uc-crsp-1--access-create-spoiler-page) (Jira: [SSQ-115](https://storyspoilerqa.atlassian.net/browse/SSQ-115))
+**Use Case:** [UC-SC-1](../use-cases/use-cases-spoiler-creation.md#uc-sc-1--access-create-spoiler-page) (Jira: [SSQ-115](https://storyspoilerqa.atlassian.net/browse/SSQ-115))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -31,9 +31,9 @@ The Create Spoiler page displays the following elements:
 
 ---
 
-## TC-CRSP-02 – Verify spoiler creation with all valid fields
+## TC-SC-02 – Verify spoiler creation with all valid fields
 **Jira Test Case:** [SSQ-119](https://storyspoilerqa.atlassian.net/browse/SSQ-119)  
-**Use Case:** [UC-CRSP-2](../use-cases/use-cases-spoiler-creation.md#uc-crsp-2--create-new-spoiler) (Jira: [SSQ-116](https://storyspoilerqa.atlassian.net/browse/SSQ-116))
+**Use Case:** [UC-SC-2](../use-cases/use-cases-spoiler-creation.md#uc-sc-2--create-new-spoiler) (Jira: [SSQ-116](https://storyspoilerqa.atlassian.net/browse/SSQ-116))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -56,13 +56,13 @@ Spoiler is created successfully. User is redirected to the Home Page where the n
 Button presence is verified in a separate query.
 
 **Related Query:** 
-- [QRY-CRSP-01](../queries/queries.md#qry-crsp-01--missing-share-button-on-newly-created-spoilers) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
+- [QRY-SC-01](../queries/queries.md#qry-sc-01--missing-share-button-on-newly-created-spoilers) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
 
 ---
 
-## TC-CRSP-03 – Verify spoiler creation with only required fields
+## TC-SC-03 – Verify spoiler creation with only required fields
 **Jira Test Case:** [SSQ-120](https://storyspoilerqa.atlassian.net/browse/SSQ-120)  
-**Use Case:** [UC-CRSP-2](../use-cases/use-cases-spoiler-creation.md#uc-crsp-2--create-new-spoiler) (Jira: [SSQ-116](https://storyspoilerqa.atlassian.net/browse/SSQ-116))
+**Use Case:** [UC-SC-2](../use-cases/use-cases-spoiler-creation.md#uc-sc-2--create-new-spoiler) (Jira: [SSQ-116](https://storyspoilerqa.atlassian.net/browse/SSQ-116))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -79,18 +79,18 @@ Button presence is verified in a separate query.
 **Expected Result:**  
 Spoiler is created successfully. User is redirected to the Home Page where the newly created spoiler appears with its attributes (title, description, empty spoiler picture placeholder, username, date) and buttons (“SHARE”, “EDIT”, and “DELETE”).
 
-**Note:** Presence of the action buttons (“SHARE” / “EDIT” / “DELETE”) on the created spoiler is tracked separately in query [QRY-CRSP-01 – Missing "SHARE" button on newly created spoilers](https://storyspoilerqa.atlassian.net/browse/SSQ-67). This test verifies creation + attribute visibility; button functionality will be covered under the Spoiler Management requirement.
+**Note:** Presence of the action buttons (“SHARE” / “EDIT” / “DELETE”) on the created spoiler is tracked separately in query [QRY-SC-01 – Missing "SHARE" button on newly created spoilers](https://storyspoilerqa.atlassian.net/browse/SSQ-67). This test verifies creation + attribute visibility; button functionality will be covered under the Spoiler Management requirement.
 
 **Execution Result:** ✅ Passed
 
 **Related Query:** 
-- [QRY-CRSP-01](../queries/queries.md#qry-crsp-01--missing-share-button-on-newly-created-spoilers) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
+- [QRY-SC-01](../queries/queries.md#qry-sc-01--missing-share-button-on-newly-created-spoilers) (Jira: [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67))
 
 ---
 
-## TC-CRSP-04 – Verify required fields validation when all fields are empty
+## TC-SC-04 – Verify required fields validation when all fields are empty
 **Jira Test Case:** [SSQ-121](https://storyspoilerqa.atlassian.net/browse/SSQ-121)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -112,9 +112,9 @@ Clear and consistent validation messages are displayed for each required field (
 
 ---
 
-## TC-CRSP-05 – Verify maximum length validation for spoiler title
+## TC-SC-05 – Verify maximum length validation for spoiler title
 **Jira Test Case:** [SSQ-122](https://storyspoilerqa.atlassian.net/browse/SSQ-122)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -135,9 +135,9 @@ User cannot complete the creation process with a value exceeding the maximum len
 
 ---
 
-## TC-CRSP-06 – Verify maximum length validation for spoiler description
+## TC-SC-06 – Verify maximum length validation for spoiler description
 **Jira Test Case:** [SSQ-123](https://storyspoilerqa.atlassian.net/browse/SSQ-123)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -158,9 +158,9 @@ User cannot complete the creation process with a value exceeding the maximum len
 
 ---
 
-## TC-CRSP-07 – Verify validation for spoiler picture field with invalid URL (missing protocol)
+## TC-SC-07 – Verify validation for spoiler picture field with invalid URL (missing protocol)
 **Jira Test Case:** [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -181,13 +181,13 @@ Clear validation error message is displayed indicating that the image URL must s
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-SC-02](../queries/queries.md#qry-sc-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
-## TC-CRSP-08 – Verify validation for spoiler picture field with invalid URL (missing file extension)
+## TC-SC-08 – Verify validation for spoiler picture field with invalid URL (missing file extension)
 **Jira Test Case:** [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -208,13 +208,13 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-SC-02](../queries/queries.md#qry-sc-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
-## TC-CRSP-09 – Verify validation for spoiler picture field with invalid URL (wrong extension)
+## TC-SC-09 – Verify validation for spoiler picture field with invalid URL (wrong extension)
 **Jira Test Case:** [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -235,13 +235,13 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-SC-02](../queries/queries.md#qry-sc-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
 
 ---
 
-## TC-CRSP-10 – Verify validation for spoiler picture field with invalid URL (invalid URL structure)
+## TC-SC-10 – Verify validation for spoiler picture field with invalid URL (invalid URL structure)
 **Jira Test Case:** [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127)  
-**Use Case:** [UC-CRSP-3](../use-cases/use-cases-spoiler-creation.md#uc-crsp-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
+**Use Case:** [UC-SC-3](../use-cases/use-cases-spoiler-creation.md#uc-sc-3--validation-errors-during-spoiler-creation) (Jira: [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117))
 
 **Prerequisites:** TD-02: Valid user account.
 
@@ -262,4 +262,4 @@ Clear validation error message is displayed indicating that the picture URL must
 
 **Related Queryies:** 
 - [QRY-UX-01](../queries/queries.md#qry-ux-01--extra-bullet-point-before-error-messages-across-multiple-forms) (Jira: [SSQ-60](https://storyspoilerqa.atlassian.net/browse/SSQ-60))
-- [QRY-CRSP-02](../queries/queries.md#qry-crsp-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))
+- [QRY-SC-02](../queries/queries.md#qry-sc-02--generic-and-improperly-formatted-validation-message-for-invalid-picture-url) (Jira: [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94))

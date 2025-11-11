@@ -2,7 +2,7 @@
 
 **Requirement Link:** [SSQ-88 – User Profile Management](https://storyspoilerqa.atlassian.net/browse/SSQ-88)  
 
-This file documents the 7 test cases for the **Profile Management** feature.  
+This file documents the 17 test cases for the **Profile Management** feature.  
 Each test case is traceable to its corresponding **Use Case** and **Requirement** in Jira.  
 
 ---

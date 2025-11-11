@@ -4,7 +4,7 @@
 
 ---
 
-## UC-CRSP-1 – Access Create Spoiler Page
+## UC-SC-1 – Access Create Spoiler Page
 **Jira Use Case:** [SSQ-115](https://storyspoilerqa.atlassian.net/browse/SSQ-115)
 
 ### Description
@@ -22,7 +22,7 @@ Create Spoiler page displays Story title, Describe your story spoiler, Add a pic
 
 ---
 
-## UC-CRSP-2 – Create New Spoiler
+## UC-SC-2 – Create New Spoiler
 **Jira Use Case:** [SSQ-116](https://storyspoilerqa.atlassian.net/browse/SSQ-116)
 
 ### Description
@@ -43,7 +43,7 @@ Spoiler is created successfully. User is redirected to the Home Page, where the 
 
 ---
 
-## UC-CRSP-3 – Validation Errors During Spoiler Creation
+## UC-SC-3 – Validation Errors During Spoiler Creation
 **Jira Use Case:** [SSQ-117](https://storyspoilerqa.atlassian.net/browse/SSQ-117)
 
 ### Description

@@ -90,3 +90,23 @@ The application should show appropriate error messages if the Home Page cannot l
 
 ### Expected Outcome
 The system displays a browser error message or application-specific failure message (e.g., “This site cannot be reached”).
+
+---
+
+## UC-HP-5 – Log Out
+**Jira Use Case:** [SSQ-176](https://storyspoilerqa.atlassian.net/browse/SSQ-176)
+
+### Description
+This use case describes how a logged-in user logs out of the Story Spoiler web application, ending their active session and returning to the non-logged-in state.
+
+### Preconditions
+- User is logged in.
+
+### Main Flow
+1. User clicks the “LOG OUT” button in the navigation bar.
+2. System processes the logout request.
+3. System terminates the active session for the user.
+4. System redirects the user to the Home Page for non-logged-in users.
+
+### Expected Outcome
+The user is logged out. The session token is invalidated. The Home Page for non-logged-in users is displayed. The navigation bar now displays “LOG IN” instead of “LOG OUT”, and authenticated options are hidden.

@@ -1,6 +1,6 @@
 # Manual QA Project (Story Spoiler)
 
-> Comprehensive manual QA testing of the Story Spoiler demo web application — 106 test cases executed, 9 bugs, and 22 queries logged. Full documentation includes detailed test cases, bug reports, API validation, and a final QA summary.
+> Comprehensive manual QA testing of the Story Spoiler demo web application — 107 test cases executed, 9 bugs, and 22 queries logged. Full documentation includes detailed test cases, bug reports, API validation, and a final QA summary.
 
 ---
 
@@ -28,13 +28,26 @@ The primary goal of this QA initiative is to verify that the Story Spoiler appli
 
 The completed testing cycle is summarized in the [qa-report.md](manual/qa-report/qa-report.md):
 
-- **Total Test Cases Executed:** 106  
+- **Total Test Cases Executed:** 107  
 - **Total Bugs Logged:** 9  
 - **Total Queries Logged:** 22  
 - **API Endpoints Tested:** 5
 - **API Tests Passed:** 5
 
 Overall, the Story Spoiler application demonstrates stable core functionality with a few minor API response and UI issues identified and documented.
+
+---
+
+### QA Results Summary
+
+| Metric | Result |
+|--------|--------|
+| **Total Test Cases** | 107 |
+| **Passed** | 71 (66%) |
+| **Failed** | 6 (6%) |
+| **Blocked** | 30 (28%) |
+| **Bugs Logged** | 9 |
+| **Defect Density** | 0.20 |
 
 ---
 
@@ -45,7 +58,7 @@ Overall, the Story Spoiler application demonstrates stable core functionality wi
 | **Project Management & Bug Tracking** | Jira |
 | **Version Control** | Git, GitHub |
 | **API Testing** | Postman |
-| **Documentation** | Markdown, Miro |
+| **Documentation** | Markdown, Canva |
 | **Test Design & Execution** | Manual Functional and UI Testing |
 | **Development Tools** | Visual Studio Code |
 
@@ -85,7 +98,7 @@ Story-Spoiler-QA-Project/
 │ └── bugs/                                         # API-related bug reports
 ├── docs/
 │ ├── screenshots/                                  # Screenshots for bugs and queries
-│ └── mind-map/                                     # Mind map of test coverage
+│ └── mind-map/                                     # Mind map
 └── manual/
 ├── requirements/                                   # Functional requirements
 ├── use-cases/                                      # Use case documentation

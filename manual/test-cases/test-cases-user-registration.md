@@ -2,7 +2,7 @@
 
 **Requirement Link:** [SSQ-29 – User Registration](https://storyspoilerqa.atlassian.net/browse/SSQ-29)  
 
-This file documents the 22 test cases for the **Use Registration** feature.  
+This file documents the 23 test cases for the **Use Registration** feature.  
 Each test case is traceable to its corresponding **Use Case** and **Requirement** in Jira.  
 
 ---

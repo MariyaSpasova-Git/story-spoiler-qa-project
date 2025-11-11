@@ -276,7 +276,7 @@ Required messages should follow a consistent format (e.g., `"<Field> is required
 One message starts with "The", the other doesn’t.
 
 ### Screenshot
-![Inconsistent Required Field Errors](../../docs/screenshots/screenshots-log-in-page/qry-log-01-inconsistent-required-field-errors.png)
+![Inconsistent Required Field Errors](../../docs/screenshots/screenshots-login-page/qry-log-01-inconsistent-required-field-errors.png)
 
 ---
 
@@ -304,8 +304,8 @@ System should display more specific validation message (e.g., `"Invalid username
 The error message is generic. No clarification is provided on whether the issue is with the username or the password.  
 
 ### Screenshots
-![Generic Error - Invalid Username](../../docs/screenshots/screenshots-log-in-page/qry-log-02-invalid-username-error.png)  
-![Generic Error - Incorect Password](../../docs/screenshots/screenshots-log-in-page/qry-log-02-incorrect-password-error.png)  
+![Generic Error - Invalid Username](../../docs/screenshots/screenshots-login-page/qry-log-02-invalid-username-error.png)  
+![Generic Error - Incorect Password](../../docs/screenshots/screenshots-login-page/qry-log-02-incorrect-password-error.png)  
 
 ---
 
@@ -336,11 +336,11 @@ Field labels differ between the text and mockup image.
 
 ---
 
-## QRY-CRSP-01 – Missing "SHARE" button on newly created spoilers
+## QRY-SC-01 – Missing "SHARE" button on newly created spoilers
 
 * **Jira Query:** [SSQ-67](https://storyspoilerqa.atlassian.net/browse/SSQ-67)  
 * **Related Test Cases:** 
-- [TC-CRSP-02](../test-cases/test-cases-spoiler-creation.md#tc-crsp-02--verify-spoiler-creation-with-all-valid-fields) (Jira: [SSQ-119](https://storyspoilerqa.atlassian.net/browse/SSQ-119))
+- [TC-SC-02](../test-cases/test-cases-spoiler-creation.md#tc-sc-02--verify-spoiler-creation-with-all-valid-fields) (Jira: [SSQ-119](https://storyspoilerqa.atlassian.net/browse/SSQ-119))
 
 **Description:**  
 According to the original requirements document, the newly created spoiler should display "SHARE", "EDIT", and "DELETE" buttons on the Home page after creation. However, the current implementations show only "EDIT" and "DELETE" buttons.
@@ -362,18 +362,18 @@ The "SHARE" button is missing.
 **Status:** Open  
 
 **Screenshot:**
-![Missing Share Button](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-01-missing-share-button.png)
+![Missing Share Button](../../docs/screenshots/screenshots-spoiler-creation/qry-sc-01-missing-share-button.png)
 
 ---
 
-## QRY-CRSP-02 – Generic and improperly formatted validation message for invalid picture URL
+## QRY-SC-02 – Generic and improperly formatted validation message for invalid picture URL
 
 * **Jira Query:** [SSQ-94](https://storyspoilerqa.atlassian.net/browse/SSQ-94)
 * **Related Test Cases:**
-- [TC-CRSP-07](../test-cases/test-cases-spoiler-creation.md#tc-crsp-07--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124))
-- [TC-CRSP-08](../test-cases/test-cases-spoiler-creation.md#tc-crsp-08--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125))
-- [TC-CRSP-09](../test-cases/test-cases-spoiler-creation.md#tc-crsp-09--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126))
-- [TC-CRSP-10](../test-cases/test-cases-spoiler-creation.md#tc-crsp-10--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127))
+- [TC-SC-07](../test-cases/test-cases-spoiler-creation.md#tc-sc-07--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124))
+- [TC-SC-08](../test-cases/test-cases-spoiler-creation.md#tc-sc-08--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125))
+- [TC-SC-09](../test-cases/test-cases-spoiler-creation.md#tc-sc-09--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126))
+- [TC-SC-10](../test-cases/test-cases-spoiler-creation.md#tc-sc-10--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127))
 
 **Description:**  
 When entering an invalid Picture URL in the Create Spoiler form, the system displays a generic error message `"Invalid url!"` regardless of the specific issue (invalid structure, missing protocol, missing or wrong file extension).  
@@ -403,10 +403,10 @@ Example messages:
 A generic and inconsistently formatted message `"Invalid url!"` appears for all invalid URL scenarios.
 
 ### Screenshots
-![Generic Invalid Picture URL Error - Missing Protocol](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-missing-protocol.png)  
-![Generic Invalid Picture URL Error - Missing File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-missing-extension.png)  
-![Generic Invalid Picture URL Error - Wrong File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-wrong-extension.png)  
-![Generic Invalid Picture URL Error - Invalid URL Structure](../../docs/screenshots/screenshots-spoiler-creation/qry-crsp-02-invalid-picture-url-invalid-structure.png)  
+![Generic Invalid Picture URL Error - Missing Protocol](../../docs/screenshots/screenshots-spoiler-creation/qry-sc-02-invalid-picture-url-missing-protocol.png)  
+![Generic Invalid Picture URL Error - Missing File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-sc-02-invalid-picture-url-missing-extension.png)  
+![Generic Invalid Picture URL Error - Wrong File Extension](../../docs/screenshots/screenshots-spoiler-creation/qry-sc-02-invalid-picture-url-wrong-extension.png)  
+![Generic Invalid Picture URL Error - Invalid URL Structure](../../docs/screenshots/screenshots-spoiler-creation/qry-sc-02-invalid-picture-url-invalid-structure.png)  
 
 ---
 
@@ -678,11 +678,11 @@ The original requirements document should specify:
 - [TC-LOG-03](../test-cases/test-cases-log-in-page.md#tc-log-03--verify-validation-for-required-fields) (Jira: [SSQ-79](https://storyspoilerqa.atlassian.net/browse/SSQ-79))
 - [TC-LOG-04](../test-cases/test-cases-log-in-page.md#tc-log-04--verify-validation-for-invalid-username) (Jira: [SSQ-80](https://storyspoilerqa.atlassian.net/browse/SSQ-80))
 - [TC-LOG-05](../test-cases/test-cases-log-in-page.md#tc-log-05--verify-validation-for-invalid-password) (Jira: [SSQ-81](https://storyspoilerqa.atlassian.net/browse/SSQ-81))
-- [TC-CRSP-04](../test-cases/test-cases-spoiler-creation.md#tc-crsp-04--verify-required-fields-validation-when-all-fields-are-empty) (Jira: [SSQ-121](https://storyspoilerqa.atlassian.net/browse/SSQ-121))
-- [TC-CRSP-07](../test-cases/test-cases-spoiler-creation.md#tc-crsp-07--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124))
-- [TC-CRSP-08](../test-cases/test-cases-spoiler-creation.md#tc-crsp-08--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125))
-- [TC-CRSP-09](../test-cases/test-cases-spoiler-creation.md#tc-crsp-09--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126))
-- [TC-CRSP-10](../test-cases/test-cases-spoiler-creation.md#tc-crsp-10--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127))
+- [TC-SC-04](../test-cases/test-cases-spoiler-creation.md#tc-sc-04--verify-required-fields-validation-when-all-fields-are-empty) (Jira: [SSQ-121](https://storyspoilerqa.atlassian.net/browse/SSQ-121))
+- [TC-SC-07](../test-cases/test-cases-spoiler-creation.md#tc-sc-07--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-protocol) (Jira: [SSQ-124](https://storyspoilerqa.atlassian.net/browse/SSQ-124))
+- [TC-SC-08](../test-cases/test-cases-spoiler-creation.md#tc-sc-08--verify-validation-for-spoiler-picture-field-with-invalid-url-missing-file-extension) (Jira: [SSQ-125](https://storyspoilerqa.atlassian.net/browse/SSQ-125))
+- [TC-SC-09](../test-cases/test-cases-spoiler-creation.md#tc-sc-09--verify-validation-for-spoiler-picture-field-with-invalid-url-wrong-extension) (Jira: [SSQ-126](https://storyspoilerqa.atlassian.net/browse/SSQ-126))
+- [TC-SC-10](../test-cases/test-cases-spoiler-creation.md#tc-sc-10--verify-validation-for-spoiler-picture-field-with-invalid-url-invalid-url-structure) (Jira: [SSQ-127](https://storyspoilerqa.atlassian.net/browse/SSQ-127))
 
 **Description:**  
 An unnecessary bullet point ("•") appears before validation error messages across multiple pages, including the Sign Up, Log In and Create Spoiler forms.
@@ -722,9 +722,9 @@ Error messages across both pages display an unnecessary bullet point ("•") bef
 ![Bullet Point Before Taken Email](../../docs/screenshots/screenshots-user-registration/qry-ux-01-bullet-point-taken-email.png)  
 
 **Log In Page**  
-![Bullet Point Before Unable Sign In - Empty Fields](../../docs/screenshots/screenshots-log-in-page/qry-ux-01-bullet-point-login-empty-fields.png)  
-![Bullet Point Before Unable Sign In - Invalid Username](../../docs/screenshots/screenshots-log-in-page/qry-ux-01-bullet-point-login-invalid-username.png)  
-![Bullet Point Before Unable Sign In - Incorrect Password](../../docs/screenshots/screenshots-log-in-page/qry-ux-01-bullet-point-login-incorrect-password.png)  
+![Bullet Point Before Unable Sign In - Empty Fields](../../docs/screenshots/screenshots-login-page/qry-ux-01-bullet-point-login-empty-fields.png)  
+![Bullet Point Before Unable Sign In - Invalid Username](../../docs/screenshots/screenshots-login-page/qry-ux-01-bullet-point-login-invalid-username.png)  
+![Bullet Point Before Unable Sign In - Incorrect Password](../../docs/screenshots/screenshots-login-page/qry-ux-01-bullet-point-login-incorrect-password.png)  
 
 **Create Spoiler Page**  
 ![Bullet Point Before Unable To Add Spoiler - Empty Fields](../../docs/screenshots/screenshots-spoiler-creation/qry-ux-01-bullet-point-add-spoiler-empty-fields.png)  

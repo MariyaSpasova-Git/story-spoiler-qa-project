@@ -2,7 +2,7 @@
 
 **Requirement Link:** [SSQ-1 – Home Page Access](https://storyspoilerqa.atlassian.net/browse/SSQ-1)  
 
-This file documents the 19 test cases for the **Home Page** feature.  
+This file documents the 20 test cases for the **Home Page** feature.  
 Each test case is traceable to its corresponding **Use Case** and **Requirement** in Jira.  
 
 ---
@@ -366,5 +366,27 @@ App does not load, browser shows an error message like “No Internet” or “Y
 
 **Expected Result:**  
 App doesn't load, browser shows an error like “Site can’t be reached” / “DNS_PROBE_FINISHED_NXDOMAIN”.
+
+**Execution Result:** ✅ Passed
+
+---
+
+## TC-HP-20 – Verify logout functionality for logged-in users
+**Jira Test Case:** [SSQ-177](https://storyspoilerqa.atlassian.net/browse/SSQ-177)  
+**Use Case:** [UC-HP-5](../use-cases/use-cases-home-page.md#uc-hp-5--log-out) (Jira: [SSQ-176](https://storyspoilerqa.atlassian.net/browse/SSQ-176))
+
+**Prerequisites:**
+- TD-02: Valid user account exists.  
+- User is successfully logged in and currently on the Home Page.  
+
+**Steps:**  
+1. On the Home Page, click the "LOG OUT" button.  
+2. Observe the page response and navigation behavior.  
+
+**Expected Result:**  
+- The user is successfully logged out of the system.  
+- The app redirects to the Home Page for non-logged-in users.  
+- The navigation bar displays "LOG IN" instead of "LOG OUT".  
+- Any logged-in–only options are no longer visible.  
 
 **Execution Result:** ✅ Passed

@@ -199,8 +199,8 @@ The user is redirected to the Restore Password page.
 The user is redirected to the Home page.
 
 **Screenshots:**  
-![Forgot Password Link Before Click](../../docs/screenshots/screenshots-log-in-page/bug-log-01-01-forgot-password-link-before-click.png)  
-![Wrong Redirect After Click](../../docs/screenshots/screenshots-log-in-page/bug-log-01-02-wrong-redirect-after-click.png)
+![Forgot Password Link Before Click](../../docs/screenshots/screenshots-login-page/bug-log-01-01-forgot-password-link-before-click.png)  
+![Wrong Redirect After Click](../../docs/screenshots/screenshots-log-inpage/bug-log-01-02-wrong-redirect-after-click.png)
 
 ---
 
