@@ -131,6 +131,14 @@ Browse documentation or preview Markdown files directly.
 - Use the issue types Requirement, Use Case, Test Case, Bug, and Query.
 - Verify the link between your Jira project and this GitHub repository. This allows commits containing the Jira issue key to appear directly on the Jira ticket for seamless traceability.
 
+---
+
+### Jira Access Note
+All Jira artifacts (Requirements, Use Cases, Test Cases, Bug Reports, and Queries) are maintained in a linked Jira project. 
+Due to access restrictions, the project is private — however, examples or screenshots can be shared upon request.
+
+---
+
 ## Contact
 
 For any questions or feedback, please feel free to reach out.
